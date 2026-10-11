@@ -1,0 +1,39 @@
+﻿INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/read_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/write_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/interconnect/tb_arbiter_write_fairness_stress.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_arbiter_write_fairness_stress
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_arbiter_write_fairness_stress -s tb_arbiter_write_fairness_stress_behav --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.read_arbiter
+Compiling module xil_defaultlib.write_arbiter
+Compiling module xil_defaultlib.arbiter
+Compiling module xil_defaultlib.tb_arbiter_write_fairness_stress
+Built simulation snapshot tb_arbiter_write_fairness_stress_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_arbiter_write_fairness_stress_behav/xsim_script.tcl
+# xsim {tb_arbiter_write_fairness_stress_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+Starting CPU/DMA continuous write-contention stress test
+TEST PASS: cpu_grants=20 dma_grants=20 cpu_B=20 dma_B=20 max_dma_wait=5
+$finish called at time : 1255 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/interconnect/tb_arbiter_write_fairness_stress.sv" Line 199
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:52:14 2026...

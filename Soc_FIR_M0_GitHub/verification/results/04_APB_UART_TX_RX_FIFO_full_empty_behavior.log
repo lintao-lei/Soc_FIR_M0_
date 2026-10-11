@@ -1,0 +1,46 @@
+﻿INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/uart_tx_byte.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/uart_rx_byte.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/apb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/apb_uart_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_uart_shell
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/uart/tb_apb_uart_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_apb_uart_fifo
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_apb_uart_fifo -s tb_apb_uart_fifo_behav --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_tx_byte(CLKS_PER_BIT=16)
+Compiling module xil_defaultlib.uart_rx_byte(CLKS_PER_BIT=16)
+Compiling module xil_defaultlib.apb_uart(CLKS_PER_BIT=16)
+Compiling module xil_defaultlib.apb_uart_shell(CLKS_PER_BIT=16)
+Compiling module xil_defaultlib.tb_apb_uart_fifo
+Built simulation snapshot tb_apb_uart_fifo_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_apb_uart_fifo_behav/xsim_script.tcl
+# xsim {tb_apb_uart_fifo_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+[TB] Dual 16-byte single-clock FIFO APB UART
+[TB] RX queue keeps multiple bytes until APB reads them
+[TB] TX FIFO queues quickly, then stalls only when full
+[TB] RX FIFO full and held 17th byte
+[TB] Reset flushes both queues and sticky state
+TEST PASS: APB UART dual FIFO, 382 checks
+$finish called at time : 66590 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/uart/tb_apb_uart_fifo.sv" Line 216
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:50:27 2026...

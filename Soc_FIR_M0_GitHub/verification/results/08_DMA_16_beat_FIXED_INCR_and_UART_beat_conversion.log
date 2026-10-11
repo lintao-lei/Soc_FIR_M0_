@@ -1,0 +1,52 @@
+﻿INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma_carry.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_carry
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma6_register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma6_register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma6_scheduler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma6_scheduler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma6_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma6_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/dma/tb_dma6_mixed_burst_16.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dma6_mixed_burst_16
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_dma6_mixed_burst_16 -s tb_dma6_mixed_burst_16_behav -debug typical --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dma6_register_file
+Compiling module xil_defaultlib.dma6_scheduler
+Compiling module xil_defaultlib.dma_carry
+Compiling module xil_defaultlib.dma6_core
+Compiling module xil_defaultlib.tb_dma6_mixed_burst_16
+Built simulation snapshot tb_dma6_mixed_burst_16_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_dma6_mixed_burst_16_behav/xsim_script.tcl
+# xsim {tb_dma6_mixed_burst_16_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+============================================================
+Starting DMA 16-beat mixed FIXED/INCR Burst verification
+============================================================
+TEST 1: channel0 SRAM(INCR) -> FIFO(FIXED), 16 beats
+TEST 2: channel1 FIFO(FIXED) -> SRAM(INCR), 16 beats
+TEST 3: SRAM burst read -> UART single-beat writes
+TEST 4: UART single-beat reads -> SRAM burst write
+------------------------------------------------------------
+AR=7 R=40 AW=7 W=40 B=7
+TEST PASS: DMA mixed Burst and UART beat conversion are correct
+Checks: 367
+============================================================
+$finish called at time : 3305 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/dma/tb_dma6_mixed_burst_16.sv" Line 499
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:52:05 2026...

@@ -1,0 +1,373 @@
+﻿INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/simple_sram_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_sram_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/axi_burst_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_burst_sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/axi_interconnect_shell_reference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interconnect_shell_reference
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_81tap_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_81tap_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_81tap_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_81tap_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/axi_fir_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fir_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_subsystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_subsystem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/uart_tx_byte.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/uart_rx_byte.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/apb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/apb_uart_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_uart_shell
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/axi_to_apb/axi_to_apb_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_to_apb_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/axi_apb_uart_subsystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_apb_uart_subsystem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/axi_interconnect_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interconnect_shell
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/axi_dma_reg_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_dma_reg_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/read_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/write_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_test
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma_carry.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_carry
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma_register_config.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_register_config
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma_configured_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_configured_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/dma/tb_dma_config_integration.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dma_config_integration
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_dma_config_integration -s tb_dma_config_integration_behav --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'dma_cfg_rd_data' is not connected on this instance [E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/dma/tb_dma_config_integration.sv:190]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dma_register_config
+Compiling module xil_defaultlib.dma_carry
+Compiling module xil_defaultlib.dma_configured_core
+Compiling module xil_defaultlib.read_arbiter
+Compiling module xil_defaultlib.write_arbiter
+Compiling module xil_defaultlib.arbiter
+Compiling module xil_defaultlib.simple_sram_core(ADDR_WIDTH=14)
+Compiling module xil_defaultlib.axi_burst_sram(SRAM_ADDR_WIDTH=1...
+Compiling module xil_defaultlib.axi_interconnect_shell_reference
+Compiling module xil_defaultlib.fir_81tap_core_default
+Compiling module xil_defaultlib.fir_81tap_axi_default
+Compiling module xil_defaultlib.axi_fir_data_default
+Compiling module xil_defaultlib.fir_subsystem
+Compiling module xil_defaultlib.axi_dma_reg_slave
+Compiling module xil_defaultlib.axi_to_apb_bridge
+Compiling module xil_defaultlib.uart_tx_byte
+Compiling module xil_defaultlib.uart_rx_byte_default
+Compiling module xil_defaultlib.apb_uart
+Compiling module xil_defaultlib.apb_uart_shell
+Compiling module xil_defaultlib.axi_apb_uart_subsystem
+Compiling module xil_defaultlib.axi_interconnect_shell
+Compiling module xil_defaultlib.tb_dma_config_integration
+Built simulation snapshot tb_dma_config_integration_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_dma_config_integration_behav/xsim_script.tcl
+# xsim {tb_dma_config_integration_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+[TB] Config registers -> DMA -> arbiter -> AXI interconnect -> SRAM
+[130000] CPU WRITE 0x20000020 = 0x12345678
+[200000] CPU WRITE 0x20000100 = 0xdeadbeef
+[270000] CPU WRITE 0x20000024 = 0xa5a55a5a
+[340000] CPU WRITE 0x20000104 = 0xfacecafe
+[410000] CPU WRITE 0x00000000 = 0xcafebabe
+[470000] CPU READ  0x20000020 = 0x12345678
+[TB] Test 1: CPU read holds bus while DMA requests AR
+[700000] CPU READ  0x20000020 = 0x12345678
+[870000] CPU READ  0x20000100 = 0x12345678
+[930000] CPU READ  0x00000000 = 0xcafebabe
+[TB] Test 2: CPU AR waits behind DMA write transaction
+[1260000] CPU READ  0x20000020 = 0x12345678
+[1320000] CPU READ  0x20000024 = 0xa5a55a5a
+[1380000] CPU READ  0x20000100 = 0x12345678
+[1440000] CPU READ  0x20000104 = 0xa5a55a5a
+[TB] Reject zero-word request
+[TB] Copy 4 words in 1 burst(s): 0x20000200 -> 0x20000400
+[1650000] CPU WRITE 0x20000200 = 0x5a000000
+[1720000] CPU WRITE 0x20000400 = 0xdead0000
+[1790000] CPU WRITE 0x20000204 = 0x5b020304
+[1860000] CPU WRITE 0x20000404 = 0xdead0001
+[1930000] CPU WRITE 0x20000208 = 0x58040608
+[2000000] CPU WRITE 0x20000408 = 0xdead0002
+[2070000] CPU WRITE 0x2000020c = 0x5906090c
+[2140000] CPU WRITE 0x2000040c = 0xdead0003
+[2210000] CPU WRITE 0x20000410 = 0xfaceb00c
+[2640000] CPU READ  0x20000400 = 0x5a000000
+[2700000] CPU READ  0x20000404 = 0x5b020304
+[2760000] CPU READ  0x20000408 = 0x58040608
+[2820000] CPU READ  0x2000040c = 0x5906090c
+[2880000] CPU READ  0x20000410 = 0xfaceb00c
+[2940000] CPU READ  0x20000200 = 0x5a000000
+[3000000] CPU READ  0x2000020c = 0x5906090c
+[TB] Copy 8 words in 1 burst(s): 0x20000600 -> 0x20000700
+[3070000] CPU WRITE 0x20000600 = 0x5a000000
+[3140000] CPU WRITE 0x20000700 = 0xdead0000
+[3210000] CPU WRITE 0x20000604 = 0x5b020304
+[3280000] CPU WRITE 0x20000704 = 0xdead0001
+[3350000] CPU WRITE 0x20000608 = 0x58040608
+[3420000] CPU WRITE 0x20000708 = 0xdead0002
+[3490000] CPU WRITE 0x2000060c = 0x5906090c
+[3560000] CPU WRITE 0x2000070c = 0xdead0003
+[3630000] CPU WRITE 0x20000610 = 0x5e080c10
+[3700000] CPU WRITE 0x20000710 = 0xdead0004
+[3770000] CPU WRITE 0x20000614 = 0x5f0a0f14
+[3840000] CPU WRITE 0x20000714 = 0xdead0005
+[3910000] CPU WRITE 0x20000618 = 0x5c0c1218
+[3980000] CPU WRITE 0x20000718 = 0xdead0006
+[4050000] CPU WRITE 0x2000061c = 0x5d0e151c
+[4120000] CPU WRITE 0x2000071c = 0xdead0007
+[4190000] CPU WRITE 0x20000720 = 0xfaceb00c
+[4960000] CPU READ  0x20000700 = 0x5a000000
+[5020000] CPU READ  0x20000704 = 0x5b020304
+[5080000] CPU READ  0x20000708 = 0x58040608
+[5140000] CPU READ  0x2000070c = 0x5906090c
+[5200000] CPU READ  0x20000710 = 0x5e080c10
+[5260000] CPU READ  0x20000714 = 0x5f0a0f14
+[5320000] CPU READ  0x20000718 = 0x5c0c1218
+[5380000] CPU READ  0x2000071c = 0x5d0e151c
+[5440000] CPU READ  0x20000720 = 0xfaceb00c
+[5500000] CPU READ  0x20000600 = 0x5a000000
+[5560000] CPU READ  0x2000061c = 0x5d0e151c
+[TB] Copy 16 words in 1 burst(s): 0x20000800 -> 0x20000c00
+[5630000] CPU WRITE 0x20000800 = 0x5a000000
+[5700000] CPU WRITE 0x20000c00 = 0xdead0000
+[5770000] CPU WRITE 0x20000804 = 0x5b020304
+[5840000] CPU WRITE 0x20000c04 = 0xdead0001
+[5910000] CPU WRITE 0x20000808 = 0x58040608
+[5980000] CPU WRITE 0x20000c08 = 0xdead0002
+[6050000] CPU WRITE 0x2000080c = 0x5906090c
+[6120000] CPU WRITE 0x20000c0c = 0xdead0003
+[6190000] CPU WRITE 0x20000810 = 0x5e080c10
+[6260000] CPU WRITE 0x20000c10 = 0xdead0004
+[6330000] CPU WRITE 0x20000814 = 0x5f0a0f14
+[6400000] CPU WRITE 0x20000c14 = 0xdead0005
+[6470000] CPU WRITE 0x20000818 = 0x5c0c1218
+[6540000] CPU WRITE 0x20000c18 = 0xdead0006
+[6610000] CPU WRITE 0x2000081c = 0x5d0e151c
+[6680000] CPU WRITE 0x20000c1c = 0xdead0007
+[6750000] CPU WRITE 0x20000820 = 0x52101820
+[6820000] CPU WRITE 0x20000c20 = 0xdead0008
+[6890000] CPU WRITE 0x20000824 = 0x53121b24
+[6960000] CPU WRITE 0x20000c24 = 0xdead0009
+[7030000] CPU WRITE 0x20000828 = 0x50141e28
+[7100000] CPU WRITE 0x20000c28 = 0xdead000a
+[7170000] CPU WRITE 0x2000082c = 0x5116212c
+[7240000] CPU WRITE 0x20000c2c = 0xdead000b
+[7310000] CPU WRITE 0x20000830 = 0x56182430
+[7380000] CPU WRITE 0x20000c30 = 0xdead000c
+[7450000] CPU WRITE 0x20000834 = 0x571a2734
+[7520000] CPU WRITE 0x20000c34 = 0xdead000d
+[7590000] CPU WRITE 0x20000838 = 0x541c2a38
+[7660000] CPU WRITE 0x20000c38 = 0xdead000e
+[7730000] CPU WRITE 0x2000083c = 0x551e2d3c
+[7800000] CPU WRITE 0x20000c3c = 0xdead000f
+[7870000] CPU WRITE 0x20000c40 = 0xfaceb00c
+[9150000] CPU READ  0x20000c00 = 0x5a000000
+[9210000] CPU READ  0x20000c04 = 0x5b020304
+[9270000] CPU READ  0x20000c08 = 0x58040608
+[9330000] CPU READ  0x20000c0c = 0x5906090c
+[9390000] CPU READ  0x20000c10 = 0x5e080c10
+[9450000] CPU READ  0x20000c14 = 0x5f0a0f14
+[9510000] CPU READ  0x20000c18 = 0x5c0c1218
+[9570000] CPU READ  0x20000c1c = 0x5d0e151c
+[9630000] CPU READ  0x20000c20 = 0x52101820
+[9690000] CPU READ  0x20000c24 = 0x53121b24
+[9750000] CPU READ  0x20000c28 = 0x50141e28
+[9810000] CPU READ  0x20000c2c = 0x5116212c
+[9870000] CPU READ  0x20000c30 = 0x56182430
+[9930000] CPU READ  0x20000c34 = 0x571a2734
+[9990000] CPU READ  0x20000c38 = 0x541c2a38
+[10050000] CPU READ  0x20000c3c = 0x551e2d3c
+[10110000] CPU READ  0x20000c40 = 0xfaceb00c
+[10170000] CPU READ  0x20000800 = 0x5a000000
+[10230000] CPU READ  0x2000083c = 0x551e2d3c
+[TB] Copy 20 words in 2 burst(s): 0x20001400 -> 0x20001800
+[10300000] CPU WRITE 0x20001400 = 0x5a000000
+[10370000] CPU WRITE 0x20001800 = 0xdead0000
+[10440000] CPU WRITE 0x20001404 = 0x5b020304
+[10510000] CPU WRITE 0x20001804 = 0xdead0001
+[10580000] CPU WRITE 0x20001408 = 0x58040608
+[10650000] CPU WRITE 0x20001808 = 0xdead0002
+[10720000] CPU WRITE 0x2000140c = 0x5906090c
+[10790000] CPU WRITE 0x2000180c = 0xdead0003
+[10860000] CPU WRITE 0x20001410 = 0x5e080c10
+[10930000] CPU WRITE 0x20001810 = 0xdead0004
+[11000000] CPU WRITE 0x20001414 = 0x5f0a0f14
+[11070000] CPU WRITE 0x20001814 = 0xdead0005
+[11140000] CPU WRITE 0x20001418 = 0x5c0c1218
+[11210000] CPU WRITE 0x20001818 = 0xdead0006
+[11280000] CPU WRITE 0x2000141c = 0x5d0e151c
+[11350000] CPU WRITE 0x2000181c = 0xdead0007
+[11420000] CPU WRITE 0x20001420 = 0x52101820
+[11490000] CPU WRITE 0x20001820 = 0xdead0008
+[11560000] CPU WRITE 0x20001424 = 0x53121b24
+[11630000] CPU WRITE 0x20001824 = 0xdead0009
+[11700000] CPU WRITE 0x20001428 = 0x50141e28
+[11770000] CPU WRITE 0x20001828 = 0xdead000a
+[11840000] CPU WRITE 0x2000142c = 0x5116212c
+[11910000] CPU WRITE 0x2000182c = 0xdead000b
+[11980000] CPU WRITE 0x20001430 = 0x56182430
+[12050000] CPU WRITE 0x20001830 = 0xdead000c
+[12120000] CPU WRITE 0x20001434 = 0x571a2734
+[12190000] CPU WRITE 0x20001834 = 0xdead000d
+[12260000] CPU WRITE 0x20001438 = 0x541c2a38
+[12330000] CPU WRITE 0x20001838 = 0xdead000e
+[12400000] CPU WRITE 0x2000143c = 0x551e2d3c
+[12470000] CPU WRITE 0x2000183c = 0xdead000f
+[12540000] CPU WRITE 0x20001440 = 0x4a203040
+[12610000] CPU WRITE 0x20001840 = 0xdead0010
+[12680000] CPU WRITE 0x20001444 = 0x4b223344
+[12750000] CPU WRITE 0x20001844 = 0xdead0011
+[12820000] CPU WRITE 0x20001448 = 0x48243648
+[12890000] CPU WRITE 0x20001848 = 0xdead0012
+[12960000] CPU WRITE 0x2000144c = 0x4926394c
+[13030000] CPU WRITE 0x2000184c = 0xdead0013
+[13100000] CPU WRITE 0x20001850 = 0xfaceb00c
+[14660000] CPU READ  0x20001800 = 0x5a000000
+[14720000] CPU READ  0x20001804 = 0x5b020304
+[14780000] CPU READ  0x20001808 = 0x58040608
+[14840000] CPU READ  0x2000180c = 0x5906090c
+[14900000] CPU READ  0x20001810 = 0x5e080c10
+[14960000] CPU READ  0x20001814 = 0x5f0a0f14
+[15020000] CPU READ  0x20001818 = 0x5c0c1218
+[15080000] CPU READ  0x2000181c = 0x5d0e151c
+[15140000] CPU READ  0x20001820 = 0x52101820
+[15200000] CPU READ  0x20001824 = 0x53121b24
+[15260000] CPU READ  0x20001828 = 0x50141e28
+[15320000] CPU READ  0x2000182c = 0x5116212c
+[15380000] CPU READ  0x20001830 = 0x56182430
+[15440000] CPU READ  0x20001834 = 0x571a2734
+[15500000] CPU READ  0x20001838 = 0x541c2a38
+[15560000] CPU READ  0x2000183c = 0x551e2d3c
+[15620000] CPU READ  0x20001840 = 0x4a203040
+[15680000] CPU READ  0x20001844 = 0x4b223344
+[15740000] CPU READ  0x20001848 = 0x48243648
+[15800000] CPU READ  0x2000184c = 0x4926394c
+[15860000] CPU READ  0x20001850 = 0xfaceb00c
+[15920000] CPU READ  0x20001400 = 0x5a000000
+[15980000] CPU READ  0x2000144c = 0x4926394c
+[TB] Copy 20 words in 4 burst(s): 0x20001ffc -> 0x20002ff8
+[16050000] CPU WRITE 0x20001ffc = 0x5a000000
+[16120000] CPU WRITE 0x20002ff8 = 0xdead0000
+[16190000] CPU WRITE 0x20002000 = 0x5b020304
+[16260000] CPU WRITE 0x20002ffc = 0xdead0001
+[16330000] CPU WRITE 0x20002004 = 0x58040608
+[16400000] CPU WRITE 0x20003000 = 0xdead0002
+[16470000] CPU WRITE 0x20002008 = 0x5906090c
+[16540000] CPU WRITE 0x20003004 = 0xdead0003
+[16610000] CPU WRITE 0x2000200c = 0x5e080c10
+[16680000] CPU WRITE 0x20003008 = 0xdead0004
+[16750000] CPU WRITE 0x20002010 = 0x5f0a0f14
+[16820000] CPU WRITE 0x2000300c = 0xdead0005
+[16890000] CPU WRITE 0x20002014 = 0x5c0c1218
+[16960000] CPU WRITE 0x20003010 = 0xdead0006
+[17030000] CPU WRITE 0x20002018 = 0x5d0e151c
+[17100000] CPU WRITE 0x20003014 = 0xdead0007
+[17170000] CPU WRITE 0x2000201c = 0x52101820
+[17240000] CPU WRITE 0x20003018 = 0xdead0008
+[17310000] CPU WRITE 0x20002020 = 0x53121b24
+[17380000] CPU WRITE 0x2000301c = 0xdead0009
+[17450000] CPU WRITE 0x20002024 = 0x50141e28
+[17520000] CPU WRITE 0x20003020 = 0xdead000a
+[17590000] CPU WRITE 0x20002028 = 0x5116212c
+[17660000] CPU WRITE 0x20003024 = 0xdead000b
+[17730000] CPU WRITE 0x2000202c = 0x56182430
+[17800000] CPU WRITE 0x20003028 = 0xdead000c
+[17870000] CPU WRITE 0x20002030 = 0x571a2734
+[17940000] CPU WRITE 0x2000302c = 0xdead000d
+[18010000] CPU WRITE 0x20002034 = 0x541c2a38
+[18080000] CPU WRITE 0x20003030 = 0xdead000e
+[18150000] CPU WRITE 0x20002038 = 0x551e2d3c
+[18220000] CPU WRITE 0x20003034 = 0xdead000f
+[18290000] CPU WRITE 0x2000203c = 0x4a203040
+[18360000] CPU WRITE 0x20003038 = 0xdead0010
+[18430000] CPU WRITE 0x20002040 = 0x4b223344
+[18500000] CPU WRITE 0x2000303c = 0xdead0011
+[18570000] CPU WRITE 0x20002044 = 0x48243648
+[18640000] CPU WRITE 0x20003040 = 0xdead0012
+[18710000] CPU WRITE 0x20002048 = 0x4926394c
+[18780000] CPU WRITE 0x20003044 = 0xdead0013
+[18850000] CPU WRITE 0x20003048 = 0xfaceb00c
+[20490000] CPU READ  0x20002ff8 = 0x5a000000
+[20550000] CPU READ  0x20002ffc = 0x5b020304
+[20610000] CPU READ  0x20003000 = 0x58040608
+[20670000] CPU READ  0x20003004 = 0x5906090c
+[20730000] CPU READ  0x20003008 = 0x5e080c10
+[20790000] CPU READ  0x2000300c = 0x5f0a0f14
+[20850000] CPU READ  0x20003010 = 0x5c0c1218
+[20910000] CPU READ  0x20003014 = 0x5d0e151c
+[20970000] CPU READ  0x20003018 = 0x52101820
+[21030000] CPU READ  0x2000301c = 0x53121b24
+[21090000] CPU READ  0x20003020 = 0x50141e28
+[21150000] CPU READ  0x20003024 = 0x5116212c
+[21210000] CPU READ  0x20003028 = 0x56182430
+[21270000] CPU READ  0x2000302c = 0x571a2734
+[21330000] CPU READ  0x20003030 = 0x541c2a38
+[21390000] CPU READ  0x20003034 = 0x551e2d3c
+[21450000] CPU READ  0x20003038 = 0x4a203040
+[21510000] CPU READ  0x2000303c = 0x4b223344
+[21570000] CPU READ  0x20003040 = 0x48243648
+[21630000] CPU READ  0x20003044 = 0x4926394c
+[21690000] CPU READ  0x20003048 = 0xfaceb00c
+[21750000] CPU READ  0x20001ffc = 0x5a000000
+[21810000] CPU READ  0x20002048 = 0x4926394c
+[TB] Stall counts AR=10 AW=6 R=56 W=70 B=3
+[TB] Inject SLVERR on second beat of mapped 4-beat read
+[21880000] CPU WRITE 0x20003400 = 0x5a000000
+[21950000] CPU WRITE 0x20003800 = 0xbad00000
+[22020000] CPU WRITE 0x20003404 = 0x5b020304
+[22090000] CPU WRITE 0x20003804 = 0xbad00001
+[22160000] CPU WRITE 0x20003408 = 0x58040608
+[22230000] CPU WRITE 0x20003808 = 0xbad00002
+[22300000] CPU WRITE 0x2000340c = 0x5906090c
+[22370000] CPU WRITE 0x2000380c = 0xbad00003
+[22720000] CPU READ  0x20003800 = 0xbad00000
+[22780000] CPU READ  0x20003804 = 0xbad00001
+[22840000] CPU READ  0x20003808 = 0xbad00002
+[22900000] CPU READ  0x2000380c = 0xbad00003
+[TB] Error on word 2: stop before second AW/W
+[22970000] CPU WRITE 0x2000fffc = 0x13579bdf
+[23040000] CPU WRITE 0x20001000 = 0x11111111
+[23110000] CPU WRITE 0x20001004 = 0x22222222
+[23450000] CPU READ  0x20001000 = 0x13579bdf
+[23510000] CPU READ  0x20001004 = 0x22222222
+[TB] Reset during an active read burst, then restart
+[23580000] CPU WRITE 0x20003c00 = 0x89abcdef
+[23650000] CPU WRITE 0x20004000 = 0xfeed1234
+[23960000] CPU READ  0x20004000 = 0xfeed1234
+[TB] Copy 1 words in 1 burst(s): 0x20003c00 -> 0x20004000
+[24030000] CPU WRITE 0x20003c00 = 0x5a000000
+[24100000] CPU WRITE 0x20004000 = 0xdead0000
+[24170000] CPU WRITE 0x20004004 = 0xfaceb00c
+[24480000] CPU READ  0x20004000 = 0x5a000000
+[24540000] CPU READ  0x20004004 = 0xfaceb00c
+[24600000] CPU READ  0x20003c00 = 0x5a000000
+[24660000] CPU READ  0x20003c00 = 0x5a000000
+TEST PASS: DMA register-config integration, true INCR bursts, backpressure, 4KiB split, and errors; 1316 checks
+$finish called at time : 24660 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/dma/tb_dma_config_integration.sv" Line 885
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:52:00 2026...

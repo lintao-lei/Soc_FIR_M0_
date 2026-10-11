@@ -1,0 +1,311 @@
+﻿INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/simple_sram_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_sram_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/axi_burst_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_burst_sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/sram/tb_axi_burst_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_burst_sram_current
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_axi_burst_sram_current -s tb_axi_burst_sram_current_behav --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simple_sram_core_default
+Compiling module xil_defaultlib.axi_burst_sram
+Compiling module xil_defaultlib.tb_axi_burst_sram_current
+Built simulation snapshot tb_axi_burst_sram_current_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_axi_burst_sram_current_behav/xsim_script.tcl
+# xsim {tb_axi_burst_sram_current_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+
+============================================================
+Starting current-stage AXI burst SRAM simulation
+============================================================
+[65000] CHECK 1 PASS: AWREADY is high after reset while idle
+[65000] CHECK 2 PASS: ARREADY is high after reset while idle
+
+TEST 1: single-beat write/read with B backpressure
+[105000] CHECK 3 PASS: BVALID remains asserted while BREADY is low
+[105000] CHECK 4 PASS: BRESP remains stable while BREADY is low
+[115000] CHECK 5 PASS: BVALID remains asserted while BREADY is low
+[115000] CHECK 6 PASS: BRESP remains stable while BREADY is low
+[125000] CHECK 7 PASS: BVALID remains asserted while BREADY is low
+[125000] CHECK 8 PASS: BRESP remains stable while BREADY is low
+[125000] CHECK 9 PASS: legal write burst returns OKAY
+[135000] CHECK 10 PASS: B channel handshake occurs
+[136000] CHECK 11 PASS: BVALID clears after B handshake
+[185000] CHECK 12 PASS: RVALID remains asserted while RREADY is low
+[185000] CHECK 13 PASS: RDATA remains stable while RREADY is low
+[185000] CHECK 14 PASS: RRESP remains stable while RREADY is low
+[185000] CHECK 15 PASS: RLAST remains stable while RREADY is low
+[195000] CHECK 16 PASS: RVALID remains asserted while RREADY is low
+[195000] CHECK 17 PASS: RDATA remains stable while RREADY is low
+[195000] CHECK 18 PASS: RRESP remains stable while RREADY is low
+[195000] CHECK 19 PASS: RLAST remains stable while RREADY is low
+[205000] CHECK 20 PASS: legal read beat returns OKAY
+[205000] CHECK 21 PASS: read data matches written data
+[205000] CHECK 22 PASS: RLAST appears only on the final beat
+
+TEST 2: four-beat INCR write/read with R backpressure
+[315000] CHECK 23 PASS: BVALID remains asserted while BREADY is low
+[315000] CHECK 24 PASS: BRESP remains stable while BREADY is low
+[325000] CHECK 25 PASS: BVALID remains asserted while BREADY is low
+[325000] CHECK 26 PASS: BRESP remains stable while BREADY is low
+[325000] CHECK 27 PASS: legal write burst returns OKAY
+[335000] CHECK 28 PASS: B channel handshake occurs
+[336000] CHECK 29 PASS: BVALID clears after B handshake
+[385000] CHECK 30 PASS: RVALID remains asserted while RREADY is low
+[385000] CHECK 31 PASS: RDATA remains stable while RREADY is low
+[385000] CHECK 32 PASS: RRESP remains stable while RREADY is low
+[385000] CHECK 33 PASS: RLAST remains stable while RREADY is low
+[395000] CHECK 34 PASS: RVALID remains asserted while RREADY is low
+[395000] CHECK 35 PASS: RDATA remains stable while RREADY is low
+[395000] CHECK 36 PASS: RRESP remains stable while RREADY is low
+[395000] CHECK 37 PASS: RLAST remains stable while RREADY is low
+[405000] CHECK 38 PASS: legal read beat returns OKAY
+[405000] CHECK 39 PASS: read data matches written data
+[405000] CHECK 40 PASS: RLAST appears only on the final beat
+[435000] CHECK 41 PASS: legal read beat returns OKAY
+[435000] CHECK 42 PASS: read data matches written data
+[435000] CHECK 43 PASS: RLAST appears only on the final beat
+[465000] CHECK 44 PASS: RVALID remains asserted while RREADY is low
+[465000] CHECK 45 PASS: RDATA remains stable while RREADY is low
+[465000] CHECK 46 PASS: RRESP remains stable while RREADY is low
+[465000] CHECK 47 PASS: RLAST remains stable while RREADY is low
+[475000] CHECK 48 PASS: RVALID remains asserted while RREADY is low
+[475000] CHECK 49 PASS: RDATA remains stable while RREADY is low
+[475000] CHECK 50 PASS: RRESP remains stable while RREADY is low
+[475000] CHECK 51 PASS: RLAST remains stable while RREADY is low
+[485000] CHECK 52 PASS: legal read beat returns OKAY
+[485000] CHECK 53 PASS: read data matches written data
+[485000] CHECK 54 PASS: RLAST appears only on the final beat
+[515000] CHECK 55 PASS: legal read beat returns OKAY
+[515000] CHECK 56 PASS: read data matches written data
+[515000] CHECK 57 PASS: RLAST appears only on the final beat
+
+TEST 3: eight-beat INCR write/read
+[700000] CHECK 58 PASS: legal write burst returns OKAY
+[715000] CHECK 59 PASS: B channel handshake occurs
+[716000] CHECK 60 PASS: BVALID clears after B handshake
+[765000] CHECK 61 PASS: RVALID remains asserted while RREADY is low
+[765000] CHECK 62 PASS: RDATA remains stable while RREADY is low
+[765000] CHECK 63 PASS: RRESP remains stable while RREADY is low
+[765000] CHECK 64 PASS: RLAST remains stable while RREADY is low
+[775000] CHECK 65 PASS: RVALID remains asserted while RREADY is low
+[775000] CHECK 66 PASS: RDATA remains stable while RREADY is low
+[775000] CHECK 67 PASS: RRESP remains stable while RREADY is low
+[775000] CHECK 68 PASS: RLAST remains stable while RREADY is low
+[785000] CHECK 69 PASS: legal read beat returns OKAY
+[785000] CHECK 70 PASS: read data matches written data
+[785000] CHECK 71 PASS: RLAST appears only on the final beat
+[815000] CHECK 72 PASS: legal read beat returns OKAY
+[815000] CHECK 73 PASS: read data matches written data
+[815000] CHECK 74 PASS: RLAST appears only on the final beat
+[845000] CHECK 75 PASS: RVALID remains asserted while RREADY is low
+[845000] CHECK 76 PASS: RDATA remains stable while RREADY is low
+[845000] CHECK 77 PASS: RRESP remains stable while RREADY is low
+[845000] CHECK 78 PASS: RLAST remains stable while RREADY is low
+[855000] CHECK 79 PASS: RVALID remains asserted while RREADY is low
+[855000] CHECK 80 PASS: RDATA remains stable while RREADY is low
+[855000] CHECK 81 PASS: RRESP remains stable while RREADY is low
+[855000] CHECK 82 PASS: RLAST remains stable while RREADY is low
+[865000] CHECK 83 PASS: legal read beat returns OKAY
+[865000] CHECK 84 PASS: read data matches written data
+[865000] CHECK 85 PASS: RLAST appears only on the final beat
+[895000] CHECK 86 PASS: legal read beat returns OKAY
+[895000] CHECK 87 PASS: read data matches written data
+[895000] CHECK 88 PASS: RLAST appears only on the final beat
+[925000] CHECK 89 PASS: RVALID remains asserted while RREADY is low
+[925000] CHECK 90 PASS: RDATA remains stable while RREADY is low
+[925000] CHECK 91 PASS: RRESP remains stable while RREADY is low
+[925000] CHECK 92 PASS: RLAST remains stable while RREADY is low
+[935000] CHECK 93 PASS: RVALID remains asserted while RREADY is low
+[935000] CHECK 94 PASS: RDATA remains stable while RREADY is low
+[935000] CHECK 95 PASS: RRESP remains stable while RREADY is low
+[935000] CHECK 96 PASS: RLAST remains stable while RREADY is low
+[945000] CHECK 97 PASS: legal read beat returns OKAY
+[945000] CHECK 98 PASS: read data matches written data
+[945000] CHECK 99 PASS: RLAST appears only on the final beat
+[975000] CHECK 100 PASS: legal read beat returns OKAY
+[975000] CHECK 101 PASS: read data matches written data
+[975000] CHECK 102 PASS: RLAST appears only on the final beat
+[1005000] CHECK 103 PASS: RVALID remains asserted while RREADY is low
+[1005000] CHECK 104 PASS: RDATA remains stable while RREADY is low
+[1005000] CHECK 105 PASS: RRESP remains stable while RREADY is low
+[1005000] CHECK 106 PASS: RLAST remains stable while RREADY is low
+[1015000] CHECK 107 PASS: RVALID remains asserted while RREADY is low
+[1015000] CHECK 108 PASS: RDATA remains stable while RREADY is low
+[1015000] CHECK 109 PASS: RRESP remains stable while RREADY is low
+[1015000] CHECK 110 PASS: RLAST remains stable while RREADY is low
+[1025000] CHECK 111 PASS: legal read beat returns OKAY
+[1025000] CHECK 112 PASS: read data matches written data
+[1025000] CHECK 113 PASS: RLAST appears only on the final beat
+[1055000] CHECK 114 PASS: legal read beat returns OKAY
+[1055000] CHECK 115 PASS: read data matches written data
+[1055000] CHECK 116 PASS: RLAST appears only on the final beat
+
+TEST 4: sixteen-beat INCR write/read
+[1405000] CHECK 117 PASS: BVALID remains asserted while BREADY is low
+[1405000] CHECK 118 PASS: BRESP remains stable while BREADY is low
+[1405000] CHECK 119 PASS: legal write burst returns OKAY
+[1415000] CHECK 120 PASS: B channel handshake occurs
+[1416000] CHECK 121 PASS: BVALID clears after B handshake
+[1465000] CHECK 122 PASS: RVALID remains asserted while RREADY is low
+[1465000] CHECK 123 PASS: RDATA remains stable while RREADY is low
+[1465000] CHECK 124 PASS: RRESP remains stable while RREADY is low
+[1465000] CHECK 125 PASS: RLAST remains stable while RREADY is low
+[1475000] CHECK 126 PASS: RVALID remains asserted while RREADY is low
+[1475000] CHECK 127 PASS: RDATA remains stable while RREADY is low
+[1475000] CHECK 128 PASS: RRESP remains stable while RREADY is low
+[1475000] CHECK 129 PASS: RLAST remains stable while RREADY is low
+[1485000] CHECK 130 PASS: legal read beat returns OKAY
+[1485000] CHECK 131 PASS: read data matches written data
+[1485000] CHECK 132 PASS: RLAST appears only on the final beat
+[1515000] CHECK 133 PASS: legal read beat returns OKAY
+[1515000] CHECK 134 PASS: read data matches written data
+[1515000] CHECK 135 PASS: RLAST appears only on the final beat
+[1545000] CHECK 136 PASS: RVALID remains asserted while RREADY is low
+[1545000] CHECK 137 PASS: RDATA remains stable while RREADY is low
+[1545000] CHECK 138 PASS: RRESP remains stable while RREADY is low
+[1545000] CHECK 139 PASS: RLAST remains stable while RREADY is low
+[1555000] CHECK 140 PASS: RVALID remains asserted while RREADY is low
+[1555000] CHECK 141 PASS: RDATA remains stable while RREADY is low
+[1555000] CHECK 142 PASS: RRESP remains stable while RREADY is low
+[1555000] CHECK 143 PASS: RLAST remains stable while RREADY is low
+[1565000] CHECK 144 PASS: legal read beat returns OKAY
+[1565000] CHECK 145 PASS: read data matches written data
+[1565000] CHECK 146 PASS: RLAST appears only on the final beat
+[1595000] CHECK 147 PASS: legal read beat returns OKAY
+[1595000] CHECK 148 PASS: read data matches written data
+[1595000] CHECK 149 PASS: RLAST appears only on the final beat
+[1625000] CHECK 150 PASS: RVALID remains asserted while RREADY is low
+[1625000] CHECK 151 PASS: RDATA remains stable while RREADY is low
+[1625000] CHECK 152 PASS: RRESP remains stable while RREADY is low
+[1625000] CHECK 153 PASS: RLAST remains stable while RREADY is low
+[1635000] CHECK 154 PASS: RVALID remains asserted while RREADY is low
+[1635000] CHECK 155 PASS: RDATA remains stable while RREADY is low
+[1635000] CHECK 156 PASS: RRESP remains stable while RREADY is low
+[1635000] CHECK 157 PASS: RLAST remains stable while RREADY is low
+[1645000] CHECK 158 PASS: legal read beat returns OKAY
+[1645000] CHECK 159 PASS: read data matches written data
+[1645000] CHECK 160 PASS: RLAST appears only on the final beat
+[1675000] CHECK 161 PASS: legal read beat returns OKAY
+[1675000] CHECK 162 PASS: read data matches written data
+[1675000] CHECK 163 PASS: RLAST appears only on the final beat
+[1705000] CHECK 164 PASS: RVALID remains asserted while RREADY is low
+[1705000] CHECK 165 PASS: RDATA remains stable while RREADY is low
+[1705000] CHECK 166 PASS: RRESP remains stable while RREADY is low
+[1705000] CHECK 167 PASS: RLAST remains stable while RREADY is low
+[1715000] CHECK 168 PASS: RVALID remains asserted while RREADY is low
+[1715000] CHECK 169 PASS: RDATA remains stable while RREADY is low
+[1715000] CHECK 170 PASS: RRESP remains stable while RREADY is low
+[1715000] CHECK 171 PASS: RLAST remains stable while RREADY is low
+[1725000] CHECK 172 PASS: legal read beat returns OKAY
+[1725000] CHECK 173 PASS: read data matches written data
+[1725000] CHECK 174 PASS: RLAST appears only on the final beat
+[1755000] CHECK 175 PASS: legal read beat returns OKAY
+[1755000] CHECK 176 PASS: read data matches written data
+[1755000] CHECK 177 PASS: RLAST appears only on the final beat
+[1785000] CHECK 178 PASS: RVALID remains asserted while RREADY is low
+[1785000] CHECK 179 PASS: RDATA remains stable while RREADY is low
+[1785000] CHECK 180 PASS: RRESP remains stable while RREADY is low
+[1785000] CHECK 181 PASS: RLAST remains stable while RREADY is low
+[1795000] CHECK 182 PASS: RVALID remains asserted while RREADY is low
+[1795000] CHECK 183 PASS: RDATA remains stable while RREADY is low
+[1795000] CHECK 184 PASS: RRESP remains stable while RREADY is low
+[1795000] CHECK 185 PASS: RLAST remains stable while RREADY is low
+[1805000] CHECK 186 PASS: legal read beat returns OKAY
+[1805000] CHECK 187 PASS: read data matches written data
+[1805000] CHECK 188 PASS: RLAST appears only on the final beat
+[1835000] CHECK 189 PASS: legal read beat returns OKAY
+[1835000] CHECK 190 PASS: read data matches written data
+[1835000] CHECK 191 PASS: RLAST appears only on the final beat
+[1865000] CHECK 192 PASS: RVALID remains asserted while RREADY is low
+[1865000] CHECK 193 PASS: RDATA remains stable while RREADY is low
+[1865000] CHECK 194 PASS: RRESP remains stable while RREADY is low
+[1865000] CHECK 195 PASS: RLAST remains stable while RREADY is low
+[1875000] CHECK 196 PASS: RVALID remains asserted while RREADY is low
+[1875000] CHECK 197 PASS: RDATA remains stable while RREADY is low
+[1875000] CHECK 198 PASS: RRESP remains stable while RREADY is low
+[1875000] CHECK 199 PASS: RLAST remains stable while RREADY is low
+[1885000] CHECK 200 PASS: legal read beat returns OKAY
+[1885000] CHECK 201 PASS: read data matches written data
+[1885000] CHECK 202 PASS: RLAST appears only on the final beat
+[1915000] CHECK 203 PASS: legal read beat returns OKAY
+[1915000] CHECK 204 PASS: read data matches written data
+[1915000] CHECK 205 PASS: RLAST appears only on the final beat
+[1945000] CHECK 206 PASS: RVALID remains asserted while RREADY is low
+[1945000] CHECK 207 PASS: RDATA remains stable while RREADY is low
+[1945000] CHECK 208 PASS: RRESP remains stable while RREADY is low
+[1945000] CHECK 209 PASS: RLAST remains stable while RREADY is low
+[1955000] CHECK 210 PASS: RVALID remains asserted while RREADY is low
+[1955000] CHECK 211 PASS: RDATA remains stable while RREADY is low
+[1955000] CHECK 212 PASS: RRESP remains stable while RREADY is low
+[1955000] CHECK 213 PASS: RLAST remains stable while RREADY is low
+[1965000] CHECK 214 PASS: legal read beat returns OKAY
+[1965000] CHECK 215 PASS: read data matches written data
+[1965000] CHECK 216 PASS: RLAST appears only on the final beat
+[1995000] CHECK 217 PASS: legal read beat returns OKAY
+[1995000] CHECK 218 PASS: read data matches written data
+[1995000] CHECK 219 PASS: RLAST appears only on the final beat
+[2025000] CHECK 220 PASS: RVALID remains asserted while RREADY is low
+[2025000] CHECK 221 PASS: RDATA remains stable while RREADY is low
+[2025000] CHECK 222 PASS: RRESP remains stable while RREADY is low
+[2025000] CHECK 223 PASS: RLAST remains stable while RREADY is low
+[2035000] CHECK 224 PASS: RVALID remains asserted while RREADY is low
+[2035000] CHECK 225 PASS: RDATA remains stable while RREADY is low
+[2035000] CHECK 226 PASS: RRESP remains stable while RREADY is low
+[2035000] CHECK 227 PASS: RLAST remains stable while RREADY is low
+[2045000] CHECK 228 PASS: legal read beat returns OKAY
+[2045000] CHECK 229 PASS: read data matches written data
+[2045000] CHECK 230 PASS: RLAST appears only on the final beat
+[2075000] CHECK 231 PASS: legal read beat returns OKAY
+[2075000] CHECK 232 PASS: read data matches written data
+[2075000] CHECK 233 PASS: RLAST appears only on the final beat
+
+TEST 5: byte strobes
+[2120000] CHECK 234 PASS: legal write burst returns OKAY
+[2135000] CHECK 235 PASS: B channel handshake occurs
+[2136000] CHECK 236 PASS: BVALID clears after B handshake
+[2180000] CHECK 237 PASS: legal write burst returns OKAY
+[2195000] CHECK 238 PASS: B channel handshake occurs
+[2196000] CHECK 239 PASS: BVALID clears after B handshake
+[2240000] CHECK 240 PASS: legal write burst returns OKAY
+[2255000] CHECK 241 PASS: B channel handshake occurs
+[2256000] CHECK 242 PASS: BVALID clears after B handshake
+[2305000] CHECK 243 PASS: RVALID remains asserted while RREADY is low
+[2305000] CHECK 244 PASS: RDATA remains stable while RREADY is low
+[2305000] CHECK 245 PASS: RRESP remains stable while RREADY is low
+[2305000] CHECK 246 PASS: RLAST remains stable while RREADY is low
+[2315000] CHECK 247 PASS: RVALID remains asserted while RREADY is low
+[2315000] CHECK 248 PASS: RDATA remains stable while RREADY is low
+[2315000] CHECK 249 PASS: RRESP remains stable while RREADY is low
+[2315000] CHECK 250 PASS: RLAST remains stable while RREADY is low
+[2325000] CHECK 251 PASS: legal read beat returns OKAY
+[2325000] CHECK 252 PASS: read data matches written data
+[2325000] CHECK 253 PASS: RLAST appears only on the final beat
+
+TEST: simultaneous AWVALID and ARVALID arbitration
+[2341000] CHECK 254 PASS: AW is selected when AW and AR arrive together
+[2341000] CHECK 255 PASS: ARREADY stays low when simultaneous AW has priority
+
+============================================================
+Checks: 255
+Errors: 0
+TEST PASS
+============================================================
+$finish called at time : 2370 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/sram/tb_axi_burst_sram.v" Line 389
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:50:12 2026...

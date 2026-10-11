@@ -1,0 +1,29 @@
+﻿SoC FIR Cortex-M0 competition behavioral acceptance
+Generated: 2026-10-11 22:53:07
+Passed: 11/11
+
+[PASS] AXI SRAM single/4/8/16-beat and backpressure (4.25s)
+      log: verification/results/01_AXI_SRAM_single_4_8_16_beat_and_backpressure.log
+[PASS] AXI SRAM invalid requests, WLAST errors and reset recovery (4.32s)
+      log: verification/results/02_AXI_SRAM_invalid_requests_WLAST_errors_and_reset_recovery.log
+[PASS] 81-tap FIR coefficients, random vectors, FIFO/backpressure (5.56s)
+      log: verification/results/03_81_tap_FIR_coefficients_random_vectors_FIFO_backpressure.log
+[PASS] APB UART TX/RX FIFO full/empty behavior (4.37s)
+      log: verification/results/04_APB_UART_TX_RX_FIFO_full_empty_behavior.log
+[PASS] Cortex-M0 polling UART echo (82.64s)
+      log: verification/results/05_Cortex_M0_polling_UART_echo.log
+[PASS] Six-channel DMA AXI register slave (4.56s)
+      log: verification/results/06_Six_channel_DMA_AXI_register_slave.log
+[PASS] DMA INCR Burst, random backpressure, 4KiB split and errors (6.62s)
+      log: verification/results/07_DMA_INCR_Burst_random_backpressure_4KiB_split_and_errors.log
+[PASS] DMA 16-beat FIXED/INCR and UART beat conversion (4.9s)
+      log: verification/results/08_DMA_16_beat_FIXED_INCR_and_UART_beat_conversion.log
+[PASS] CPU/DMA continuous read contention fairness (4.47s)
+      log: verification/results/09_CPU_DMA_continuous_read_contention_fairness.log
+[PASS] CPU/DMA continuous write contention fairness (4.4s)
+      log: verification/results/10_CPU_DMA_continuous_write_contention_fairness.log
+[PASS] Full Cortex-M0 six-channel DMA/FIR/UART/SRAM IRQ scenario (52.44s)
+      log: verification/results/11_Full_Cortex_M0_six_channel_DMA_FIR_UART_SRAM_IRQ_scenario.log
+
+Not provable by behavioral simulation: FPGA timing >=25 MHz,
+post-route timing closure, physical pin constraints, and board I/O.

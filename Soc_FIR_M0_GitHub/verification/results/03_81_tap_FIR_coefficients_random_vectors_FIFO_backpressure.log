@@ -1,0 +1,1929 @@
+﻿INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_81tap_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_81tap_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_81tap_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_81tap_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/axi_fir_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fir_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_subsystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_subsystem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/fir/tb_fir_subsystem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fir_subsystem
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_fir_subsystem -s tb_fir_subsystem_behav -debug typical 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fir_81tap_core_default
+Compiling module xil_defaultlib.fir_81tap_axi_default
+Compiling module xil_defaultlib.axi_fir_data_default
+Compiling module xil_defaultlib.fir_subsystem
+Compiling module xil_defaultlib.tb_fir_subsystem
+Built simulation snapshot tb_fir_subsystem_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_fir_subsystem_behav/xsim_script.tcl
+# xsim {tb_fir_subsystem_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+============================================================
+FIR subsystem independent verification
+FIR RTL includes verified bus and FIFO boundary fixes
+============================================================
+
+--- CASE: disabled FIR consumes write burst with SLVERR ---
+[90000] CHECK 1 PASS: Disabled-write negative test accepted AW request
+[95000] CHECK 2 PASS: Disabled FIR consumed the expected W beat
+[95000] CHECK 3 PASS: Disabled write did not issue an early B response
+[105000] CHECK 4 PASS: Disabled FIR consumed the expected W beat
+[105000] CHECK 5 PASS: Disabled write did not issue an early B response
+[115000] CHECK 6 PASS: Disabled FIR consumed the expected W beat
+[115000] CHECK 7 PASS: Disabled write did not issue an early B response
+[125000] CHECK 8 PASS: Disabled FIR consumed the expected W beat
+[130000] CHECK 9 PASS: Disabled FIR returned bounded SLVERR response
+[130000] CHECK 10 PASS: Disabled FIR accepted no sample and produced no output
+[135000] CHECK 11 PASS: BVALID and BRESP remain stable under BREADY stall
+[145000] CHECK 12 PASS: BVALID and BRESP remain stable under BREADY stall
+[155000] CHECK 13 PASS: BVALID and BRESP remain stable under BREADY stall
+
+--- CASE: CSR DATA_IN byte-strobe validity ---
+[340000] CHECK 14 PASS: AXI-Lite write response matches expectation
+[370000] CHECK 15 PASS: AXI-Lite write response matches expectation
+[400000] CHECK 16 PASS: AXI-Lite write response matches expectation
+[455000] CHECK 17 PASS: Invalid CSR strobes did not inject a sample
+[470000] CHECK 18 PASS: AXI-Lite write response matches expectation
+[525000] CHECK 19 PASS: Valid two-byte CSR strobe injected one sample
+
+--- CASE: all-zero coefficients ---
+[700000] CHECK 20 PASS: AXI-Lite write response matches expectation
+[730000] CHECK 21 PASS: AXI-Lite write response matches expectation
+[760000] CHECK 22 PASS: AXI-Lite write response matches expectation
+[790000] CHECK 23 PASS: AXI-Lite write response matches expectation
+[820000] CHECK 24 PASS: AXI-Lite write response matches expectation
+[850000] CHECK 25 PASS: AXI-Lite write response matches expectation
+[880000] CHECK 26 PASS: AXI-Lite write response matches expectation
+[910000] CHECK 27 PASS: AXI-Lite write response matches expectation
+[940000] CHECK 28 PASS: AXI-Lite write response matches expectation
+[970000] CHECK 29 PASS: AXI-Lite write response matches expectation
+[1000000] CHECK 30 PASS: AXI-Lite write response matches expectation
+[1030000] CHECK 31 PASS: AXI-Lite write response matches expectation
+[1060000] CHECK 32 PASS: AXI-Lite write response matches expectation
+[1090000] CHECK 33 PASS: AXI-Lite write response matches expectation
+[1120000] CHECK 34 PASS: AXI-Lite write response matches expectation
+[1150000] CHECK 35 PASS: AXI-Lite write response matches expectation
+[1180000] CHECK 36 PASS: AXI-Lite write response matches expectation
+[1210000] CHECK 37 PASS: AXI-Lite write response matches expectation
+[1240000] CHECK 38 PASS: AXI-Lite write response matches expectation
+[1270000] CHECK 39 PASS: AXI-Lite write response matches expectation
+[1300000] CHECK 40 PASS: AXI-Lite write response matches expectation
+[1330000] CHECK 41 PASS: AXI-Lite write response matches expectation
+[1360000] CHECK 42 PASS: AXI-Lite write response matches expectation
+[1390000] CHECK 43 PASS: AXI-Lite write response matches expectation
+[1420000] CHECK 44 PASS: AXI-Lite write response matches expectation
+[1450000] CHECK 45 PASS: AXI-Lite write response matches expectation
+[1480000] CHECK 46 PASS: AXI-Lite write response matches expectation
+[1510000] CHECK 47 PASS: AXI-Lite write response matches expectation
+[1540000] CHECK 48 PASS: AXI-Lite write response matches expectation
+[1570000] CHECK 49 PASS: AXI-Lite write response matches expectation
+[1600000] CHECK 50 PASS: AXI-Lite write response matches expectation
+[1630000] CHECK 51 PASS: AXI-Lite write response matches expectation
+[1660000] CHECK 52 PASS: AXI-Lite write response matches expectation
+[1690000] CHECK 53 PASS: AXI-Lite write response matches expectation
+[1720000] CHECK 54 PASS: AXI-Lite write response matches expectation
+[1750000] CHECK 55 PASS: AXI-Lite write response matches expectation
+[1780000] CHECK 56 PASS: AXI-Lite write response matches expectation
+[1810000] CHECK 57 PASS: AXI-Lite write response matches expectation
+[1840000] CHECK 58 PASS: AXI-Lite write response matches expectation
+[1870000] CHECK 59 PASS: AXI-Lite write response matches expectation
+[1900000] CHECK 60 PASS: AXI-Lite write response matches expectation
+[1930000] CHECK 61 PASS: AXI-Lite write response matches expectation
+[1960000] CHECK 62 PASS: AXI-Lite write response matches expectation
+[1990000] CHECK 63 PASS: AXI-Lite write response matches expectation
+[2020000] CHECK 64 PASS: AXI-Lite write response matches expectation
+[2050000] CHECK 65 PASS: AXI-Lite write response matches expectation
+[2080000] CHECK 66 PASS: AXI-Lite write response matches expectation
+[2110000] CHECK 67 PASS: AXI-Lite write response matches expectation
+[2140000] CHECK 68 PASS: AXI-Lite write response matches expectation
+[2170000] CHECK 69 PASS: AXI-Lite write response matches expectation
+[2200000] CHECK 70 PASS: AXI-Lite write response matches expectation
+[2230000] CHECK 71 PASS: AXI-Lite write response matches expectation
+[2260000] CHECK 72 PASS: AXI-Lite write response matches expectation
+[2290000] CHECK 73 PASS: AXI-Lite write response matches expectation
+[2320000] CHECK 74 PASS: AXI-Lite write response matches expectation
+[2350000] CHECK 75 PASS: AXI-Lite write response matches expectation
+[2380000] CHECK 76 PASS: AXI-Lite write response matches expectation
+[2410000] CHECK 77 PASS: AXI-Lite write response matches expectation
+[2440000] CHECK 78 PASS: AXI-Lite write response matches expectation
+[2470000] CHECK 79 PASS: AXI-Lite write response matches expectation
+[2500000] CHECK 80 PASS: AXI-Lite write response matches expectation
+[2530000] CHECK 81 PASS: AXI-Lite write response matches expectation
+[2560000] CHECK 82 PASS: AXI-Lite write response matches expectation
+[2590000] CHECK 83 PASS: AXI-Lite write response matches expectation
+[2620000] CHECK 84 PASS: AXI-Lite write response matches expectation
+[2650000] CHECK 85 PASS: AXI-Lite write response matches expectation
+[2680000] CHECK 86 PASS: AXI-Lite write response matches expectation
+[2710000] CHECK 87 PASS: AXI-Lite write response matches expectation
+[2740000] CHECK 88 PASS: AXI-Lite write response matches expectation
+[2770000] CHECK 89 PASS: AXI-Lite write response matches expectation
+[2800000] CHECK 90 PASS: AXI-Lite write response matches expectation
+[2830000] CHECK 91 PASS: AXI-Lite write response matches expectation
+[2860000] CHECK 92 PASS: AXI-Lite write response matches expectation
+[2890000] CHECK 93 PASS: AXI-Lite write response matches expectation
+[2920000] CHECK 94 PASS: AXI-Lite write response matches expectation
+[2950000] CHECK 95 PASS: AXI-Lite write response matches expectation
+[2980000] CHECK 96 PASS: AXI-Lite write response matches expectation
+[3010000] CHECK 97 PASS: AXI-Lite write response matches expectation
+[3040000] CHECK 98 PASS: AXI-Lite write response matches expectation
+[3070000] CHECK 99 PASS: AXI-Lite write response matches expectation
+[3100000] CHECK 100 PASS: AXI-Lite write response matches expectation
+[3130000] CHECK 101 PASS: AXI-Lite write response matches expectation
+[3160000] CHECK 102 PASS: AXI-Lite write response matches expectation
+[3190000] CHECK 103 PASS: AXI-Lite write response matches expectation
+[3220000] CHECK 104 PASS: AXI-Lite write response matches expectation
+[3250000] CHECK 105 PASS: AXI-Lite write response matches expectation
+[3400000] CHECK 106 PASS: AXI data write response matches expectation
+[3445000] CHECK 107 PASS: AXI data read response is OKAY
+[3445000] CHECK 108 PASS: FIR output matches independent Q15 reference
+[3445000] CHECK 109 PASS: AXI RLAST position is correct
+[3465000] CHECK 110 PASS: AXI data read response is OKAY
+[3465000] CHECK 111 PASS: FIR output matches independent Q15 reference
+[3465000] CHECK 112 PASS: AXI RLAST position is correct
+[3475000] CHECK 113 PASS: AXI data read response is OKAY
+[3475000] CHECK 114 PASS: FIR output matches independent Q15 reference
+[3475000] CHECK 115 PASS: AXI RLAST position is correct
+[3485000] CHECK 116 PASS: AXI data read response is OKAY
+[3485000] CHECK 117 PASS: FIR output matches independent Q15 reference
+[3485000] CHECK 118 PASS: AXI RLAST position is correct
+[3505000] CHECK 119 PASS: AXI data read response is OKAY
+[3505000] CHECK 120 PASS: FIR output matches independent Q15 reference
+[3505000] CHECK 121 PASS: AXI RLAST position is correct
+[3515000] CHECK 122 PASS: AXI data read response is OKAY
+[3515000] CHECK 123 PASS: FIR output matches independent Q15 reference
+[3515000] CHECK 124 PASS: AXI RLAST position is correct
+[3525000] CHECK 125 PASS: AXI data read response is OKAY
+[3525000] CHECK 126 PASS: FIR output matches independent Q15 reference
+[3525000] CHECK 127 PASS: AXI RLAST position is correct
+[3545000] CHECK 128 PASS: AXI data read response is OKAY
+[3545000] CHECK 129 PASS: FIR output matches independent Q15 reference
+[3545000] CHECK 130 PASS: AXI RLAST position is correct
+[3555000] CHECK 131 PASS: AXI data read response is OKAY
+[3555000] CHECK 132 PASS: FIR output matches independent Q15 reference
+[3555000] CHECK 133 PASS: AXI RLAST position is correct
+[3565000] CHECK 134 PASS: AXI data read response is OKAY
+[3565000] CHECK 135 PASS: FIR output matches independent Q15 reference
+[3565000] CHECK 136 PASS: AXI RLAST position is correct
+[3585000] CHECK 137 PASS: AXI data read response is OKAY
+[3585000] CHECK 138 PASS: FIR output matches independent Q15 reference
+[3585000] CHECK 139 PASS: AXI RLAST position is correct
+[3595000] CHECK 140 PASS: AXI data read response is OKAY
+[3595000] CHECK 141 PASS: FIR output matches independent Q15 reference
+[3595000] CHECK 142 PASS: AXI RLAST position is correct
+[3620000] CHECK 143 PASS: AXI-Lite read response matches expectation
+[3630000] CHECK 144 PASS: DONE sticky status asserted after complete frame
+[3630000] CHECK 145 PASS: DONE interrupt asserted when enabled
+[3650000] CHECK 146 PASS: AXI-Lite write response matches expectation
+[3660000] CHECK 147 PASS: DONE interrupt clears through STATUS W1C
+[3660000] CHECK 148 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 149 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 150 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 151 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 152 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 153 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 154 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 155 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 156 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 157 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 158 PASS: Zero-coefficient reference output is exactly zero
+[3660000] CHECK 159 PASS: Zero-coefficient reference output is exactly zero
+
+--- CASE: unit coefficient with constant input ---
+[3750000] CHECK 160 PASS: AXI-Lite write response matches expectation
+[3780000] CHECK 161 PASS: AXI-Lite write response matches expectation
+[3810000] CHECK 162 PASS: AXI-Lite write response matches expectation
+[3840000] CHECK 163 PASS: AXI-Lite write response matches expectation
+[3870000] CHECK 164 PASS: AXI-Lite write response matches expectation
+[3900000] CHECK 165 PASS: AXI-Lite write response matches expectation
+[3930000] CHECK 166 PASS: AXI-Lite write response matches expectation
+[3960000] CHECK 167 PASS: AXI-Lite write response matches expectation
+[3990000] CHECK 168 PASS: AXI-Lite write response matches expectation
+[4020000] CHECK 169 PASS: AXI-Lite write response matches expectation
+[4050000] CHECK 170 PASS: AXI-Lite write response matches expectation
+[4080000] CHECK 171 PASS: AXI-Lite write response matches expectation
+[4110000] CHECK 172 PASS: AXI-Lite write response matches expectation
+[4140000] CHECK 173 PASS: AXI-Lite write response matches expectation
+[4170000] CHECK 174 PASS: AXI-Lite write response matches expectation
+[4200000] CHECK 175 PASS: AXI-Lite write response matches expectation
+[4230000] CHECK 176 PASS: AXI-Lite write response matches expectation
+[4260000] CHECK 177 PASS: AXI-Lite write response matches expectation
+[4290000] CHECK 178 PASS: AXI-Lite write response matches expectation
+[4320000] CHECK 179 PASS: AXI-Lite write response matches expectation
+[4350000] CHECK 180 PASS: AXI-Lite write response matches expectation
+[4380000] CHECK 181 PASS: AXI-Lite write response matches expectation
+[4410000] CHECK 182 PASS: AXI-Lite write response matches expectation
+[4440000] CHECK 183 PASS: AXI-Lite write response matches expectation
+[4470000] CHECK 184 PASS: AXI-Lite write response matches expectation
+[4500000] CHECK 185 PASS: AXI-Lite write response matches expectation
+[4530000] CHECK 186 PASS: AXI-Lite write response matches expectation
+[4560000] CHECK 187 PASS: AXI-Lite write response matches expectation
+[4590000] CHECK 188 PASS: AXI-Lite write response matches expectation
+[4620000] CHECK 189 PASS: AXI-Lite write response matches expectation
+[4650000] CHECK 190 PASS: AXI-Lite write response matches expectation
+[4680000] CHECK 191 PASS: AXI-Lite write response matches expectation
+[4710000] CHECK 192 PASS: AXI-Lite write response matches expectation
+[4740000] CHECK 193 PASS: AXI-Lite write response matches expectation
+[4770000] CHECK 194 PASS: AXI-Lite write response matches expectation
+[4800000] CHECK 195 PASS: AXI-Lite write response matches expectation
+[4830000] CHECK 196 PASS: AXI-Lite write response matches expectation
+[4860000] CHECK 197 PASS: AXI-Lite write response matches expectation
+[4890000] CHECK 198 PASS: AXI-Lite write response matches expectation
+[4920000] CHECK 199 PASS: AXI-Lite write response matches expectation
+[4950000] CHECK 200 PASS: AXI-Lite write response matches expectation
+[4980000] CHECK 201 PASS: AXI-Lite write response matches expectation
+[5010000] CHECK 202 PASS: AXI-Lite write response matches expectation
+[5040000] CHECK 203 PASS: AXI-Lite write response matches expectation
+[5070000] CHECK 204 PASS: AXI-Lite write response matches expectation
+[5100000] CHECK 205 PASS: AXI-Lite write response matches expectation
+[5130000] CHECK 206 PASS: AXI-Lite write response matches expectation
+[5160000] CHECK 207 PASS: AXI-Lite write response matches expectation
+[5190000] CHECK 208 PASS: AXI-Lite write response matches expectation
+[5220000] CHECK 209 PASS: AXI-Lite write response matches expectation
+[5250000] CHECK 210 PASS: AXI-Lite write response matches expectation
+[5280000] CHECK 211 PASS: AXI-Lite write response matches expectation
+[5310000] CHECK 212 PASS: AXI-Lite write response matches expectation
+[5340000] CHECK 213 PASS: AXI-Lite write response matches expectation
+[5370000] CHECK 214 PASS: AXI-Lite write response matches expectation
+[5400000] CHECK 215 PASS: AXI-Lite write response matches expectation
+[5430000] CHECK 216 PASS: AXI-Lite write response matches expectation
+[5460000] CHECK 217 PASS: AXI-Lite write response matches expectation
+[5490000] CHECK 218 PASS: AXI-Lite write response matches expectation
+[5520000] CHECK 219 PASS: AXI-Lite write response matches expectation
+[5550000] CHECK 220 PASS: AXI-Lite write response matches expectation
+[5580000] CHECK 221 PASS: AXI-Lite write response matches expectation
+[5610000] CHECK 222 PASS: AXI-Lite write response matches expectation
+[5640000] CHECK 223 PASS: AXI-Lite write response matches expectation
+[5670000] CHECK 224 PASS: AXI-Lite write response matches expectation
+[5700000] CHECK 225 PASS: AXI-Lite write response matches expectation
+[5730000] CHECK 226 PASS: AXI-Lite write response matches expectation
+[5760000] CHECK 227 PASS: AXI-Lite write response matches expectation
+[5790000] CHECK 228 PASS: AXI-Lite write response matches expectation
+[5820000] CHECK 229 PASS: AXI-Lite write response matches expectation
+[5850000] CHECK 230 PASS: AXI-Lite write response matches expectation
+[5880000] CHECK 231 PASS: AXI-Lite write response matches expectation
+[5910000] CHECK 232 PASS: AXI-Lite write response matches expectation
+[5940000] CHECK 233 PASS: AXI-Lite write response matches expectation
+[5970000] CHECK 234 PASS: AXI-Lite write response matches expectation
+[6000000] CHECK 235 PASS: AXI-Lite write response matches expectation
+[6030000] CHECK 236 PASS: AXI-Lite write response matches expectation
+[6060000] CHECK 237 PASS: AXI-Lite write response matches expectation
+[6090000] CHECK 238 PASS: AXI-Lite write response matches expectation
+[6120000] CHECK 239 PASS: AXI-Lite write response matches expectation
+[6150000] CHECK 240 PASS: AXI-Lite write response matches expectation
+[6180000] CHECK 241 PASS: AXI-Lite write response matches expectation
+[6210000] CHECK 242 PASS: AXI-Lite write response matches expectation
+[6240000] CHECK 243 PASS: AXI-Lite write response matches expectation
+[6270000] CHECK 244 PASS: AXI-Lite write response matches expectation
+[6300000] CHECK 245 PASS: AXI-Lite write response matches expectation
+[6490000] CHECK 246 PASS: AXI data write response matches expectation
+[6535000] CHECK 247 PASS: AXI data read response is OKAY
+[6535000] CHECK 248 PASS: FIR output matches independent Q15 reference
+[6535000] CHECK 249 PASS: AXI RLAST position is correct
+[6555000] CHECK 250 PASS: AXI data read response is OKAY
+[6555000] CHECK 251 PASS: FIR output matches independent Q15 reference
+[6555000] CHECK 252 PASS: AXI RLAST position is correct
+[6565000] CHECK 253 PASS: AXI data read response is OKAY
+[6565000] CHECK 254 PASS: FIR output matches independent Q15 reference
+[6565000] CHECK 255 PASS: AXI RLAST position is correct
+[6575000] CHECK 256 PASS: AXI data read response is OKAY
+[6575000] CHECK 257 PASS: FIR output matches independent Q15 reference
+[6575000] CHECK 258 PASS: AXI RLAST position is correct
+[6595000] CHECK 259 PASS: AXI data read response is OKAY
+[6595000] CHECK 260 PASS: FIR output matches independent Q15 reference
+[6595000] CHECK 261 PASS: AXI RLAST position is correct
+[6605000] CHECK 262 PASS: AXI data read response is OKAY
+[6605000] CHECK 263 PASS: FIR output matches independent Q15 reference
+[6605000] CHECK 264 PASS: AXI RLAST position is correct
+[6615000] CHECK 265 PASS: AXI data read response is OKAY
+[6615000] CHECK 266 PASS: FIR output matches independent Q15 reference
+[6615000] CHECK 267 PASS: AXI RLAST position is correct
+[6635000] CHECK 268 PASS: AXI data read response is OKAY
+[6635000] CHECK 269 PASS: FIR output matches independent Q15 reference
+[6635000] CHECK 270 PASS: AXI RLAST position is correct
+[6645000] CHECK 271 PASS: AXI data read response is OKAY
+[6645000] CHECK 272 PASS: FIR output matches independent Q15 reference
+[6645000] CHECK 273 PASS: AXI RLAST position is correct
+[6655000] CHECK 274 PASS: AXI data read response is OKAY
+[6655000] CHECK 275 PASS: FIR output matches independent Q15 reference
+[6655000] CHECK 276 PASS: AXI RLAST position is correct
+[6675000] CHECK 277 PASS: AXI data read response is OKAY
+[6675000] CHECK 278 PASS: FIR output matches independent Q15 reference
+[6675000] CHECK 279 PASS: AXI RLAST position is correct
+[6685000] CHECK 280 PASS: AXI data read response is OKAY
+[6685000] CHECK 281 PASS: FIR output matches independent Q15 reference
+[6685000] CHECK 282 PASS: AXI RLAST position is correct
+[6695000] CHECK 283 PASS: AXI data read response is OKAY
+[6695000] CHECK 284 PASS: FIR output matches independent Q15 reference
+[6695000] CHECK 285 PASS: AXI RLAST position is correct
+[6715000] CHECK 286 PASS: AXI data read response is OKAY
+[6715000] CHECK 287 PASS: FIR output matches independent Q15 reference
+[6715000] CHECK 288 PASS: AXI RLAST position is correct
+[6725000] CHECK 289 PASS: AXI data read response is OKAY
+[6725000] CHECK 290 PASS: FIR output matches independent Q15 reference
+[6725000] CHECK 291 PASS: AXI RLAST position is correct
+[6735000] CHECK 292 PASS: AXI data read response is OKAY
+[6735000] CHECK 293 PASS: FIR output matches independent Q15 reference
+[6735000] CHECK 294 PASS: AXI RLAST position is correct
+[6760000] CHECK 295 PASS: AXI-Lite read response matches expectation
+[6770000] CHECK 296 PASS: DONE sticky status asserted after complete frame
+[6770000] CHECK 297 PASS: DONE interrupt asserted when enabled
+[6790000] CHECK 298 PASS: AXI-Lite write response matches expectation
+[6800000] CHECK 299 PASS: DONE interrupt clears through STATUS W1C
+
+--- CASE: 81-tap impulse response and coefficient order ---
+[6890000] CHECK 300 PASS: AXI-Lite write response matches expectation
+[6920000] CHECK 301 PASS: AXI-Lite write response matches expectation
+[6950000] CHECK 302 PASS: AXI-Lite write response matches expectation
+[6980000] CHECK 303 PASS: AXI-Lite write response matches expectation
+[7010000] CHECK 304 PASS: AXI-Lite write response matches expectation
+[7040000] CHECK 305 PASS: AXI-Lite write response matches expectation
+[7070000] CHECK 306 PASS: AXI-Lite write response matches expectation
+[7100000] CHECK 307 PASS: AXI-Lite write response matches expectation
+[7130000] CHECK 308 PASS: AXI-Lite write response matches expectation
+[7160000] CHECK 309 PASS: AXI-Lite write response matches expectation
+[7190000] CHECK 310 PASS: AXI-Lite write response matches expectation
+[7220000] CHECK 311 PASS: AXI-Lite write response matches expectation
+[7250000] CHECK 312 PASS: AXI-Lite write response matches expectation
+[7280000] CHECK 313 PASS: AXI-Lite write response matches expectation
+[7310000] CHECK 314 PASS: AXI-Lite write response matches expectation
+[7340000] CHECK 315 PASS: AXI-Lite write response matches expectation
+[7370000] CHECK 316 PASS: AXI-Lite write response matches expectation
+[7400000] CHECK 317 PASS: AXI-Lite write response matches expectation
+[7430000] CHECK 318 PASS: AXI-Lite write response matches expectation
+[7460000] CHECK 319 PASS: AXI-Lite write response matches expectation
+[7490000] CHECK 320 PASS: AXI-Lite write response matches expectation
+[7520000] CHECK 321 PASS: AXI-Lite write response matches expectation
+[7550000] CHECK 322 PASS: AXI-Lite write response matches expectation
+[7580000] CHECK 323 PASS: AXI-Lite write response matches expectation
+[7610000] CHECK 324 PASS: AXI-Lite write response matches expectation
+[7640000] CHECK 325 PASS: AXI-Lite write response matches expectation
+[7670000] CHECK 326 PASS: AXI-Lite write response matches expectation
+[7700000] CHECK 327 PASS: AXI-Lite write response matches expectation
+[7730000] CHECK 328 PASS: AXI-Lite write response matches expectation
+[7760000] CHECK 329 PASS: AXI-Lite write response matches expectation
+[7790000] CHECK 330 PASS: AXI-Lite write response matches expectation
+[7820000] CHECK 331 PASS: AXI-Lite write response matches expectation
+[7850000] CHECK 332 PASS: AXI-Lite write response matches expectation
+[7880000] CHECK 333 PASS: AXI-Lite write response matches expectation
+[7910000] CHECK 334 PASS: AXI-Lite write response matches expectation
+[7940000] CHECK 335 PASS: AXI-Lite write response matches expectation
+[7970000] CHECK 336 PASS: AXI-Lite write response matches expectation
+[8000000] CHECK 337 PASS: AXI-Lite write response matches expectation
+[8030000] CHECK 338 PASS: AXI-Lite write response matches expectation
+[8060000] CHECK 339 PASS: AXI-Lite write response matches expectation
+[8090000] CHECK 340 PASS: AXI-Lite write response matches expectation
+[8120000] CHECK 341 PASS: AXI-Lite write response matches expectation
+[8150000] CHECK 342 PASS: AXI-Lite write response matches expectation
+[8180000] CHECK 343 PASS: AXI-Lite write response matches expectation
+[8210000] CHECK 344 PASS: AXI-Lite write response matches expectation
+[8240000] CHECK 345 PASS: AXI-Lite write response matches expectation
+[8270000] CHECK 346 PASS: AXI-Lite write response matches expectation
+[8300000] CHECK 347 PASS: AXI-Lite write response matches expectation
+[8330000] CHECK 348 PASS: AXI-Lite write response matches expectation
+[8360000] CHECK 349 PASS: AXI-Lite write response matches expectation
+[8390000] CHECK 350 PASS: AXI-Lite write response matches expectation
+[8420000] CHECK 351 PASS: AXI-Lite write response matches expectation
+[8450000] CHECK 352 PASS: AXI-Lite write response matches expectation
+[8480000] CHECK 353 PASS: AXI-Lite write response matches expectation
+[8510000] CHECK 354 PASS: AXI-Lite write response matches expectation
+[8540000] CHECK 355 PASS: AXI-Lite write response matches expectation
+[8570000] CHECK 356 PASS: AXI-Lite write response matches expectation
+[8600000] CHECK 357 PASS: AXI-Lite write response matches expectation
+[8630000] CHECK 358 PASS: AXI-Lite write response matches expectation
+[8660000] CHECK 359 PASS: AXI-Lite write response matches expectation
+[8690000] CHECK 360 PASS: AXI-Lite write response matches expectation
+[8720000] CHECK 361 PASS: AXI-Lite write response matches expectation
+[8750000] CHECK 362 PASS: AXI-Lite write response matches expectation
+[8780000] CHECK 363 PASS: AXI-Lite write response matches expectation
+[8810000] CHECK 364 PASS: AXI-Lite write response matches expectation
+[8840000] CHECK 365 PASS: AXI-Lite write response matches expectation
+[8870000] CHECK 366 PASS: AXI-Lite write response matches expectation
+[8900000] CHECK 367 PASS: AXI-Lite write response matches expectation
+[8930000] CHECK 368 PASS: AXI-Lite write response matches expectation
+[8960000] CHECK 369 PASS: AXI-Lite write response matches expectation
+[8990000] CHECK 370 PASS: AXI-Lite write response matches expectation
+[9020000] CHECK 371 PASS: AXI-Lite write response matches expectation
+[9050000] CHECK 372 PASS: AXI-Lite write response matches expectation
+[9080000] CHECK 373 PASS: AXI-Lite write response matches expectation
+[9110000] CHECK 374 PASS: AXI-Lite write response matches expectation
+[9140000] CHECK 375 PASS: AXI-Lite write response matches expectation
+[9170000] CHECK 376 PASS: AXI-Lite write response matches expectation
+[9200000] CHECK 377 PASS: AXI-Lite write response matches expectation
+[9230000] CHECK 378 PASS: AXI-Lite write response matches expectation
+[9260000] CHECK 379 PASS: AXI-Lite write response matches expectation
+[9290000] CHECK 380 PASS: AXI-Lite write response matches expectation
+[9320000] CHECK 381 PASS: AXI-Lite write response matches expectation
+[9350000] CHECK 382 PASS: AXI-Lite write response matches expectation
+[9380000] CHECK 383 PASS: AXI-Lite write response matches expectation
+[9410000] CHECK 384 PASS: AXI-Lite write response matches expectation
+[9440000] CHECK 385 PASS: AXI-Lite write response matches expectation
+[9555000] CHECK 386 PASS: AXI data read response is OKAY
+[9555000] CHECK 387 PASS: FIR output matches independent Q15 reference
+[9555000] CHECK 388 PASS: AXI RLAST position is correct
+[9575000] CHECK 389 PASS: AXI data read response is OKAY
+[9575000] CHECK 390 PASS: FIR output matches independent Q15 reference
+[9575000] CHECK 391 PASS: AXI RLAST position is correct
+[9585000] CHECK 392 PASS: AXI data read response is OKAY
+[9585000] CHECK 393 PASS: FIR output matches independent Q15 reference
+[9585000] CHECK 394 PASS: AXI RLAST position is correct
+[9595000] CHECK 395 PASS: AXI data read response is OKAY
+[9595000] CHECK 396 PASS: FIR output matches independent Q15 reference
+[9595000] CHECK 397 PASS: AXI RLAST position is correct
+[9615000] CHECK 398 PASS: AXI data read response is OKAY
+[9615000] CHECK 399 PASS: FIR output matches independent Q15 reference
+[9615000] CHECK 400 PASS: AXI RLAST position is correct
+[9625000] CHECK 401 PASS: AXI data read response is OKAY
+[9625000] CHECK 402 PASS: FIR output matches independent Q15 reference
+[9625000] CHECK 403 PASS: AXI RLAST position is correct
+[9635000] CHECK 404 PASS: AXI data read response is OKAY
+[9635000] CHECK 405 PASS: FIR output matches independent Q15 reference
+[9635000] CHECK 406 PASS: AXI RLAST position is correct
+[9655000] CHECK 407 PASS: AXI data read response is OKAY
+[9655000] CHECK 408 PASS: FIR output matches independent Q15 reference
+[9655000] CHECK 409 PASS: AXI RLAST position is correct
+[9665000] CHECK 410 PASS: AXI data read response is OKAY
+[9665000] CHECK 411 PASS: FIR output matches independent Q15 reference
+[9665000] CHECK 412 PASS: AXI RLAST position is correct
+[9675000] CHECK 413 PASS: AXI data read response is OKAY
+[9675000] CHECK 414 PASS: FIR output matches independent Q15 reference
+[9675000] CHECK 415 PASS: AXI RLAST position is correct
+[9695000] CHECK 416 PASS: AXI data read response is OKAY
+[9695000] CHECK 417 PASS: FIR output matches independent Q15 reference
+[9695000] CHECK 418 PASS: AXI RLAST position is correct
+[9705000] CHECK 419 PASS: AXI data read response is OKAY
+[9705000] CHECK 420 PASS: FIR output matches independent Q15 reference
+[9705000] CHECK 421 PASS: AXI RLAST position is correct
+[9715000] CHECK 422 PASS: AXI data read response is OKAY
+[9715000] CHECK 423 PASS: FIR output matches independent Q15 reference
+[9715000] CHECK 424 PASS: AXI RLAST position is correct
+[9735000] CHECK 425 PASS: AXI data read response is OKAY
+[9735000] CHECK 426 PASS: FIR output matches independent Q15 reference
+[9735000] CHECK 427 PASS: AXI RLAST position is correct
+[9745000] CHECK 428 PASS: AXI data read response is OKAY
+[9745000] CHECK 429 PASS: FIR output matches independent Q15 reference
+[9745000] CHECK 430 PASS: AXI RLAST position is correct
+[9755000] CHECK 431 PASS: AXI data read response is OKAY
+[9755000] CHECK 432 PASS: FIR output matches independent Q15 reference
+[9755000] CHECK 433 PASS: AXI RLAST position is correct
+[9775000] CHECK 434 PASS: AXI data read response is OKAY
+[9775000] CHECK 435 PASS: FIR output matches independent Q15 reference
+[9775000] CHECK 436 PASS: AXI RLAST position is correct
+[9785000] CHECK 437 PASS: AXI data read response is OKAY
+[9785000] CHECK 438 PASS: FIR output matches independent Q15 reference
+[9785000] CHECK 439 PASS: AXI RLAST position is correct
+[9795000] CHECK 440 PASS: AXI data read response is OKAY
+[9795000] CHECK 441 PASS: FIR output matches independent Q15 reference
+[9795000] CHECK 442 PASS: AXI RLAST position is correct
+[9815000] CHECK 443 PASS: AXI data read response is OKAY
+[9815000] CHECK 444 PASS: FIR output matches independent Q15 reference
+[9815000] CHECK 445 PASS: AXI RLAST position is correct
+[9825000] CHECK 446 PASS: AXI data read response is OKAY
+[9825000] CHECK 447 PASS: FIR output matches independent Q15 reference
+[9825000] CHECK 448 PASS: AXI RLAST position is correct
+[9835000] CHECK 449 PASS: AXI data read response is OKAY
+[9835000] CHECK 450 PASS: FIR output matches independent Q15 reference
+[9835000] CHECK 451 PASS: AXI RLAST position is correct
+[9855000] CHECK 452 PASS: AXI data read response is OKAY
+[9855000] CHECK 453 PASS: FIR output matches independent Q15 reference
+[9855000] CHECK 454 PASS: AXI RLAST position is correct
+[9865000] CHECK 455 PASS: AXI data read response is OKAY
+[9865000] CHECK 456 PASS: FIR output matches independent Q15 reference
+[9865000] CHECK 457 PASS: AXI RLAST position is correct
+[9875000] CHECK 458 PASS: AXI data read response is OKAY
+[9875000] CHECK 459 PASS: FIR output matches independent Q15 reference
+[9875000] CHECK 460 PASS: AXI RLAST position is correct
+[9895000] CHECK 461 PASS: AXI data read response is OKAY
+[9895000] CHECK 462 PASS: FIR output matches independent Q15 reference
+[9895000] CHECK 463 PASS: AXI RLAST position is correct
+[9905000] CHECK 464 PASS: AXI data read response is OKAY
+[9905000] CHECK 465 PASS: FIR output matches independent Q15 reference
+[9905000] CHECK 466 PASS: AXI RLAST position is correct
+[9915000] CHECK 467 PASS: AXI data read response is OKAY
+[9915000] CHECK 468 PASS: FIR output matches independent Q15 reference
+[9915000] CHECK 469 PASS: AXI RLAST position is correct
+[9935000] CHECK 470 PASS: AXI data read response is OKAY
+[9935000] CHECK 471 PASS: FIR output matches independent Q15 reference
+[9935000] CHECK 472 PASS: AXI RLAST position is correct
+[9945000] CHECK 473 PASS: AXI data read response is OKAY
+[9945000] CHECK 474 PASS: FIR output matches independent Q15 reference
+[9945000] CHECK 475 PASS: AXI RLAST position is correct
+[9955000] CHECK 476 PASS: AXI data read response is OKAY
+[9955000] CHECK 477 PASS: FIR output matches independent Q15 reference
+[9955000] CHECK 478 PASS: AXI RLAST position is correct
+[9975000] CHECK 479 PASS: AXI data read response is OKAY
+[9975000] CHECK 480 PASS: FIR output matches independent Q15 reference
+[9975000] CHECK 481 PASS: AXI RLAST position is correct
+[9985000] CHECK 482 PASS: AXI data read response is OKAY
+[9985000] CHECK 483 PASS: FIR output matches independent Q15 reference
+[9985000] CHECK 484 PASS: AXI RLAST position is correct
+[9995000] CHECK 485 PASS: AXI data read response is OKAY
+[9995000] CHECK 486 PASS: FIR output matches independent Q15 reference
+[9995000] CHECK 487 PASS: AXI RLAST position is correct
+[10015000] CHECK 488 PASS: AXI data read response is OKAY
+[10015000] CHECK 489 PASS: FIR output matches independent Q15 reference
+[10015000] CHECK 490 PASS: AXI RLAST position is correct
+[10025000] CHECK 491 PASS: AXI data read response is OKAY
+[10025000] CHECK 492 PASS: FIR output matches independent Q15 reference
+[10025000] CHECK 493 PASS: AXI RLAST position is correct
+[10035000] CHECK 494 PASS: AXI data read response is OKAY
+[10035000] CHECK 495 PASS: FIR output matches independent Q15 reference
+[10035000] CHECK 496 PASS: AXI RLAST position is correct
+[10055000] CHECK 497 PASS: AXI data read response is OKAY
+[10055000] CHECK 498 PASS: FIR output matches independent Q15 reference
+[10055000] CHECK 499 PASS: AXI RLAST position is correct
+[10065000] CHECK 500 PASS: AXI data read response is OKAY
+[10065000] CHECK 501 PASS: FIR output matches independent Q15 reference
+[10065000] CHECK 502 PASS: AXI RLAST position is correct
+[10075000] CHECK 503 PASS: AXI data read response is OKAY
+[10075000] CHECK 504 PASS: FIR output matches independent Q15 reference
+[10075000] CHECK 505 PASS: AXI RLAST position is correct
+[10095000] CHECK 506 PASS: AXI data read response is OKAY
+[10095000] CHECK 507 PASS: FIR output matches independent Q15 reference
+[10095000] CHECK 508 PASS: AXI RLAST position is correct
+[10105000] CHECK 509 PASS: AXI data read response is OKAY
+[10105000] CHECK 510 PASS: FIR output matches independent Q15 reference
+[10105000] CHECK 511 PASS: AXI RLAST position is correct
+[10115000] CHECK 512 PASS: AXI data read response is OKAY
+[10115000] CHECK 513 PASS: FIR output matches independent Q15 reference
+[10115000] CHECK 514 PASS: AXI RLAST position is correct
+[10135000] CHECK 515 PASS: AXI data read response is OKAY
+[10135000] CHECK 516 PASS: FIR output matches independent Q15 reference
+[10135000] CHECK 517 PASS: AXI RLAST position is correct
+[10145000] CHECK 518 PASS: AXI data read response is OKAY
+[10145000] CHECK 519 PASS: FIR output matches independent Q15 reference
+[10145000] CHECK 520 PASS: AXI RLAST position is correct
+[10155000] CHECK 521 PASS: AXI data read response is OKAY
+[10155000] CHECK 522 PASS: FIR output matches independent Q15 reference
+[10155000] CHECK 523 PASS: AXI RLAST position is correct
+[10175000] CHECK 524 PASS: AXI data read response is OKAY
+[10175000] CHECK 525 PASS: FIR output matches independent Q15 reference
+[10175000] CHECK 526 PASS: AXI RLAST position is correct
+[10185000] CHECK 527 PASS: AXI data read response is OKAY
+[10185000] CHECK 528 PASS: FIR output matches independent Q15 reference
+[10185000] CHECK 529 PASS: AXI RLAST position is correct
+[10195000] CHECK 530 PASS: AXI data read response is OKAY
+[10195000] CHECK 531 PASS: FIR output matches independent Q15 reference
+[10195000] CHECK 532 PASS: AXI RLAST position is correct
+[10215000] CHECK 533 PASS: AXI data read response is OKAY
+[10215000] CHECK 534 PASS: FIR output matches independent Q15 reference
+[10215000] CHECK 535 PASS: AXI RLAST position is correct
+[10225000] CHECK 536 PASS: AXI data read response is OKAY
+[10225000] CHECK 537 PASS: FIR output matches independent Q15 reference
+[10225000] CHECK 538 PASS: AXI RLAST position is correct
+[10235000] CHECK 539 PASS: AXI data read response is OKAY
+[10235000] CHECK 540 PASS: FIR output matches independent Q15 reference
+[10235000] CHECK 541 PASS: AXI RLAST position is correct
+[10255000] CHECK 542 PASS: AXI data read response is OKAY
+[10255000] CHECK 543 PASS: FIR output matches independent Q15 reference
+[10255000] CHECK 544 PASS: AXI RLAST position is correct
+[10265000] CHECK 545 PASS: AXI data read response is OKAY
+[10265000] CHECK 546 PASS: FIR output matches independent Q15 reference
+[10265000] CHECK 547 PASS: AXI RLAST position is correct
+[10275000] CHECK 548 PASS: AXI data read response is OKAY
+[10275000] CHECK 549 PASS: FIR output matches independent Q15 reference
+[10275000] CHECK 550 PASS: AXI RLAST position is correct
+[10280000] CHECK 551 PASS: AXI data write response matches expectation
+[10295000] CHECK 552 PASS: AXI data read response is OKAY
+[10295000] CHECK 553 PASS: FIR output matches independent Q15 reference
+[10295000] CHECK 554 PASS: AXI RLAST position is correct
+[10305000] CHECK 555 PASS: AXI data read response is OKAY
+[10305000] CHECK 556 PASS: FIR output matches independent Q15 reference
+[10305000] CHECK 557 PASS: AXI RLAST position is correct
+[10315000] CHECK 558 PASS: AXI data read response is OKAY
+[10315000] CHECK 559 PASS: FIR output matches independent Q15 reference
+[10315000] CHECK 560 PASS: AXI RLAST position is correct
+[10335000] CHECK 561 PASS: AXI data read response is OKAY
+[10335000] CHECK 562 PASS: FIR output matches independent Q15 reference
+[10335000] CHECK 563 PASS: AXI RLAST position is correct
+[10345000] CHECK 564 PASS: AXI data read response is OKAY
+[10345000] CHECK 565 PASS: FIR output matches independent Q15 reference
+[10345000] CHECK 566 PASS: AXI RLAST position is correct
+[10355000] CHECK 567 PASS: AXI data read response is OKAY
+[10355000] CHECK 568 PASS: FIR output matches independent Q15 reference
+[10355000] CHECK 569 PASS: AXI RLAST position is correct
+[10375000] CHECK 570 PASS: AXI data read response is OKAY
+[10375000] CHECK 571 PASS: FIR output matches independent Q15 reference
+[10375000] CHECK 572 PASS: AXI RLAST position is correct
+[10385000] CHECK 573 PASS: AXI data read response is OKAY
+[10385000] CHECK 574 PASS: FIR output matches independent Q15 reference
+[10385000] CHECK 575 PASS: AXI RLAST position is correct
+[10395000] CHECK 576 PASS: AXI data read response is OKAY
+[10395000] CHECK 577 PASS: FIR output matches independent Q15 reference
+[10395000] CHECK 578 PASS: AXI RLAST position is correct
+[10415000] CHECK 579 PASS: AXI data read response is OKAY
+[10415000] CHECK 580 PASS: FIR output matches independent Q15 reference
+[10415000] CHECK 581 PASS: AXI RLAST position is correct
+[10425000] CHECK 582 PASS: AXI data read response is OKAY
+[10425000] CHECK 583 PASS: FIR output matches independent Q15 reference
+[10425000] CHECK 584 PASS: AXI RLAST position is correct
+[10435000] CHECK 585 PASS: AXI data read response is OKAY
+[10435000] CHECK 586 PASS: FIR output matches independent Q15 reference
+[10435000] CHECK 587 PASS: AXI RLAST position is correct
+[10455000] CHECK 588 PASS: AXI data read response is OKAY
+[10455000] CHECK 589 PASS: FIR output matches independent Q15 reference
+[10455000] CHECK 590 PASS: AXI RLAST position is correct
+[10465000] CHECK 591 PASS: AXI data read response is OKAY
+[10465000] CHECK 592 PASS: FIR output matches independent Q15 reference
+[10465000] CHECK 593 PASS: AXI RLAST position is correct
+[10475000] CHECK 594 PASS: AXI data read response is OKAY
+[10475000] CHECK 595 PASS: FIR output matches independent Q15 reference
+[10475000] CHECK 596 PASS: AXI RLAST position is correct
+[10495000] CHECK 597 PASS: AXI data read response is OKAY
+[10495000] CHECK 598 PASS: FIR output matches independent Q15 reference
+[10495000] CHECK 599 PASS: AXI RLAST position is correct
+[10505000] CHECK 600 PASS: AXI data read response is OKAY
+[10505000] CHECK 601 PASS: FIR output matches independent Q15 reference
+[10505000] CHECK 602 PASS: AXI RLAST position is correct
+[10515000] CHECK 603 PASS: AXI data read response is OKAY
+[10515000] CHECK 604 PASS: FIR output matches independent Q15 reference
+[10515000] CHECK 605 PASS: AXI RLAST position is correct
+[10535000] CHECK 606 PASS: AXI data read response is OKAY
+[10535000] CHECK 607 PASS: FIR output matches independent Q15 reference
+[10535000] CHECK 608 PASS: AXI RLAST position is correct
+[10545000] CHECK 609 PASS: AXI data read response is OKAY
+[10545000] CHECK 610 PASS: FIR output matches independent Q15 reference
+[10545000] CHECK 611 PASS: AXI RLAST position is correct
+[10555000] CHECK 612 PASS: AXI data read response is OKAY
+[10555000] CHECK 613 PASS: FIR output matches independent Q15 reference
+[10555000] CHECK 614 PASS: AXI RLAST position is correct
+[10575000] CHECK 615 PASS: AXI data read response is OKAY
+[10575000] CHECK 616 PASS: FIR output matches independent Q15 reference
+[10575000] CHECK 617 PASS: AXI RLAST position is correct
+[10585000] CHECK 618 PASS: AXI data read response is OKAY
+[10585000] CHECK 619 PASS: FIR output matches independent Q15 reference
+[10585000] CHECK 620 PASS: AXI RLAST position is correct
+[10595000] CHECK 621 PASS: AXI data read response is OKAY
+[10595000] CHECK 622 PASS: FIR output matches independent Q15 reference
+[10595000] CHECK 623 PASS: AXI RLAST position is correct
+[10615000] CHECK 624 PASS: AXI data read response is OKAY
+[10615000] CHECK 625 PASS: FIR output matches independent Q15 reference
+[10615000] CHECK 626 PASS: AXI RLAST position is correct
+[10625000] CHECK 627 PASS: AXI data read response is OKAY
+[10625000] CHECK 628 PASS: FIR output matches independent Q15 reference
+[10625000] CHECK 629 PASS: AXI RLAST position is correct
+
+--- CASE: random coefficients and random samples ---
+[10720000] CHECK 630 PASS: AXI-Lite write response matches expectation
+[10750000] CHECK 631 PASS: AXI-Lite write response matches expectation
+[10780000] CHECK 632 PASS: AXI-Lite write response matches expectation
+[10810000] CHECK 633 PASS: AXI-Lite write response matches expectation
+[10840000] CHECK 634 PASS: AXI-Lite write response matches expectation
+[10870000] CHECK 635 PASS: AXI-Lite write response matches expectation
+[10900000] CHECK 636 PASS: AXI-Lite write response matches expectation
+[10930000] CHECK 637 PASS: AXI-Lite write response matches expectation
+[10960000] CHECK 638 PASS: AXI-Lite write response matches expectation
+[10990000] CHECK 639 PASS: AXI-Lite write response matches expectation
+[11020000] CHECK 640 PASS: AXI-Lite write response matches expectation
+[11050000] CHECK 641 PASS: AXI-Lite write response matches expectation
+[11080000] CHECK 642 PASS: AXI-Lite write response matches expectation
+[11110000] CHECK 643 PASS: AXI-Lite write response matches expectation
+[11140000] CHECK 644 PASS: AXI-Lite write response matches expectation
+[11170000] CHECK 645 PASS: AXI-Lite write response matches expectation
+[11200000] CHECK 646 PASS: AXI-Lite write response matches expectation
+[11230000] CHECK 647 PASS: AXI-Lite write response matches expectation
+[11260000] CHECK 648 PASS: AXI-Lite write response matches expectation
+[11290000] CHECK 649 PASS: AXI-Lite write response matches expectation
+[11320000] CHECK 650 PASS: AXI-Lite write response matches expectation
+[11350000] CHECK 651 PASS: AXI-Lite write response matches expectation
+[11380000] CHECK 652 PASS: AXI-Lite write response matches expectation
+[11410000] CHECK 653 PASS: AXI-Lite write response matches expectation
+[11440000] CHECK 654 PASS: AXI-Lite write response matches expectation
+[11470000] CHECK 655 PASS: AXI-Lite write response matches expectation
+[11500000] CHECK 656 PASS: AXI-Lite write response matches expectation
+[11530000] CHECK 657 PASS: AXI-Lite write response matches expectation
+[11560000] CHECK 658 PASS: AXI-Lite write response matches expectation
+[11590000] CHECK 659 PASS: AXI-Lite write response matches expectation
+[11620000] CHECK 660 PASS: AXI-Lite write response matches expectation
+[11650000] CHECK 661 PASS: AXI-Lite write response matches expectation
+[11680000] CHECK 662 PASS: AXI-Lite write response matches expectation
+[11710000] CHECK 663 PASS: AXI-Lite write response matches expectation
+[11740000] CHECK 664 PASS: AXI-Lite write response matches expectation
+[11770000] CHECK 665 PASS: AXI-Lite write response matches expectation
+[11800000] CHECK 666 PASS: AXI-Lite write response matches expectation
+[11830000] CHECK 667 PASS: AXI-Lite write response matches expectation
+[11860000] CHECK 668 PASS: AXI-Lite write response matches expectation
+[11890000] CHECK 669 PASS: AXI-Lite write response matches expectation
+[11920000] CHECK 670 PASS: AXI-Lite write response matches expectation
+[11950000] CHECK 671 PASS: AXI-Lite write response matches expectation
+[11980000] CHECK 672 PASS: AXI-Lite write response matches expectation
+[12010000] CHECK 673 PASS: AXI-Lite write response matches expectation
+[12040000] CHECK 674 PASS: AXI-Lite write response matches expectation
+[12070000] CHECK 675 PASS: AXI-Lite write response matches expectation
+[12100000] CHECK 676 PASS: AXI-Lite write response matches expectation
+[12130000] CHECK 677 PASS: AXI-Lite write response matches expectation
+[12160000] CHECK 678 PASS: AXI-Lite write response matches expectation
+[12190000] CHECK 679 PASS: AXI-Lite write response matches expectation
+[12220000] CHECK 680 PASS: AXI-Lite write response matches expectation
+[12250000] CHECK 681 PASS: AXI-Lite write response matches expectation
+[12280000] CHECK 682 PASS: AXI-Lite write response matches expectation
+[12310000] CHECK 683 PASS: AXI-Lite write response matches expectation
+[12340000] CHECK 684 PASS: AXI-Lite write response matches expectation
+[12370000] CHECK 685 PASS: AXI-Lite write response matches expectation
+[12400000] CHECK 686 PASS: AXI-Lite write response matches expectation
+[12430000] CHECK 687 PASS: AXI-Lite write response matches expectation
+[12460000] CHECK 688 PASS: AXI-Lite write response matches expectation
+[12490000] CHECK 689 PASS: AXI-Lite write response matches expectation
+[12520000] CHECK 690 PASS: AXI-Lite write response matches expectation
+[12550000] CHECK 691 PASS: AXI-Lite write response matches expectation
+[12580000] CHECK 692 PASS: AXI-Lite write response matches expectation
+[12610000] CHECK 693 PASS: AXI-Lite write response matches expectation
+[12640000] CHECK 694 PASS: AXI-Lite write response matches expectation
+[12670000] CHECK 695 PASS: AXI-Lite write response matches expectation
+[12700000] CHECK 696 PASS: AXI-Lite write response matches expectation
+[12730000] CHECK 697 PASS: AXI-Lite write response matches expectation
+[12760000] CHECK 698 PASS: AXI-Lite write response matches expectation
+[12790000] CHECK 699 PASS: AXI-Lite write response matches expectation
+[12820000] CHECK 700 PASS: AXI-Lite write response matches expectation
+[12850000] CHECK 701 PASS: AXI-Lite write response matches expectation
+[12880000] CHECK 702 PASS: AXI-Lite write response matches expectation
+[12910000] CHECK 703 PASS: AXI-Lite write response matches expectation
+[12940000] CHECK 704 PASS: AXI-Lite write response matches expectation
+[12970000] CHECK 705 PASS: AXI-Lite write response matches expectation
+[13000000] CHECK 706 PASS: AXI-Lite write response matches expectation
+[13030000] CHECK 707 PASS: AXI-Lite write response matches expectation
+[13060000] CHECK 708 PASS: AXI-Lite write response matches expectation
+[13090000] CHECK 709 PASS: AXI-Lite write response matches expectation
+[13120000] CHECK 710 PASS: AXI-Lite write response matches expectation
+[13150000] CHECK 711 PASS: AXI-Lite write response matches expectation
+[13180000] CHECK 712 PASS: AXI-Lite write response matches expectation
+[13210000] CHECK 713 PASS: AXI-Lite write response matches expectation
+[13240000] CHECK 714 PASS: AXI-Lite write response matches expectation
+[13270000] CHECK 715 PASS: AXI-Lite write response matches expectation
+[13540000] CHECK 716 PASS: AXI data write response matches expectation
+[13585000] CHECK 717 PASS: AXI data read response is OKAY
+[13585000] CHECK 718 PASS: FIR output matches independent Q15 reference
+[13585000] CHECK 719 PASS: AXI RLAST position is correct
+[13605000] CHECK 720 PASS: AXI data read response is OKAY
+[13605000] CHECK 721 PASS: FIR output matches independent Q15 reference
+[13605000] CHECK 722 PASS: AXI RLAST position is correct
+[13615000] CHECK 723 PASS: AXI data read response is OKAY
+[13615000] CHECK 724 PASS: FIR output matches independent Q15 reference
+[13615000] CHECK 725 PASS: AXI RLAST position is correct
+[13625000] CHECK 726 PASS: AXI data read response is OKAY
+[13625000] CHECK 727 PASS: FIR output matches independent Q15 reference
+[13625000] CHECK 728 PASS: AXI RLAST position is correct
+[13645000] CHECK 729 PASS: AXI data read response is OKAY
+[13645000] CHECK 730 PASS: FIR output matches independent Q15 reference
+[13645000] CHECK 731 PASS: AXI RLAST position is correct
+[13655000] CHECK 732 PASS: AXI data read response is OKAY
+[13655000] CHECK 733 PASS: FIR output matches independent Q15 reference
+[13655000] CHECK 734 PASS: AXI RLAST position is correct
+[13665000] CHECK 735 PASS: AXI data read response is OKAY
+[13665000] CHECK 736 PASS: FIR output matches independent Q15 reference
+[13665000] CHECK 737 PASS: AXI RLAST position is correct
+[13685000] CHECK 738 PASS: AXI data read response is OKAY
+[13685000] CHECK 739 PASS: FIR output matches independent Q15 reference
+[13685000] CHECK 740 PASS: AXI RLAST position is correct
+[13695000] CHECK 741 PASS: AXI data read response is OKAY
+[13695000] CHECK 742 PASS: FIR output matches independent Q15 reference
+[13695000] CHECK 743 PASS: AXI RLAST position is correct
+[13705000] CHECK 744 PASS: AXI data read response is OKAY
+[13705000] CHECK 745 PASS: FIR output matches independent Q15 reference
+[13705000] CHECK 746 PASS: AXI RLAST position is correct
+[13725000] CHECK 747 PASS: AXI data read response is OKAY
+[13725000] CHECK 748 PASS: FIR output matches independent Q15 reference
+[13725000] CHECK 749 PASS: AXI RLAST position is correct
+[13735000] CHECK 750 PASS: AXI data read response is OKAY
+[13735000] CHECK 751 PASS: FIR output matches independent Q15 reference
+[13735000] CHECK 752 PASS: AXI RLAST position is correct
+[13745000] CHECK 753 PASS: AXI data read response is OKAY
+[13745000] CHECK 754 PASS: FIR output matches independent Q15 reference
+[13745000] CHECK 755 PASS: AXI RLAST position is correct
+[13765000] CHECK 756 PASS: AXI data read response is OKAY
+[13765000] CHECK 757 PASS: FIR output matches independent Q15 reference
+[13765000] CHECK 758 PASS: AXI RLAST position is correct
+[13775000] CHECK 759 PASS: AXI data read response is OKAY
+[13775000] CHECK 760 PASS: FIR output matches independent Q15 reference
+[13775000] CHECK 761 PASS: AXI RLAST position is correct
+[13785000] CHECK 762 PASS: AXI data read response is OKAY
+[13785000] CHECK 763 PASS: FIR output matches independent Q15 reference
+[13785000] CHECK 764 PASS: AXI RLAST position is correct
+[13805000] CHECK 765 PASS: AXI data read response is OKAY
+[13805000] CHECK 766 PASS: FIR output matches independent Q15 reference
+[13805000] CHECK 767 PASS: AXI RLAST position is correct
+[13815000] CHECK 768 PASS: AXI data read response is OKAY
+[13815000] CHECK 769 PASS: FIR output matches independent Q15 reference
+[13815000] CHECK 770 PASS: AXI RLAST position is correct
+[13825000] CHECK 771 PASS: AXI data read response is OKAY
+[13825000] CHECK 772 PASS: FIR output matches independent Q15 reference
+[13825000] CHECK 773 PASS: AXI RLAST position is correct
+[13845000] CHECK 774 PASS: AXI data read response is OKAY
+[13845000] CHECK 775 PASS: FIR output matches independent Q15 reference
+[13845000] CHECK 776 PASS: AXI RLAST position is correct
+[13855000] CHECK 777 PASS: AXI data read response is OKAY
+[13855000] CHECK 778 PASS: FIR output matches independent Q15 reference
+[13855000] CHECK 779 PASS: AXI RLAST position is correct
+[13865000] CHECK 780 PASS: AXI data read response is OKAY
+[13865000] CHECK 781 PASS: FIR output matches independent Q15 reference
+[13865000] CHECK 782 PASS: AXI RLAST position is correct
+[13885000] CHECK 783 PASS: AXI data read response is OKAY
+[13885000] CHECK 784 PASS: FIR output matches independent Q15 reference
+[13885000] CHECK 785 PASS: AXI RLAST position is correct
+[13895000] CHECK 786 PASS: AXI data read response is OKAY
+[13895000] CHECK 787 PASS: FIR output matches independent Q15 reference
+[13895000] CHECK 788 PASS: AXI RLAST position is correct
+[13920000] CHECK 789 PASS: AXI-Lite read response matches expectation
+[13930000] CHECK 790 PASS: DONE sticky status asserted after complete frame
+[13930000] CHECK 791 PASS: DONE interrupt asserted when enabled
+[13950000] CHECK 792 PASS: AXI-Lite write response matches expectation
+[13960000] CHECK 793 PASS: DONE interrupt clears through STATUS W1C
+
+--- CASE: sustained input and output backpressure ---
+[14050000] CHECK 794 PASS: AXI-Lite write response matches expectation
+[14080000] CHECK 795 PASS: AXI-Lite write response matches expectation
+[14110000] CHECK 796 PASS: AXI-Lite write response matches expectation
+[14140000] CHECK 797 PASS: AXI-Lite write response matches expectation
+[14170000] CHECK 798 PASS: AXI-Lite write response matches expectation
+[14200000] CHECK 799 PASS: AXI-Lite write response matches expectation
+[14230000] CHECK 800 PASS: AXI-Lite write response matches expectation
+[14260000] CHECK 801 PASS: AXI-Lite write response matches expectation
+[14290000] CHECK 802 PASS: AXI-Lite write response matches expectation
+[14320000] CHECK 803 PASS: AXI-Lite write response matches expectation
+[14350000] CHECK 804 PASS: AXI-Lite write response matches expectation
+[14380000] CHECK 805 PASS: AXI-Lite write response matches expectation
+[14410000] CHECK 806 PASS: AXI-Lite write response matches expectation
+[14440000] CHECK 807 PASS: AXI-Lite write response matches expectation
+[14470000] CHECK 808 PASS: AXI-Lite write response matches expectation
+[14500000] CHECK 809 PASS: AXI-Lite write response matches expectation
+[14530000] CHECK 810 PASS: AXI-Lite write response matches expectation
+[14560000] CHECK 811 PASS: AXI-Lite write response matches expectation
+[14590000] CHECK 812 PASS: AXI-Lite write response matches expectation
+[14620000] CHECK 813 PASS: AXI-Lite write response matches expectation
+[14650000] CHECK 814 PASS: AXI-Lite write response matches expectation
+[14680000] CHECK 815 PASS: AXI-Lite write response matches expectation
+[14710000] CHECK 816 PASS: AXI-Lite write response matches expectation
+[14740000] CHECK 817 PASS: AXI-Lite write response matches expectation
+[14770000] CHECK 818 PASS: AXI-Lite write response matches expectation
+[14800000] CHECK 819 PASS: AXI-Lite write response matches expectation
+[14830000] CHECK 820 PASS: AXI-Lite write response matches expectation
+[14860000] CHECK 821 PASS: AXI-Lite write response matches expectation
+[14890000] CHECK 822 PASS: AXI-Lite write response matches expectation
+[14920000] CHECK 823 PASS: AXI-Lite write response matches expectation
+[14950000] CHECK 824 PASS: AXI-Lite write response matches expectation
+[14980000] CHECK 825 PASS: AXI-Lite write response matches expectation
+[15010000] CHECK 826 PASS: AXI-Lite write response matches expectation
+[15040000] CHECK 827 PASS: AXI-Lite write response matches expectation
+[15070000] CHECK 828 PASS: AXI-Lite write response matches expectation
+[15100000] CHECK 829 PASS: AXI-Lite write response matches expectation
+[15130000] CHECK 830 PASS: AXI-Lite write response matches expectation
+[15160000] CHECK 831 PASS: AXI-Lite write response matches expectation
+[15190000] CHECK 832 PASS: AXI-Lite write response matches expectation
+[15220000] CHECK 833 PASS: AXI-Lite write response matches expectation
+[15250000] CHECK 834 PASS: AXI-Lite write response matches expectation
+[15280000] CHECK 835 PASS: AXI-Lite write response matches expectation
+[15310000] CHECK 836 PASS: AXI-Lite write response matches expectation
+[15340000] CHECK 837 PASS: AXI-Lite write response matches expectation
+[15370000] CHECK 838 PASS: AXI-Lite write response matches expectation
+[15400000] CHECK 839 PASS: AXI-Lite write response matches expectation
+[15430000] CHECK 840 PASS: AXI-Lite write response matches expectation
+[15460000] CHECK 841 PASS: AXI-Lite write response matches expectation
+[15490000] CHECK 842 PASS: AXI-Lite write response matches expectation
+[15520000] CHECK 843 PASS: AXI-Lite write response matches expectation
+[15550000] CHECK 844 PASS: AXI-Lite write response matches expectation
+[15580000] CHECK 845 PASS: AXI-Lite write response matches expectation
+[15610000] CHECK 846 PASS: AXI-Lite write response matches expectation
+[15640000] CHECK 847 PASS: AXI-Lite write response matches expectation
+[15670000] CHECK 848 PASS: AXI-Lite write response matches expectation
+[15700000] CHECK 849 PASS: AXI-Lite write response matches expectation
+[15730000] CHECK 850 PASS: AXI-Lite write response matches expectation
+[15760000] CHECK 851 PASS: AXI-Lite write response matches expectation
+[15790000] CHECK 852 PASS: AXI-Lite write response matches expectation
+[15820000] CHECK 853 PASS: AXI-Lite write response matches expectation
+[15850000] CHECK 854 PASS: AXI-Lite write response matches expectation
+[15880000] CHECK 855 PASS: AXI-Lite write response matches expectation
+[15910000] CHECK 856 PASS: AXI-Lite write response matches expectation
+[15940000] CHECK 857 PASS: AXI-Lite write response matches expectation
+[15970000] CHECK 858 PASS: AXI-Lite write response matches expectation
+[16000000] CHECK 859 PASS: AXI-Lite write response matches expectation
+[16030000] CHECK 860 PASS: AXI-Lite write response matches expectation
+[16060000] CHECK 861 PASS: AXI-Lite write response matches expectation
+[16090000] CHECK 862 PASS: AXI-Lite write response matches expectation
+[16120000] CHECK 863 PASS: AXI-Lite write response matches expectation
+[16150000] CHECK 864 PASS: AXI-Lite write response matches expectation
+[16180000] CHECK 865 PASS: AXI-Lite write response matches expectation
+[16210000] CHECK 866 PASS: AXI-Lite write response matches expectation
+[16240000] CHECK 867 PASS: AXI-Lite write response matches expectation
+[16270000] CHECK 868 PASS: AXI-Lite write response matches expectation
+[16300000] CHECK 869 PASS: AXI-Lite write response matches expectation
+[16330000] CHECK 870 PASS: AXI-Lite write response matches expectation
+[16360000] CHECK 871 PASS: AXI-Lite write response matches expectation
+[16390000] CHECK 872 PASS: AXI-Lite write response matches expectation
+[16420000] CHECK 873 PASS: AXI-Lite write response matches expectation
+[16450000] CHECK 874 PASS: AXI-Lite write response matches expectation
+[16480000] CHECK 875 PASS: AXI-Lite write response matches expectation
+[16510000] CHECK 876 PASS: AXI-Lite write response matches expectation
+[16540000] CHECK 877 PASS: AXI-Lite write response matches expectation
+[16570000] CHECK 878 PASS: AXI-Lite write response matches expectation
+[16600000] CHECK 879 PASS: AXI-Lite write response matches expectation
+[17635000] CHECK 880 PASS: AXI data read response is OKAY
+[17635000] CHECK 881 PASS: FIR output matches independent Q15 reference
+[17635000] CHECK 882 PASS: AXI RLAST position is correct
+[17655000] CHECK 883 PASS: AXI data read response is OKAY
+[17655000] CHECK 884 PASS: FIR output matches independent Q15 reference
+[17655000] CHECK 885 PASS: AXI RLAST position is correct
+[17665000] CHECK 886 PASS: AXI data read response is OKAY
+[17665000] CHECK 887 PASS: FIR output matches independent Q15 reference
+[17665000] CHECK 888 PASS: AXI RLAST position is correct
+[17675000] CHECK 889 PASS: AXI data read response is OKAY
+[17675000] CHECK 890 PASS: FIR output matches independent Q15 reference
+[17675000] CHECK 891 PASS: AXI RLAST position is correct
+[17695000] CHECK 892 PASS: AXI data read response is OKAY
+[17695000] CHECK 893 PASS: FIR output matches independent Q15 reference
+[17695000] CHECK 894 PASS: AXI RLAST position is correct
+[17705000] CHECK 895 PASS: AXI data read response is OKAY
+[17705000] CHECK 896 PASS: FIR output matches independent Q15 reference
+[17705000] CHECK 897 PASS: AXI RLAST position is correct
+[17715000] CHECK 898 PASS: AXI data read response is OKAY
+[17715000] CHECK 899 PASS: FIR output matches independent Q15 reference
+[17715000] CHECK 900 PASS: AXI RLAST position is correct
+[17735000] CHECK 901 PASS: AXI data read response is OKAY
+[17735000] CHECK 902 PASS: FIR output matches independent Q15 reference
+[17735000] CHECK 903 PASS: AXI RLAST position is correct
+[17745000] CHECK 904 PASS: AXI data read response is OKAY
+[17745000] CHECK 905 PASS: FIR output matches independent Q15 reference
+[17745000] CHECK 906 PASS: AXI RLAST position is correct
+[17755000] CHECK 907 PASS: AXI data read response is OKAY
+[17755000] CHECK 908 PASS: FIR output matches independent Q15 reference
+[17755000] CHECK 909 PASS: AXI RLAST position is correct
+[17775000] CHECK 910 PASS: AXI data read response is OKAY
+[17775000] CHECK 911 PASS: FIR output matches independent Q15 reference
+[17775000] CHECK 912 PASS: AXI RLAST position is correct
+[17785000] CHECK 913 PASS: AXI data read response is OKAY
+[17785000] CHECK 914 PASS: FIR output matches independent Q15 reference
+[17785000] CHECK 915 PASS: AXI RLAST position is correct
+[17795000] CHECK 916 PASS: AXI data read response is OKAY
+[17795000] CHECK 917 PASS: FIR output matches independent Q15 reference
+[17795000] CHECK 918 PASS: AXI RLAST position is correct
+[17815000] CHECK 919 PASS: AXI data read response is OKAY
+[17815000] CHECK 920 PASS: FIR output matches independent Q15 reference
+[17815000] CHECK 921 PASS: AXI RLAST position is correct
+[17820000] CHECK 922 PASS: AXI data write response matches expectation
+[17825000] CHECK 923 PASS: AXI data read response is OKAY
+[17825000] CHECK 924 PASS: FIR output matches independent Q15 reference
+[17825000] CHECK 925 PASS: AXI RLAST position is correct
+[17835000] CHECK 926 PASS: AXI data read response is OKAY
+[17835000] CHECK 927 PASS: FIR output matches independent Q15 reference
+[17835000] CHECK 928 PASS: AXI RLAST position is correct
+[17855000] CHECK 929 PASS: AXI data read response is OKAY
+[17855000] CHECK 930 PASS: FIR output matches independent Q15 reference
+[17855000] CHECK 931 PASS: AXI RLAST position is correct
+[17865000] CHECK 932 PASS: AXI data read response is OKAY
+[17865000] CHECK 933 PASS: FIR output matches independent Q15 reference
+[17865000] CHECK 934 PASS: AXI RLAST position is correct
+[17875000] CHECK 935 PASS: AXI data read response is OKAY
+[17875000] CHECK 936 PASS: FIR output matches independent Q15 reference
+[17875000] CHECK 937 PASS: AXI RLAST position is correct
+[17895000] CHECK 938 PASS: AXI data read response is OKAY
+[17895000] CHECK 939 PASS: FIR output matches independent Q15 reference
+[17895000] CHECK 940 PASS: AXI RLAST position is correct
+[17905000] CHECK 941 PASS: AXI data read response is OKAY
+[17905000] CHECK 942 PASS: FIR output matches independent Q15 reference
+[17905000] CHECK 943 PASS: AXI RLAST position is correct
+[17915000] CHECK 944 PASS: AXI data read response is OKAY
+[17915000] CHECK 945 PASS: FIR output matches independent Q15 reference
+[17915000] CHECK 946 PASS: AXI RLAST position is correct
+[17935000] CHECK 947 PASS: AXI data read response is OKAY
+[17935000] CHECK 948 PASS: FIR output matches independent Q15 reference
+[17935000] CHECK 949 PASS: AXI RLAST position is correct
+[17945000] CHECK 950 PASS: AXI data read response is OKAY
+[17945000] CHECK 951 PASS: FIR output matches independent Q15 reference
+[17945000] CHECK 952 PASS: AXI RLAST position is correct
+[17955000] CHECK 953 PASS: AXI data read response is OKAY
+[17955000] CHECK 954 PASS: FIR output matches independent Q15 reference
+[17955000] CHECK 955 PASS: AXI RLAST position is correct
+[17975000] CHECK 956 PASS: AXI data read response is OKAY
+[17975000] CHECK 957 PASS: FIR output matches independent Q15 reference
+[17975000] CHECK 958 PASS: AXI RLAST position is correct
+[17985000] CHECK 959 PASS: AXI data read response is OKAY
+[17985000] CHECK 960 PASS: FIR output matches independent Q15 reference
+[17985000] CHECK 961 PASS: AXI RLAST position is correct
+[17995000] CHECK 962 PASS: AXI data read response is OKAY
+[17995000] CHECK 963 PASS: FIR output matches independent Q15 reference
+[17995000] CHECK 964 PASS: AXI RLAST position is correct
+[18015000] CHECK 965 PASS: AXI data read response is OKAY
+[18015000] CHECK 966 PASS: FIR output matches independent Q15 reference
+[18015000] CHECK 967 PASS: AXI RLAST position is correct
+[18025000] CHECK 968 PASS: AXI data read response is OKAY
+[18025000] CHECK 969 PASS: FIR output matches independent Q15 reference
+[18025000] CHECK 970 PASS: AXI RLAST position is correct
+[18035000] CHECK 971 PASS: AXI data read response is OKAY
+[18035000] CHECK 972 PASS: FIR output matches independent Q15 reference
+[18035000] CHECK 973 PASS: AXI RLAST position is correct
+[18055000] CHECK 974 PASS: AXI data read response is OKAY
+[18055000] CHECK 975 PASS: FIR output matches independent Q15 reference
+[18055000] CHECK 976 PASS: AXI RLAST position is correct
+[18065000] CHECK 977 PASS: AXI data read response is OKAY
+[18065000] CHECK 978 PASS: FIR output matches independent Q15 reference
+[18065000] CHECK 979 PASS: AXI RLAST position is correct
+[18075000] CHECK 980 PASS: AXI data read response is OKAY
+[18075000] CHECK 981 PASS: FIR output matches independent Q15 reference
+[18075000] CHECK 982 PASS: AXI RLAST position is correct
+[18095000] CHECK 983 PASS: AXI data read response is OKAY
+[18095000] CHECK 984 PASS: FIR output matches independent Q15 reference
+[18095000] CHECK 985 PASS: AXI RLAST position is correct
+[18105000] CHECK 986 PASS: AXI data read response is OKAY
+[18105000] CHECK 987 PASS: FIR output matches independent Q15 reference
+[18105000] CHECK 988 PASS: AXI RLAST position is correct
+[18115000] CHECK 989 PASS: AXI data read response is OKAY
+[18115000] CHECK 990 PASS: FIR output matches independent Q15 reference
+[18115000] CHECK 991 PASS: AXI RLAST position is correct
+[18135000] CHECK 992 PASS: AXI data read response is OKAY
+[18135000] CHECK 993 PASS: FIR output matches independent Q15 reference
+[18135000] CHECK 994 PASS: AXI RLAST position is correct
+[18145000] CHECK 995 PASS: AXI data read response is OKAY
+[18145000] CHECK 996 PASS: FIR output matches independent Q15 reference
+[18145000] CHECK 997 PASS: AXI RLAST position is correct
+[18155000] CHECK 998 PASS: AXI data read response is OKAY
+[18155000] CHECK 999 PASS: FIR output matches independent Q15 reference
+[18155000] CHECK 1000 PASS: AXI RLAST position is correct
+[18175000] CHECK 1001 PASS: AXI data read response is OKAY
+[18175000] CHECK 1002 PASS: FIR output matches independent Q15 reference
+[18175000] CHECK 1003 PASS: AXI RLAST position is correct
+[18185000] CHECK 1004 PASS: AXI data read response is OKAY
+[18185000] CHECK 1005 PASS: FIR output matches independent Q15 reference
+[18185000] CHECK 1006 PASS: AXI RLAST position is correct
+[18195000] CHECK 1007 PASS: AXI data read response is OKAY
+[18195000] CHECK 1008 PASS: FIR output matches independent Q15 reference
+[18195000] CHECK 1009 PASS: AXI RLAST position is correct
+[18215000] CHECK 1010 PASS: AXI data read response is OKAY
+[18215000] CHECK 1011 PASS: FIR output matches independent Q15 reference
+[18215000] CHECK 1012 PASS: AXI RLAST position is correct
+[18225000] CHECK 1013 PASS: AXI data read response is OKAY
+[18225000] CHECK 1014 PASS: FIR output matches independent Q15 reference
+[18225000] CHECK 1015 PASS: AXI RLAST position is correct
+[18235000] CHECK 1016 PASS: AXI data read response is OKAY
+[18235000] CHECK 1017 PASS: FIR output matches independent Q15 reference
+[18235000] CHECK 1018 PASS: AXI RLAST position is correct
+[18255000] CHECK 1019 PASS: AXI data read response is OKAY
+[18255000] CHECK 1020 PASS: FIR output matches independent Q15 reference
+[18255000] CHECK 1021 PASS: AXI RLAST position is correct
+[18265000] CHECK 1022 PASS: AXI data read response is OKAY
+[18265000] CHECK 1023 PASS: FIR output matches independent Q15 reference
+[18265000] CHECK 1024 PASS: AXI RLAST position is correct
+[18270000] CHECK 1025 PASS: Output backpressure was actually exercised
+[18270000] CHECK 1026 PASS: FIR accepted at least 16 consecutive samples at one per cycle
+
+--- CASE: clear state and reload all-zero coefficients ---
+[18290000] CHECK 1027 PASS: AXI-Lite write response matches expectation
+[18320000] CHECK 1028 PASS: AXI-Lite write response matches expectation
+[18350000] CHECK 1029 PASS: AXI-Lite write response matches expectation
+[18380000] CHECK 1030 PASS: AXI-Lite write response matches expectation
+[18410000] CHECK 1031 PASS: AXI-Lite write response matches expectation
+[18440000] CHECK 1032 PASS: AXI-Lite write response matches expectation
+[18470000] CHECK 1033 PASS: AXI-Lite write response matches expectation
+[18500000] CHECK 1034 PASS: AXI-Lite write response matches expectation
+[18530000] CHECK 1035 PASS: AXI-Lite write response matches expectation
+[18560000] CHECK 1036 PASS: AXI-Lite write response matches expectation
+[18590000] CHECK 1037 PASS: AXI-Lite write response matches expectation
+[18620000] CHECK 1038 PASS: AXI-Lite write response matches expectation
+[18650000] CHECK 1039 PASS: AXI-Lite write response matches expectation
+[18680000] CHECK 1040 PASS: AXI-Lite write response matches expectation
+[18710000] CHECK 1041 PASS: AXI-Lite write response matches expectation
+[18740000] CHECK 1042 PASS: AXI-Lite write response matches expectation
+[18770000] CHECK 1043 PASS: AXI-Lite write response matches expectation
+[18800000] CHECK 1044 PASS: AXI-Lite write response matches expectation
+[18830000] CHECK 1045 PASS: AXI-Lite write response matches expectation
+[18860000] CHECK 1046 PASS: AXI-Lite write response matches expectation
+[18890000] CHECK 1047 PASS: AXI-Lite write response matches expectation
+[18920000] CHECK 1048 PASS: AXI-Lite write response matches expectation
+[18950000] CHECK 1049 PASS: AXI-Lite write response matches expectation
+[18980000] CHECK 1050 PASS: AXI-Lite write response matches expectation
+[19010000] CHECK 1051 PASS: AXI-Lite write response matches expectation
+[19040000] CHECK 1052 PASS: AXI-Lite write response matches expectation
+[19070000] CHECK 1053 PASS: AXI-Lite write response matches expectation
+[19100000] CHECK 1054 PASS: AXI-Lite write response matches expectation
+[19130000] CHECK 1055 PASS: AXI-Lite write response matches expectation
+[19160000] CHECK 1056 PASS: AXI-Lite write response matches expectation
+[19190000] CHECK 1057 PASS: AXI-Lite write response matches expectation
+[19220000] CHECK 1058 PASS: AXI-Lite write response matches expectation
+[19250000] CHECK 1059 PASS: AXI-Lite write response matches expectation
+[19280000] CHECK 1060 PASS: AXI-Lite write response matches expectation
+[19310000] CHECK 1061 PASS: AXI-Lite write response matches expectation
+[19340000] CHECK 1062 PASS: AXI-Lite write response matches expectation
+[19370000] CHECK 1063 PASS: AXI-Lite write response matches expectation
+[19400000] CHECK 1064 PASS: AXI-Lite write response matches expectation
+[19430000] CHECK 1065 PASS: AXI-Lite write response matches expectation
+[19460000] CHECK 1066 PASS: AXI-Lite write response matches expectation
+[19490000] CHECK 1067 PASS: AXI-Lite write response matches expectation
+[19520000] CHECK 1068 PASS: AXI-Lite write response matches expectation
+[19550000] CHECK 1069 PASS: AXI-Lite write response matches expectation
+[19580000] CHECK 1070 PASS: AXI-Lite write response matches expectation
+[19610000] CHECK 1071 PASS: AXI-Lite write response matches expectation
+[19640000] CHECK 1072 PASS: AXI-Lite write response matches expectation
+[19670000] CHECK 1073 PASS: AXI-Lite write response matches expectation
+[19700000] CHECK 1074 PASS: AXI-Lite write response matches expectation
+[19730000] CHECK 1075 PASS: AXI-Lite write response matches expectation
+[19760000] CHECK 1076 PASS: AXI-Lite write response matches expectation
+[19790000] CHECK 1077 PASS: AXI-Lite write response matches expectation
+[19820000] CHECK 1078 PASS: AXI-Lite write response matches expectation
+[19850000] CHECK 1079 PASS: AXI-Lite write response matches expectation
+[19880000] CHECK 1080 PASS: AXI-Lite write response matches expectation
+[19910000] CHECK 1081 PASS: AXI-Lite write response matches expectation
+[19940000] CHECK 1082 PASS: AXI-Lite write response matches expectation
+[19970000] CHECK 1083 PASS: AXI-Lite write response matches expectation
+[20000000] CHECK 1084 PASS: AXI-Lite write response matches expectation
+[20030000] CHECK 1085 PASS: AXI-Lite write response matches expectation
+[20060000] CHECK 1086 PASS: AXI-Lite write response matches expectation
+[20090000] CHECK 1087 PASS: AXI-Lite write response matches expectation
+[20120000] CHECK 1088 PASS: AXI-Lite write response matches expectation
+[20150000] CHECK 1089 PASS: AXI-Lite write response matches expectation
+[20180000] CHECK 1090 PASS: AXI-Lite write response matches expectation
+[20210000] CHECK 1091 PASS: AXI-Lite write response matches expectation
+[20240000] CHECK 1092 PASS: AXI-Lite write response matches expectation
+[20270000] CHECK 1093 PASS: AXI-Lite write response matches expectation
+[20300000] CHECK 1094 PASS: AXI-Lite write response matches expectation
+[20330000] CHECK 1095 PASS: AXI-Lite write response matches expectation
+[20360000] CHECK 1096 PASS: AXI-Lite write response matches expectation
+[20390000] CHECK 1097 PASS: AXI-Lite write response matches expectation
+[20420000] CHECK 1098 PASS: AXI-Lite write response matches expectation
+[20450000] CHECK 1099 PASS: AXI-Lite write response matches expectation
+[20480000] CHECK 1100 PASS: AXI-Lite write response matches expectation
+[20510000] CHECK 1101 PASS: AXI-Lite write response matches expectation
+[20540000] CHECK 1102 PASS: AXI-Lite write response matches expectation
+[20570000] CHECK 1103 PASS: AXI-Lite write response matches expectation
+[20600000] CHECK 1104 PASS: AXI-Lite write response matches expectation
+[20630000] CHECK 1105 PASS: AXI-Lite write response matches expectation
+[20660000] CHECK 1106 PASS: AXI-Lite write response matches expectation
+[20690000] CHECK 1107 PASS: AXI-Lite write response matches expectation
+[20720000] CHECK 1108 PASS: AXI-Lite write response matches expectation
+[20750000] CHECK 1109 PASS: AXI-Lite write response matches expectation
+[20780000] CHECK 1110 PASS: AXI-Lite write response matches expectation
+[20810000] CHECK 1111 PASS: AXI-Lite write response matches expectation
+[20840000] CHECK 1112 PASS: AXI-Lite write response matches expectation
+[20970000] CHECK 1113 PASS: AXI data write response matches expectation
+[21015000] CHECK 1114 PASS: AXI data read response is OKAY
+[21015000] CHECK 1115 PASS: FIR output matches independent Q15 reference
+[21015000] CHECK 1116 PASS: AXI RLAST position is correct
+[21035000] CHECK 1117 PASS: AXI data read response is OKAY
+[21035000] CHECK 1118 PASS: FIR output matches independent Q15 reference
+[21035000] CHECK 1119 PASS: AXI RLAST position is correct
+[21045000] CHECK 1120 PASS: AXI data read response is OKAY
+[21045000] CHECK 1121 PASS: FIR output matches independent Q15 reference
+[21045000] CHECK 1122 PASS: AXI RLAST position is correct
+[21055000] CHECK 1123 PASS: AXI data read response is OKAY
+[21055000] CHECK 1124 PASS: FIR output matches independent Q15 reference
+[21055000] CHECK 1125 PASS: AXI RLAST position is correct
+[21075000] CHECK 1126 PASS: AXI data read response is OKAY
+[21075000] CHECK 1127 PASS: FIR output matches independent Q15 reference
+[21075000] CHECK 1128 PASS: AXI RLAST position is correct
+[21085000] CHECK 1129 PASS: AXI data read response is OKAY
+[21085000] CHECK 1130 PASS: FIR output matches independent Q15 reference
+[21085000] CHECK 1131 PASS: AXI RLAST position is correct
+[21095000] CHECK 1132 PASS: AXI data read response is OKAY
+[21095000] CHECK 1133 PASS: FIR output matches independent Q15 reference
+[21095000] CHECK 1134 PASS: AXI RLAST position is correct
+[21115000] CHECK 1135 PASS: AXI data read response is OKAY
+[21115000] CHECK 1136 PASS: FIR output matches independent Q15 reference
+[21115000] CHECK 1137 PASS: AXI RLAST position is correct
+[21125000] CHECK 1138 PASS: AXI data read response is OKAY
+[21125000] CHECK 1139 PASS: FIR output matches independent Q15 reference
+[21125000] CHECK 1140 PASS: AXI RLAST position is correct
+[21135000] CHECK 1141 PASS: AXI data read response is OKAY
+[21135000] CHECK 1142 PASS: FIR output matches independent Q15 reference
+[21135000] CHECK 1143 PASS: AXI RLAST position is correct
+[21160000] CHECK 1144 PASS: AXI-Lite read response matches expectation
+[21170000] CHECK 1145 PASS: DONE sticky status asserted after complete frame
+[21170000] CHECK 1146 PASS: DONE interrupt asserted when enabled
+[21190000] CHECK 1147 PASS: AXI-Lite write response matches expectation
+[21200000] CHECK 1148 PASS: DONE interrupt clears through STATUS W1C
+[21200000] CHECK 1149 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1150 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1151 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1152 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1153 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1154 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1155 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1156 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1157 PASS: No stale sample remains after clear/reload
+[21200000] CHECK 1158 PASS: No stale sample remains after clear/reload
+[21220000] CHECK 1159 PASS: AXI-Lite read response matches expectation
+[21230000] CHECK 1160 PASS: CTRL readback reports FIR enabled
+[21250000] CHECK 1161 PASS: AXI-Lite read response matches expectation
+[21260000] CHECK 1162 PASS: Coefficient readback matches most recent zero reload
+
+--- CASE: CTRL.CLR flushes pending FIR results ---
+[21350000] CHECK 1163 PASS: AXI-Lite write response matches expectation
+[21380000] CHECK 1164 PASS: AXI-Lite write response matches expectation
+[21410000] CHECK 1165 PASS: AXI-Lite write response matches expectation
+[21440000] CHECK 1166 PASS: AXI-Lite write response matches expectation
+[21470000] CHECK 1167 PASS: AXI-Lite write response matches expectation
+[21500000] CHECK 1168 PASS: AXI-Lite write response matches expectation
+[21530000] CHECK 1169 PASS: AXI-Lite write response matches expectation
+[21560000] CHECK 1170 PASS: AXI-Lite write response matches expectation
+[21590000] CHECK 1171 PASS: AXI-Lite write response matches expectation
+[21620000] CHECK 1172 PASS: AXI-Lite write response matches expectation
+[21650000] CHECK 1173 PASS: AXI-Lite write response matches expectation
+[21680000] CHECK 1174 PASS: AXI-Lite write response matches expectation
+[21710000] CHECK 1175 PASS: AXI-Lite write response matches expectation
+[21740000] CHECK 1176 PASS: AXI-Lite write response matches expectation
+[21770000] CHECK 1177 PASS: AXI-Lite write response matches expectation
+[21800000] CHECK 1178 PASS: AXI-Lite write response matches expectation
+[21830000] CHECK 1179 PASS: AXI-Lite write response matches expectation
+[21860000] CHECK 1180 PASS: AXI-Lite write response matches expectation
+[21890000] CHECK 1181 PASS: AXI-Lite write response matches expectation
+[21920000] CHECK 1182 PASS: AXI-Lite write response matches expectation
+[21950000] CHECK 1183 PASS: AXI-Lite write response matches expectation
+[21980000] CHECK 1184 PASS: AXI-Lite write response matches expectation
+[22010000] CHECK 1185 PASS: AXI-Lite write response matches expectation
+[22040000] CHECK 1186 PASS: AXI-Lite write response matches expectation
+[22070000] CHECK 1187 PASS: AXI-Lite write response matches expectation
+[22100000] CHECK 1188 PASS: AXI-Lite write response matches expectation
+[22130000] CHECK 1189 PASS: AXI-Lite write response matches expectation
+[22160000] CHECK 1190 PASS: AXI-Lite write response matches expectation
+[22190000] CHECK 1191 PASS: AXI-Lite write response matches expectation
+[22220000] CHECK 1192 PASS: AXI-Lite write response matches expectation
+[22250000] CHECK 1193 PASS: AXI-Lite write response matches expectation
+[22280000] CHECK 1194 PASS: AXI-Lite write response matches expectation
+[22310000] CHECK 1195 PASS: AXI-Lite write response matches expectation
+[22340000] CHECK 1196 PASS: AXI-Lite write response matches expectation
+[22370000] CHECK 1197 PASS: AXI-Lite write response matches expectation
+[22400000] CHECK 1198 PASS: AXI-Lite write response matches expectation
+[22430000] CHECK 1199 PASS: AXI-Lite write response matches expectation
+[22460000] CHECK 1200 PASS: AXI-Lite write response matches expectation
+[22490000] CHECK 1201 PASS: AXI-Lite write response matches expectation
+[22520000] CHECK 1202 PASS: AXI-Lite write response matches expectation
+[22550000] CHECK 1203 PASS: AXI-Lite write response matches expectation
+[22580000] CHECK 1204 PASS: AXI-Lite write response matches expectation
+[22610000] CHECK 1205 PASS: AXI-Lite write response matches expectation
+[22640000] CHECK 1206 PASS: AXI-Lite write response matches expectation
+[22670000] CHECK 1207 PASS: AXI-Lite write response matches expectation
+[22700000] CHECK 1208 PASS: AXI-Lite write response matches expectation
+[22730000] CHECK 1209 PASS: AXI-Lite write response matches expectation
+[22760000] CHECK 1210 PASS: AXI-Lite write response matches expectation
+[22790000] CHECK 1211 PASS: AXI-Lite write response matches expectation
+[22820000] CHECK 1212 PASS: AXI-Lite write response matches expectation
+[22850000] CHECK 1213 PASS: AXI-Lite write response matches expectation
+[22880000] CHECK 1214 PASS: AXI-Lite write response matches expectation
+[22910000] CHECK 1215 PASS: AXI-Lite write response matches expectation
+[22940000] CHECK 1216 PASS: AXI-Lite write response matches expectation
+[22970000] CHECK 1217 PASS: AXI-Lite write response matches expectation
+[23000000] CHECK 1218 PASS: AXI-Lite write response matches expectation
+[23030000] CHECK 1219 PASS: AXI-Lite write response matches expectation
+[23060000] CHECK 1220 PASS: AXI-Lite write response matches expectation
+[23090000] CHECK 1221 PASS: AXI-Lite write response matches expectation
+[23120000] CHECK 1222 PASS: AXI-Lite write response matches expectation
+[23150000] CHECK 1223 PASS: AXI-Lite write response matches expectation
+[23180000] CHECK 1224 PASS: AXI-Lite write response matches expectation
+[23210000] CHECK 1225 PASS: AXI-Lite write response matches expectation
+[23240000] CHECK 1226 PASS: AXI-Lite write response matches expectation
+[23270000] CHECK 1227 PASS: AXI-Lite write response matches expectation
+[23300000] CHECK 1228 PASS: AXI-Lite write response matches expectation
+[23330000] CHECK 1229 PASS: AXI-Lite write response matches expectation
+[23360000] CHECK 1230 PASS: AXI-Lite write response matches expectation
+[23390000] CHECK 1231 PASS: AXI-Lite write response matches expectation
+[23420000] CHECK 1232 PASS: AXI-Lite write response matches expectation
+[23450000] CHECK 1233 PASS: AXI-Lite write response matches expectation
+[23480000] CHECK 1234 PASS: AXI-Lite write response matches expectation
+[23510000] CHECK 1235 PASS: AXI-Lite write response matches expectation
+[23540000] CHECK 1236 PASS: AXI-Lite write response matches expectation
+[23570000] CHECK 1237 PASS: AXI-Lite write response matches expectation
+[23600000] CHECK 1238 PASS: AXI-Lite write response matches expectation
+[23630000] CHECK 1239 PASS: AXI-Lite write response matches expectation
+[23660000] CHECK 1240 PASS: AXI-Lite write response matches expectation
+[23690000] CHECK 1241 PASS: AXI-Lite write response matches expectation
+[23720000] CHECK 1242 PASS: AXI-Lite write response matches expectation
+[23750000] CHECK 1243 PASS: AXI-Lite write response matches expectation
+[23780000] CHECK 1244 PASS: AXI-Lite write response matches expectation
+[23810000] CHECK 1245 PASS: AXI-Lite write response matches expectation
+[23840000] CHECK 1246 PASS: AXI-Lite write response matches expectation
+[23870000] CHECK 1247 PASS: AXI-Lite write response matches expectation
+[23900000] CHECK 1248 PASS: AXI-Lite write response matches expectation
+[24010000] CHECK 1249 PASS: AXI data write response matches expectation
+[24035000] CHECK 1250 PASS: Old results were queued before clear
+[24050000] CHECK 1251 PASS: AXI-Lite write response matches expectation
+[24075000] CHECK 1252 PASS: CTRL.CLR removed all old FIFO entries
+[24075000] CHECK 1253 PASS: CTRL.CLR removed old core output state
+[24090000] CHECK 1254 PASS: AXI-Lite write response matches expectation
+[24120000] CHECK 1255 PASS: AXI-Lite write response matches expectation
+[24150000] CHECK 1256 PASS: AXI-Lite write response matches expectation
+[24180000] CHECK 1257 PASS: AXI-Lite write response matches expectation
+[24210000] CHECK 1258 PASS: AXI-Lite write response matches expectation
+[24240000] CHECK 1259 PASS: AXI-Lite write response matches expectation
+[24270000] CHECK 1260 PASS: AXI-Lite write response matches expectation
+[24300000] CHECK 1261 PASS: AXI-Lite write response matches expectation
+[24330000] CHECK 1262 PASS: AXI-Lite write response matches expectation
+[24360000] CHECK 1263 PASS: AXI-Lite write response matches expectation
+[24390000] CHECK 1264 PASS: AXI-Lite write response matches expectation
+[24420000] CHECK 1265 PASS: AXI-Lite write response matches expectation
+[24450000] CHECK 1266 PASS: AXI-Lite write response matches expectation
+[24480000] CHECK 1267 PASS: AXI-Lite write response matches expectation
+[24510000] CHECK 1268 PASS: AXI-Lite write response matches expectation
+[24540000] CHECK 1269 PASS: AXI-Lite write response matches expectation
+[24570000] CHECK 1270 PASS: AXI-Lite write response matches expectation
+[24600000] CHECK 1271 PASS: AXI-Lite write response matches expectation
+[24630000] CHECK 1272 PASS: AXI-Lite write response matches expectation
+[24660000] CHECK 1273 PASS: AXI-Lite write response matches expectation
+[24690000] CHECK 1274 PASS: AXI-Lite write response matches expectation
+[24720000] CHECK 1275 PASS: AXI-Lite write response matches expectation
+[24750000] CHECK 1276 PASS: AXI-Lite write response matches expectation
+[24780000] CHECK 1277 PASS: AXI-Lite write response matches expectation
+[24810000] CHECK 1278 PASS: AXI-Lite write response matches expectation
+[24840000] CHECK 1279 PASS: AXI-Lite write response matches expectation
+[24870000] CHECK 1280 PASS: AXI-Lite write response matches expectation
+[24900000] CHECK 1281 PASS: AXI-Lite write response matches expectation
+[24930000] CHECK 1282 PASS: AXI-Lite write response matches expectation
+[24960000] CHECK 1283 PASS: AXI-Lite write response matches expectation
+[24990000] CHECK 1284 PASS: AXI-Lite write response matches expectation
+[25020000] CHECK 1285 PASS: AXI-Lite write response matches expectation
+[25050000] CHECK 1286 PASS: AXI-Lite write response matches expectation
+[25080000] CHECK 1287 PASS: AXI-Lite write response matches expectation
+[25110000] CHECK 1288 PASS: AXI-Lite write response matches expectation
+[25140000] CHECK 1289 PASS: AXI-Lite write response matches expectation
+[25170000] CHECK 1290 PASS: AXI-Lite write response matches expectation
+[25200000] CHECK 1291 PASS: AXI-Lite write response matches expectation
+[25230000] CHECK 1292 PASS: AXI-Lite write response matches expectation
+[25260000] CHECK 1293 PASS: AXI-Lite write response matches expectation
+[25290000] CHECK 1294 PASS: AXI-Lite write response matches expectation
+[25320000] CHECK 1295 PASS: AXI-Lite write response matches expectation
+[25350000] CHECK 1296 PASS: AXI-Lite write response matches expectation
+[25380000] CHECK 1297 PASS: AXI-Lite write response matches expectation
+[25410000] CHECK 1298 PASS: AXI-Lite write response matches expectation
+[25440000] CHECK 1299 PASS: AXI-Lite write response matches expectation
+[25470000] CHECK 1300 PASS: AXI-Lite write response matches expectation
+[25500000] CHECK 1301 PASS: AXI-Lite write response matches expectation
+[25530000] CHECK 1302 PASS: AXI-Lite write response matches expectation
+[25560000] CHECK 1303 PASS: AXI-Lite write response matches expectation
+[25590000] CHECK 1304 PASS: AXI-Lite write response matches expectation
+[25620000] CHECK 1305 PASS: AXI-Lite write response matches expectation
+[25650000] CHECK 1306 PASS: AXI-Lite write response matches expectation
+[25680000] CHECK 1307 PASS: AXI-Lite write response matches expectation
+[25710000] CHECK 1308 PASS: AXI-Lite write response matches expectation
+[25740000] CHECK 1309 PASS: AXI-Lite write response matches expectation
+[25770000] CHECK 1310 PASS: AXI-Lite write response matches expectation
+[25800000] CHECK 1311 PASS: AXI-Lite write response matches expectation
+[25830000] CHECK 1312 PASS: AXI-Lite write response matches expectation
+[25860000] CHECK 1313 PASS: AXI-Lite write response matches expectation
+[25890000] CHECK 1314 PASS: AXI-Lite write response matches expectation
+[25920000] CHECK 1315 PASS: AXI-Lite write response matches expectation
+[25950000] CHECK 1316 PASS: AXI-Lite write response matches expectation
+[25980000] CHECK 1317 PASS: AXI-Lite write response matches expectation
+[26010000] CHECK 1318 PASS: AXI-Lite write response matches expectation
+[26040000] CHECK 1319 PASS: AXI-Lite write response matches expectation
+[26070000] CHECK 1320 PASS: AXI-Lite write response matches expectation
+[26100000] CHECK 1321 PASS: AXI-Lite write response matches expectation
+[26130000] CHECK 1322 PASS: AXI-Lite write response matches expectation
+[26160000] CHECK 1323 PASS: AXI-Lite write response matches expectation
+[26190000] CHECK 1324 PASS: AXI-Lite write response matches expectation
+[26220000] CHECK 1325 PASS: AXI-Lite write response matches expectation
+[26250000] CHECK 1326 PASS: AXI-Lite write response matches expectation
+[26280000] CHECK 1327 PASS: AXI-Lite write response matches expectation
+[26310000] CHECK 1328 PASS: AXI-Lite write response matches expectation
+[26340000] CHECK 1329 PASS: AXI-Lite write response matches expectation
+[26370000] CHECK 1330 PASS: AXI-Lite write response matches expectation
+[26400000] CHECK 1331 PASS: AXI-Lite write response matches expectation
+[26430000] CHECK 1332 PASS: AXI-Lite write response matches expectation
+[26460000] CHECK 1333 PASS: AXI-Lite write response matches expectation
+[26490000] CHECK 1334 PASS: AXI-Lite write response matches expectation
+[26520000] CHECK 1335 PASS: AXI-Lite write response matches expectation
+[26550000] CHECK 1336 PASS: AXI-Lite write response matches expectation
+[26580000] CHECK 1337 PASS: AXI-Lite write response matches expectation
+[26610000] CHECK 1338 PASS: AXI-Lite write response matches expectation
+[26640000] CHECK 1339 PASS: AXI-Lite write response matches expectation
+[26680000] CHECK 1340 PASS: AXI data write response matches expectation
+[26725000] CHECK 1341 PASS: AXI data read response is OKAY
+[26725000] CHECK 1342 PASS: FIR output matches independent Q15 reference
+[26725000] CHECK 1343 PASS: AXI RLAST position is correct
+[26730000] CHECK 1344 PASS: New run left no stale output in FIFO
+
+--- CASE: early WLAST, bad WSTRB and clear during active data write ---
+[26820000] CHECK 1345 PASS: AXI-Lite write response matches expectation
+[26850000] CHECK 1346 PASS: AXI-Lite write response matches expectation
+[26880000] CHECK 1347 PASS: AXI-Lite write response matches expectation
+[26910000] CHECK 1348 PASS: AXI-Lite write response matches expectation
+[26940000] CHECK 1349 PASS: AXI-Lite write response matches expectation
+[26970000] CHECK 1350 PASS: AXI-Lite write response matches expectation
+[27000000] CHECK 1351 PASS: AXI-Lite write response matches expectation
+[27030000] CHECK 1352 PASS: AXI-Lite write response matches expectation
+[27060000] CHECK 1353 PASS: AXI-Lite write response matches expectation
+[27090000] CHECK 1354 PASS: AXI-Lite write response matches expectation
+[27120000] CHECK 1355 PASS: AXI-Lite write response matches expectation
+[27150000] CHECK 1356 PASS: AXI-Lite write response matches expectation
+[27180000] CHECK 1357 PASS: AXI-Lite write response matches expectation
+[27210000] CHECK 1358 PASS: AXI-Lite write response matches expectation
+[27240000] CHECK 1359 PASS: AXI-Lite write response matches expectation
+[27270000] CHECK 1360 PASS: AXI-Lite write response matches expectation
+[27300000] CHECK 1361 PASS: AXI-Lite write response matches expectation
+[27330000] CHECK 1362 PASS: AXI-Lite write response matches expectation
+[27360000] CHECK 1363 PASS: AXI-Lite write response matches expectation
+[27390000] CHECK 1364 PASS: AXI-Lite write response matches expectation
+[27420000] CHECK 1365 PASS: AXI-Lite write response matches expectation
+[27450000] CHECK 1366 PASS: AXI-Lite write response matches expectation
+[27480000] CHECK 1367 PASS: AXI-Lite write response matches expectation
+[27510000] CHECK 1368 PASS: AXI-Lite write response matches expectation
+[27540000] CHECK 1369 PASS: AXI-Lite write response matches expectation
+[27570000] CHECK 1370 PASS: AXI-Lite write response matches expectation
+[27600000] CHECK 1371 PASS: AXI-Lite write response matches expectation
+[27630000] CHECK 1372 PASS: AXI-Lite write response matches expectation
+[27660000] CHECK 1373 PASS: AXI-Lite write response matches expectation
+[27690000] CHECK 1374 PASS: AXI-Lite write response matches expectation
+[27720000] CHECK 1375 PASS: AXI-Lite write response matches expectation
+[27750000] CHECK 1376 PASS: AXI-Lite write response matches expectation
+[27780000] CHECK 1377 PASS: AXI-Lite write response matches expectation
+[27810000] CHECK 1378 PASS: AXI-Lite write response matches expectation
+[27840000] CHECK 1379 PASS: AXI-Lite write response matches expectation
+[27870000] CHECK 1380 PASS: AXI-Lite write response matches expectation
+[27900000] CHECK 1381 PASS: AXI-Lite write response matches expectation
+[27930000] CHECK 1382 PASS: AXI-Lite write response matches expectation
+[27960000] CHECK 1383 PASS: AXI-Lite write response matches expectation
+[27990000] CHECK 1384 PASS: AXI-Lite write response matches expectation
+[28020000] CHECK 1385 PASS: AXI-Lite write response matches expectation
+[28050000] CHECK 1386 PASS: AXI-Lite write response matches expectation
+[28080000] CHECK 1387 PASS: AXI-Lite write response matches expectation
+[28110000] CHECK 1388 PASS: AXI-Lite write response matches expectation
+[28140000] CHECK 1389 PASS: AXI-Lite write response matches expectation
+[28170000] CHECK 1390 PASS: AXI-Lite write response matches expectation
+[28200000] CHECK 1391 PASS: AXI-Lite write response matches expectation
+[28230000] CHECK 1392 PASS: AXI-Lite write response matches expectation
+[28260000] CHECK 1393 PASS: AXI-Lite write response matches expectation
+[28290000] CHECK 1394 PASS: AXI-Lite write response matches expectation
+[28320000] CHECK 1395 PASS: AXI-Lite write response matches expectation
+[28350000] CHECK 1396 PASS: AXI-Lite write response matches expectation
+[28380000] CHECK 1397 PASS: AXI-Lite write response matches expectation
+[28410000] CHECK 1398 PASS: AXI-Lite write response matches expectation
+[28440000] CHECK 1399 PASS: AXI-Lite write response matches expectation
+[28470000] CHECK 1400 PASS: AXI-Lite write response matches expectation
+[28500000] CHECK 1401 PASS: AXI-Lite write response matches expectation
+[28530000] CHECK 1402 PASS: AXI-Lite write response matches expectation
+[28560000] CHECK 1403 PASS: AXI-Lite write response matches expectation
+[28590000] CHECK 1404 PASS: AXI-Lite write response matches expectation
+[28620000] CHECK 1405 PASS: AXI-Lite write response matches expectation
+[28650000] CHECK 1406 PASS: AXI-Lite write response matches expectation
+[28680000] CHECK 1407 PASS: AXI-Lite write response matches expectation
+[28710000] CHECK 1408 PASS: AXI-Lite write response matches expectation
+[28740000] CHECK 1409 PASS: AXI-Lite write response matches expectation
+[28770000] CHECK 1410 PASS: AXI-Lite write response matches expectation
+[28800000] CHECK 1411 PASS: AXI-Lite write response matches expectation
+[28830000] CHECK 1412 PASS: AXI-Lite write response matches expectation
+[28860000] CHECK 1413 PASS: AXI-Lite write response matches expectation
+[28890000] CHECK 1414 PASS: AXI-Lite write response matches expectation
+[28920000] CHECK 1415 PASS: AXI-Lite write response matches expectation
+[28950000] CHECK 1416 PASS: AXI-Lite write response matches expectation
+[28980000] CHECK 1417 PASS: AXI-Lite write response matches expectation
+[29010000] CHECK 1418 PASS: AXI-Lite write response matches expectation
+[29040000] CHECK 1419 PASS: AXI-Lite write response matches expectation
+[29070000] CHECK 1420 PASS: AXI-Lite write response matches expectation
+[29100000] CHECK 1421 PASS: AXI-Lite write response matches expectation
+[29130000] CHECK 1422 PASS: AXI-Lite write response matches expectation
+[29160000] CHECK 1423 PASS: AXI-Lite write response matches expectation
+[29190000] CHECK 1424 PASS: AXI-Lite write response matches expectation
+[29220000] CHECK 1425 PASS: AXI-Lite write response matches expectation
+[29250000] CHECK 1426 PASS: AXI-Lite write response matches expectation
+[29280000] CHECK 1427 PASS: AXI-Lite write response matches expectation
+[29310000] CHECK 1428 PASS: AXI-Lite write response matches expectation
+[29340000] CHECK 1429 PASS: AXI-Lite write response matches expectation
+[29370000] CHECK 1430 PASS: AXI-Lite write response matches expectation
+[29400000] CHECK 1431 PASS: Four-beat data AW accepted
+[29420000] CHECK 1432 PASS: AXI-Lite write response matches expectation
+[29450000] CHECK 1433 PASS: AXI-Lite read response matches expectation
+[29460000] CHECK 1434 PASS: Rejected busy clear did not disable FIR
+[29475000] CHECK 1435 PASS: Erroneous W beat was consumed without deadlock
+[29475000] CHECK 1436 PASS: Early WLAST did not truncate the burst
+[29495000] CHECK 1437 PASS: Erroneous W beat was consumed without deadlock
+[29495000] CHECK 1438 PASS: Early WLAST did not truncate the burst
+[29515000] CHECK 1439 PASS: Erroneous W beat was consumed without deadlock
+[29515000] CHECK 1440 PASS: Early WLAST did not truncate the burst
+[29535000] CHECK 1441 PASS: Erroneous W beat was consumed without deadlock
+[29540000] CHECK 1442 PASS: WLAST/WSTRB error returned one SLVERR response
+[29545000] CHECK 1443 PASS: Errored B response stayed stable while stalled
+[29555000] CHECK 1444 PASS: Errored B response stayed stable while stalled
+[29590000] CHECK 1445 PASS: AXI-Lite write response matches expectation
+[29615000] CHECK 1446 PASS: Clear succeeds after data transaction completes
+
+--- NEGATIVE CASE: invalid read while result FIFO is full ---
+[29710000] CHECK 1447 PASS: AXI-Lite write response matches expectation
+[29740000] CHECK 1448 PASS: AXI-Lite write response matches expectation
+[29770000] CHECK 1449 PASS: AXI-Lite write response matches expectation
+[29800000] CHECK 1450 PASS: AXI-Lite write response matches expectation
+[29830000] CHECK 1451 PASS: AXI-Lite write response matches expectation
+[29860000] CHECK 1452 PASS: AXI-Lite write response matches expectation
+[29890000] CHECK 1453 PASS: AXI-Lite write response matches expectation
+[29920000] CHECK 1454 PASS: AXI-Lite write response matches expectation
+[29950000] CHECK 1455 PASS: AXI-Lite write response matches expectation
+[29980000] CHECK 1456 PASS: AXI-Lite write response matches expectation
+[30010000] CHECK 1457 PASS: AXI-Lite write response matches expectation
+[30040000] CHECK 1458 PASS: AXI-Lite write response matches expectation
+[30070000] CHECK 1459 PASS: AXI-Lite write response matches expectation
+[30100000] CHECK 1460 PASS: AXI-Lite write response matches expectation
+[30130000] CHECK 1461 PASS: AXI-Lite write response matches expectation
+[30160000] CHECK 1462 PASS: AXI-Lite write response matches expectation
+[30190000] CHECK 1463 PASS: AXI-Lite write response matches expectation
+[30220000] CHECK 1464 PASS: AXI-Lite write response matches expectation
+[30250000] CHECK 1465 PASS: AXI-Lite write response matches expectation
+[30280000] CHECK 1466 PASS: AXI-Lite write response matches expectation
+[30310000] CHECK 1467 PASS: AXI-Lite write response matches expectation
+[30340000] CHECK 1468 PASS: AXI-Lite write response matches expectation
+[30370000] CHECK 1469 PASS: AXI-Lite write response matches expectation
+[30400000] CHECK 1470 PASS: AXI-Lite write response matches expectation
+[30430000] CHECK 1471 PASS: AXI-Lite write response matches expectation
+[30460000] CHECK 1472 PASS: AXI-Lite write response matches expectation
+[30490000] CHECK 1473 PASS: AXI-Lite write response matches expectation
+[30520000] CHECK 1474 PASS: AXI-Lite write response matches expectation
+[30550000] CHECK 1475 PASS: AXI-Lite write response matches expectation
+[30580000] CHECK 1476 PASS: AXI-Lite write response matches expectation
+[30610000] CHECK 1477 PASS: AXI-Lite write response matches expectation
+[30640000] CHECK 1478 PASS: AXI-Lite write response matches expectation
+[30670000] CHECK 1479 PASS: AXI-Lite write response matches expectation
+[30700000] CHECK 1480 PASS: AXI-Lite write response matches expectation
+[30730000] CHECK 1481 PASS: AXI-Lite write response matches expectation
+[30760000] CHECK 1482 PASS: AXI-Lite write response matches expectation
+[30790000] CHECK 1483 PASS: AXI-Lite write response matches expectation
+[30820000] CHECK 1484 PASS: AXI-Lite write response matches expectation
+[30850000] CHECK 1485 PASS: AXI-Lite write response matches expectation
+[30880000] CHECK 1486 PASS: AXI-Lite write response matches expectation
+[30910000] CHECK 1487 PASS: AXI-Lite write response matches expectation
+[30940000] CHECK 1488 PASS: AXI-Lite write response matches expectation
+[30970000] CHECK 1489 PASS: AXI-Lite write response matches expectation
+[31000000] CHECK 1490 PASS: AXI-Lite write response matches expectation
+[31030000] CHECK 1491 PASS: AXI-Lite write response matches expectation
+[31060000] CHECK 1492 PASS: AXI-Lite write response matches expectation
+[31090000] CHECK 1493 PASS: AXI-Lite write response matches expectation
+[31120000] CHECK 1494 PASS: AXI-Lite write response matches expectation
+[31150000] CHECK 1495 PASS: AXI-Lite write response matches expectation
+[31180000] CHECK 1496 PASS: AXI-Lite write response matches expectation
+[31210000] CHECK 1497 PASS: AXI-Lite write response matches expectation
+[31240000] CHECK 1498 PASS: AXI-Lite write response matches expectation
+[31270000] CHECK 1499 PASS: AXI-Lite write response matches expectation
+[31300000] CHECK 1500 PASS: AXI-Lite write response matches expectation
+[31330000] CHECK 1501 PASS: AXI-Lite write response matches expectation
+[31360000] CHECK 1502 PASS: AXI-Lite write response matches expectation
+[31390000] CHECK 1503 PASS: AXI-Lite write response matches expectation
+[31420000] CHECK 1504 PASS: AXI-Lite write response matches expectation
+[31450000] CHECK 1505 PASS: AXI-Lite write response matches expectation
+[31480000] CHECK 1506 PASS: AXI-Lite write response matches expectation
+[31510000] CHECK 1507 PASS: AXI-Lite write response matches expectation
+[31540000] CHECK 1508 PASS: AXI-Lite write response matches expectation
+[31570000] CHECK 1509 PASS: AXI-Lite write response matches expectation
+[31600000] CHECK 1510 PASS: AXI-Lite write response matches expectation
+[31630000] CHECK 1511 PASS: AXI-Lite write response matches expectation
+[31660000] CHECK 1512 PASS: AXI-Lite write response matches expectation
+[31690000] CHECK 1513 PASS: AXI-Lite write response matches expectation
+[31720000] CHECK 1514 PASS: AXI-Lite write response matches expectation
+[31750000] CHECK 1515 PASS: AXI-Lite write response matches expectation
+[31780000] CHECK 1516 PASS: AXI-Lite write response matches expectation
+[31810000] CHECK 1517 PASS: AXI-Lite write response matches expectation
+[31840000] CHECK 1518 PASS: AXI-Lite write response matches expectation
+[31870000] CHECK 1519 PASS: AXI-Lite write response matches expectation
+[31900000] CHECK 1520 PASS: AXI-Lite write response matches expectation
+[31930000] CHECK 1521 PASS: AXI-Lite write response matches expectation
+[31960000] CHECK 1522 PASS: AXI-Lite write response matches expectation
+[31990000] CHECK 1523 PASS: AXI-Lite write response matches expectation
+[32020000] CHECK 1524 PASS: AXI-Lite write response matches expectation
+[32050000] CHECK 1525 PASS: AXI-Lite write response matches expectation
+[32080000] CHECK 1526 PASS: AXI-Lite write response matches expectation
+[32110000] CHECK 1527 PASS: AXI-Lite write response matches expectation
+[32140000] CHECK 1528 PASS: AXI-Lite write response matches expectation
+[32170000] CHECK 1529 PASS: AXI-Lite write response matches expectation
+[32200000] CHECK 1530 PASS: AXI-Lite write response matches expectation
+[32230000] CHECK 1531 PASS: AXI-Lite write response matches expectation
+[32260000] CHECK 1532 PASS: AXI-Lite write response matches expectation
+[32635000] CHECK 1533 PASS: Result FIFO reached full state without overflow
+[32635000] CHECK 1534 PASS: FIR output is held under FIFO backpressure
+[32685000] CHECK 1535 PASS: Full FIFO count remains bounded during normal stall
+[32700000] CHECK 1536 PASS: Invalid data-window read returns SLVERR
+[32725000] CHECK 1537 PASS: Invalid read cannot create a full-FIFO overwrite
+[32755000] CHECK 1538 PASS: AXI data read response is OKAY
+[32755000] CHECK 1539 PASS: FIR output matches independent Q15 reference
+[32755000] CHECK 1540 PASS: AXI RLAST position is correct
+[32775000] CHECK 1541 PASS: AXI data read response is OKAY
+[32775000] CHECK 1542 PASS: FIR output matches independent Q15 reference
+[32775000] CHECK 1543 PASS: AXI RLAST position is correct
+[32785000] CHECK 1544 PASS: AXI data read response is OKAY
+[32785000] CHECK 1545 PASS: FIR output matches independent Q15 reference
+[32785000] CHECK 1546 PASS: AXI RLAST position is correct
+[32795000] CHECK 1547 PASS: AXI data read response is OKAY
+[32795000] CHECK 1548 PASS: FIR output matches independent Q15 reference
+[32795000] CHECK 1549 PASS: AXI RLAST position is correct
+[32815000] CHECK 1550 PASS: AXI data read response is OKAY
+[32815000] CHECK 1551 PASS: FIR output matches independent Q15 reference
+[32815000] CHECK 1552 PASS: AXI RLAST position is correct
+[32825000] CHECK 1553 PASS: AXI data read response is OKAY
+[32825000] CHECK 1554 PASS: FIR output matches independent Q15 reference
+[32825000] CHECK 1555 PASS: AXI RLAST position is correct
+[32830000] CHECK 1556 PASS: AXI data write response matches expectation
+[32835000] CHECK 1557 PASS: AXI data read response is OKAY
+[32835000] CHECK 1558 PASS: FIR output matches independent Q15 reference
+[32835000] CHECK 1559 PASS: AXI RLAST position is correct
+[32855000] CHECK 1560 PASS: AXI data read response is OKAY
+[32855000] CHECK 1561 PASS: FIR output matches independent Q15 reference
+[32855000] CHECK 1562 PASS: AXI RLAST position is correct
+[32865000] CHECK 1563 PASS: AXI data read response is OKAY
+[32865000] CHECK 1564 PASS: FIR output matches independent Q15 reference
+[32865000] CHECK 1565 PASS: AXI RLAST position is correct
+[32875000] CHECK 1566 PASS: AXI data read response is OKAY
+[32875000] CHECK 1567 PASS: FIR output matches independent Q15 reference
+[32875000] CHECK 1568 PASS: AXI RLAST position is correct
+[32895000] CHECK 1569 PASS: AXI data read response is OKAY
+[32895000] CHECK 1570 PASS: FIR output matches independent Q15 reference
+[32895000] CHECK 1571 PASS: AXI RLAST position is correct
+[32905000] CHECK 1572 PASS: AXI data read response is OKAY
+[32905000] CHECK 1573 PASS: FIR output matches independent Q15 reference
+[32905000] CHECK 1574 PASS: AXI RLAST position is correct
+[32915000] CHECK 1575 PASS: AXI data read response is OKAY
+[32915000] CHECK 1576 PASS: FIR output matches independent Q15 reference
+[32915000] CHECK 1577 PASS: AXI RLAST position is correct
+[32935000] CHECK 1578 PASS: AXI data read response is OKAY
+[32935000] CHECK 1579 PASS: FIR output matches independent Q15 reference
+[32935000] CHECK 1580 PASS: AXI RLAST position is correct
+[32945000] CHECK 1581 PASS: AXI data read response is OKAY
+[32945000] CHECK 1582 PASS: FIR output matches independent Q15 reference
+[32945000] CHECK 1583 PASS: AXI RLAST position is correct
+[32955000] CHECK 1584 PASS: AXI data read response is OKAY
+[32955000] CHECK 1585 PASS: FIR output matches independent Q15 reference
+[32955000] CHECK 1586 PASS: AXI RLAST position is correct
+[32975000] CHECK 1587 PASS: AXI data read response is OKAY
+[32975000] CHECK 1588 PASS: FIR output matches independent Q15 reference
+[32975000] CHECK 1589 PASS: AXI RLAST position is correct
+[32985000] CHECK 1590 PASS: AXI data read response is OKAY
+[32985000] CHECK 1591 PASS: FIR output matches independent Q15 reference
+[32985000] CHECK 1592 PASS: AXI RLAST position is correct
+[32995000] CHECK 1593 PASS: AXI data read response is OKAY
+[32995000] CHECK 1594 PASS: FIR output matches independent Q15 reference
+[32995000] CHECK 1595 PASS: AXI RLAST position is correct
+[33015000] CHECK 1596 PASS: AXI data read response is OKAY
+[33015000] CHECK 1597 PASS: FIR output matches independent Q15 reference
+[33015000] CHECK 1598 PASS: AXI RLAST position is correct
+[33025000] CHECK 1599 PASS: AXI data read response is OKAY
+[33025000] CHECK 1600 PASS: FIR output matches independent Q15 reference
+[33025000] CHECK 1601 PASS: AXI RLAST position is correct
+[33035000] CHECK 1602 PASS: AXI data read response is OKAY
+[33035000] CHECK 1603 PASS: FIR output matches independent Q15 reference
+[33035000] CHECK 1604 PASS: AXI RLAST position is correct
+[33055000] CHECK 1605 PASS: AXI data read response is OKAY
+[33055000] CHECK 1606 PASS: FIR output matches independent Q15 reference
+[33055000] CHECK 1607 PASS: AXI RLAST position is correct
+[33065000] CHECK 1608 PASS: AXI data read response is OKAY
+[33065000] CHECK 1609 PASS: FIR output matches independent Q15 reference
+[33065000] CHECK 1610 PASS: AXI RLAST position is correct
+[33075000] CHECK 1611 PASS: AXI data read response is OKAY
+[33075000] CHECK 1612 PASS: FIR output matches independent Q15 reference
+[33075000] CHECK 1613 PASS: AXI RLAST position is correct
+[33095000] CHECK 1614 PASS: AXI data read response is OKAY
+[33095000] CHECK 1615 PASS: FIR output matches independent Q15 reference
+[33095000] CHECK 1616 PASS: AXI RLAST position is correct
+[33105000] CHECK 1617 PASS: AXI data read response is OKAY
+[33105000] CHECK 1618 PASS: FIR output matches independent Q15 reference
+[33105000] CHECK 1619 PASS: AXI RLAST position is correct
+[33115000] CHECK 1620 PASS: AXI data read response is OKAY
+[33115000] CHECK 1621 PASS: FIR output matches independent Q15 reference
+[33115000] CHECK 1622 PASS: AXI RLAST position is correct
+[33135000] CHECK 1623 PASS: AXI data read response is OKAY
+[33135000] CHECK 1624 PASS: FIR output matches independent Q15 reference
+[33135000] CHECK 1625 PASS: AXI RLAST position is correct
+[33145000] CHECK 1626 PASS: AXI data read response is OKAY
+[33145000] CHECK 1627 PASS: FIR output matches independent Q15 reference
+[33145000] CHECK 1628 PASS: AXI RLAST position is correct
+[33155000] CHECK 1629 PASS: AXI data read response is OKAY
+[33155000] CHECK 1630 PASS: FIR output matches independent Q15 reference
+[33155000] CHECK 1631 PASS: AXI RLAST position is correct
+[33175000] CHECK 1632 PASS: AXI data read response is OKAY
+[33175000] CHECK 1633 PASS: FIR output matches independent Q15 reference
+[33175000] CHECK 1634 PASS: AXI RLAST position is correct
+[33185000] CHECK 1635 PASS: AXI data read response is OKAY
+[33185000] CHECK 1636 PASS: FIR output matches independent Q15 reference
+[33185000] CHECK 1637 PASS: AXI RLAST position is correct
+[33195000] CHECK 1638 PASS: AXI data read response is OKAY
+[33195000] CHECK 1639 PASS: FIR output matches independent Q15 reference
+[33195000] CHECK 1640 PASS: AXI RLAST position is correct
+[33215000] CHECK 1641 PASS: AXI data read response is OKAY
+[33215000] CHECK 1642 PASS: FIR output matches independent Q15 reference
+[33215000] CHECK 1643 PASS: AXI RLAST position is correct
+[33225000] CHECK 1644 PASS: AXI data read response is OKAY
+[33225000] CHECK 1645 PASS: FIR output matches independent Q15 reference
+[33225000] CHECK 1646 PASS: AXI RLAST position is correct
+[33235000] CHECK 1647 PASS: AXI data read response is OKAY
+[33235000] CHECK 1648 PASS: FIR output matches independent Q15 reference
+[33235000] CHECK 1649 PASS: AXI RLAST position is correct
+[33255000] CHECK 1650 PASS: AXI data read response is OKAY
+[33255000] CHECK 1651 PASS: FIR output matches independent Q15 reference
+[33255000] CHECK 1652 PASS: AXI RLAST position is correct
+[33265000] CHECK 1653 PASS: AXI data read response is OKAY
+[33265000] CHECK 1654 PASS: FIR output matches independent Q15 reference
+[33265000] CHECK 1655 PASS: AXI RLAST position is correct
+[33275000] CHECK 1656 PASS: AXI data read response is OKAY
+[33275000] CHECK 1657 PASS: FIR output matches independent Q15 reference
+[33275000] CHECK 1658 PASS: AXI RLAST position is correct
+[33280000] CHECK 1659 PASS: All FIFO results survived the illegal read
+
+--- CASE: reset aborts an active burst and removes old samples ---
+[33450000] CHECK 1660 PASS: AXI-Lite write response matches expectation
+[33480000] CHECK 1661 PASS: AXI-Lite write response matches expectation
+[33510000] CHECK 1662 PASS: AXI-Lite write response matches expectation
+[33540000] CHECK 1663 PASS: AXI-Lite write response matches expectation
+[33570000] CHECK 1664 PASS: AXI-Lite write response matches expectation
+[33600000] CHECK 1665 PASS: AXI-Lite write response matches expectation
+[33630000] CHECK 1666 PASS: AXI-Lite write response matches expectation
+[33660000] CHECK 1667 PASS: AXI-Lite write response matches expectation
+[33690000] CHECK 1668 PASS: AXI-Lite write response matches expectation
+[33720000] CHECK 1669 PASS: AXI-Lite write response matches expectation
+[33750000] CHECK 1670 PASS: AXI-Lite write response matches expectation
+[33780000] CHECK 1671 PASS: AXI-Lite write response matches expectation
+[33810000] CHECK 1672 PASS: AXI-Lite write response matches expectation
+[33840000] CHECK 1673 PASS: AXI-Lite write response matches expectation
+[33870000] CHECK 1674 PASS: AXI-Lite write response matches expectation
+[33900000] CHECK 1675 PASS: AXI-Lite write response matches expectation
+[33930000] CHECK 1676 PASS: AXI-Lite write response matches expectation
+[33960000] CHECK 1677 PASS: AXI-Lite write response matches expectation
+[33990000] CHECK 1678 PASS: AXI-Lite write response matches expectation
+[34020000] CHECK 1679 PASS: AXI-Lite write response matches expectation
+[34050000] CHECK 1680 PASS: AXI-Lite write response matches expectation
+[34080000] CHECK 1681 PASS: AXI-Lite write response matches expectation
+[34110000] CHECK 1682 PASS: AXI-Lite write response matches expectation
+[34140000] CHECK 1683 PASS: AXI-Lite write response matches expectation
+[34170000] CHECK 1684 PASS: AXI-Lite write response matches expectation
+[34200000] CHECK 1685 PASS: AXI-Lite write response matches expectation
+[34230000] CHECK 1686 PASS: AXI-Lite write response matches expectation
+[34260000] CHECK 1687 PASS: AXI-Lite write response matches expectation
+[34290000] CHECK 1688 PASS: AXI-Lite write response matches expectation
+[34320000] CHECK 1689 PASS: AXI-Lite write response matches expectation
+[34350000] CHECK 1690 PASS: AXI-Lite write response matches expectation
+[34380000] CHECK 1691 PASS: AXI-Lite write response matches expectation
+[34410000] CHECK 1692 PASS: AXI-Lite write response matches expectation
+[34440000] CHECK 1693 PASS: AXI-Lite write response matches expectation
+[34470000] CHECK 1694 PASS: AXI-Lite write response matches expectation
+[34500000] CHECK 1695 PASS: AXI-Lite write response matches expectation
+[34530000] CHECK 1696 PASS: AXI-Lite write response matches expectation
+[34560000] CHECK 1697 PASS: AXI-Lite write response matches expectation
+[34590000] CHECK 1698 PASS: AXI-Lite write response matches expectation
+[34620000] CHECK 1699 PASS: AXI-Lite write response matches expectation
+[34650000] CHECK 1700 PASS: AXI-Lite write response matches expectation
+[34680000] CHECK 1701 PASS: AXI-Lite write response matches expectation
+[34710000] CHECK 1702 PASS: AXI-Lite write response matches expectation
+[34740000] CHECK 1703 PASS: AXI-Lite write response matches expectation
+[34770000] CHECK 1704 PASS: AXI-Lite write response matches expectation
+[34800000] CHECK 1705 PASS: AXI-Lite write response matches expectation
+[34830000] CHECK 1706 PASS: AXI-Lite write response matches expectation
+[34860000] CHECK 1707 PASS: AXI-Lite write response matches expectation
+[34890000] CHECK 1708 PASS: AXI-Lite write response matches expectation
+[34920000] CHECK 1709 PASS: AXI-Lite write response matches expectation
+[34950000] CHECK 1710 PASS: AXI-Lite write response matches expectation
+[34980000] CHECK 1711 PASS: AXI-Lite write response matches expectation
+[35010000] CHECK 1712 PASS: AXI-Lite write response matches expectation
+[35040000] CHECK 1713 PASS: AXI-Lite write response matches expectation
+[35070000] CHECK 1714 PASS: AXI-Lite write response matches expectation
+[35100000] CHECK 1715 PASS: AXI-Lite write response matches expectation
+[35130000] CHECK 1716 PASS: AXI-Lite write response matches expectation
+[35160000] CHECK 1717 PASS: AXI-Lite write response matches expectation
+[35190000] CHECK 1718 PASS: AXI-Lite write response matches expectation
+[35220000] CHECK 1719 PASS: AXI-Lite write response matches expectation
+[35250000] CHECK 1720 PASS: AXI-Lite write response matches expectation
+[35280000] CHECK 1721 PASS: AXI-Lite write response matches expectation
+[35310000] CHECK 1722 PASS: AXI-Lite write response matches expectation
+[35340000] CHECK 1723 PASS: AXI-Lite write response matches expectation
+[35370000] CHECK 1724 PASS: AXI-Lite write response matches expectation
+[35400000] CHECK 1725 PASS: AXI-Lite write response matches expectation
+[35430000] CHECK 1726 PASS: AXI-Lite write response matches expectation
+[35460000] CHECK 1727 PASS: AXI-Lite write response matches expectation
+[35490000] CHECK 1728 PASS: AXI-Lite write response matches expectation
+[35520000] CHECK 1729 PASS: AXI-Lite write response matches expectation
+[35550000] CHECK 1730 PASS: AXI-Lite write response matches expectation
+[35580000] CHECK 1731 PASS: AXI-Lite write response matches expectation
+[35610000] CHECK 1732 PASS: AXI-Lite write response matches expectation
+[35640000] CHECK 1733 PASS: AXI-Lite write response matches expectation
+[35670000] CHECK 1734 PASS: AXI-Lite write response matches expectation
+[35700000] CHECK 1735 PASS: AXI-Lite write response matches expectation
+[35730000] CHECK 1736 PASS: AXI-Lite write response matches expectation
+[35760000] CHECK 1737 PASS: AXI-Lite write response matches expectation
+[35790000] CHECK 1738 PASS: AXI-Lite write response matches expectation
+[35820000] CHECK 1739 PASS: AXI-Lite write response matches expectation
+[35850000] CHECK 1740 PASS: AXI-Lite write response matches expectation
+[35880000] CHECK 1741 PASS: AXI-Lite write response matches expectation
+[35910000] CHECK 1742 PASS: AXI-Lite write response matches expectation
+[35940000] CHECK 1743 PASS: AXI-Lite write response matches expectation
+[35970000] CHECK 1744 PASS: AXI-Lite write response matches expectation
+[36000000] CHECK 1745 PASS: AXI-Lite write response matches expectation
+[36030000] CHECK 1746 PASS: Interrupted burst AW accepted
+[36035000] CHECK 1747 PASS: First W beat accepted before reset
+[36085000] CHECK 1748 PASS: Old result queued while four-beat write is unfinished
+[36165000] CHECK 1749 PASS: Reset aborts bus transaction and empties result FIFO
+[36165000] CHECK 1750 PASS: Reset clears pending core output and interrupt state
+
+--- CASE: new zero-coefficient run after interrupted reset ---
+[36180000] CHECK 1751 PASS: AXI-Lite write response matches expectation
+[36210000] CHECK 1752 PASS: AXI-Lite write response matches expectation
+[36240000] CHECK 1753 PASS: AXI-Lite write response matches expectation
+[36270000] CHECK 1754 PASS: AXI-Lite write response matches expectation
+[36300000] CHECK 1755 PASS: AXI-Lite write response matches expectation
+[36330000] CHECK 1756 PASS: AXI-Lite write response matches expectation
+[36360000] CHECK 1757 PASS: AXI-Lite write response matches expectation
+[36390000] CHECK 1758 PASS: AXI-Lite write response matches expectation
+[36420000] CHECK 1759 PASS: AXI-Lite write response matches expectation
+[36450000] CHECK 1760 PASS: AXI-Lite write response matches expectation
+[36480000] CHECK 1761 PASS: AXI-Lite write response matches expectation
+[36510000] CHECK 1762 PASS: AXI-Lite write response matches expectation
+[36540000] CHECK 1763 PASS: AXI-Lite write response matches expectation
+[36570000] CHECK 1764 PASS: AXI-Lite write response matches expectation
+[36600000] CHECK 1765 PASS: AXI-Lite write response matches expectation
+[36630000] CHECK 1766 PASS: AXI-Lite write response matches expectation
+[36660000] CHECK 1767 PASS: AXI-Lite write response matches expectation
+[36690000] CHECK 1768 PASS: AXI-Lite write response matches expectation
+[36720000] CHECK 1769 PASS: AXI-Lite write response matches expectation
+[36750000] CHECK 1770 PASS: AXI-Lite write response matches expectation
+[36780000] CHECK 1771 PASS: AXI-Lite write response matches expectation
+[36810000] CHECK 1772 PASS: AXI-Lite write response matches expectation
+[36840000] CHECK 1773 PASS: AXI-Lite write response matches expectation
+[36870000] CHECK 1774 PASS: AXI-Lite write response matches expectation
+[36900000] CHECK 1775 PASS: AXI-Lite write response matches expectation
+[36930000] CHECK 1776 PASS: AXI-Lite write response matches expectation
+[36960000] CHECK 1777 PASS: AXI-Lite write response matches expectation
+[36990000] CHECK 1778 PASS: AXI-Lite write response matches expectation
+[37020000] CHECK 1779 PASS: AXI-Lite write response matches expectation
+[37050000] CHECK 1780 PASS: AXI-Lite write response matches expectation
+[37080000] CHECK 1781 PASS: AXI-Lite write response matches expectation
+[37110000] CHECK 1782 PASS: AXI-Lite write response matches expectation
+[37140000] CHECK 1783 PASS: AXI-Lite write response matches expectation
+[37170000] CHECK 1784 PASS: AXI-Lite write response matches expectation
+[37200000] CHECK 1785 PASS: AXI-Lite write response matches expectation
+[37230000] CHECK 1786 PASS: AXI-Lite write response matches expectation
+[37260000] CHECK 1787 PASS: AXI-Lite write response matches expectation
+[37290000] CHECK 1788 PASS: AXI-Lite write response matches expectation
+[37320000] CHECK 1789 PASS: AXI-Lite write response matches expectation
+[37350000] CHECK 1790 PASS: AXI-Lite write response matches expectation
+[37380000] CHECK 1791 PASS: AXI-Lite write response matches expectation
+[37410000] CHECK 1792 PASS: AXI-Lite write response matches expectation
+[37440000] CHECK 1793 PASS: AXI-Lite write response matches expectation
+[37470000] CHECK 1794 PASS: AXI-Lite write response matches expectation
+[37500000] CHECK 1795 PASS: AXI-Lite write response matches expectation
+[37530000] CHECK 1796 PASS: AXI-Lite write response matches expectation
+[37560000] CHECK 1797 PASS: AXI-Lite write response matches expectation
+[37590000] CHECK 1798 PASS: AXI-Lite write response matches expectation
+[37620000] CHECK 1799 PASS: AXI-Lite write response matches expectation
+[37650000] CHECK 1800 PASS: AXI-Lite write response matches expectation
+[37680000] CHECK 1801 PASS: AXI-Lite write response matches expectation
+[37710000] CHECK 1802 PASS: AXI-Lite write response matches expectation
+[37740000] CHECK 1803 PASS: AXI-Lite write response matches expectation
+[37770000] CHECK 1804 PASS: AXI-Lite write response matches expectation
+[37800000] CHECK 1805 PASS: AXI-Lite write response matches expectation
+[37830000] CHECK 1806 PASS: AXI-Lite write response matches expectation
+[37860000] CHECK 1807 PASS: AXI-Lite write response matches expectation
+[37890000] CHECK 1808 PASS: AXI-Lite write response matches expectation
+[37920000] CHECK 1809 PASS: AXI-Lite write response matches expectation
+[37950000] CHECK 1810 PASS: AXI-Lite write response matches expectation
+[37980000] CHECK 1811 PASS: AXI-Lite write response matches expectation
+[38010000] CHECK 1812 PASS: AXI-Lite write response matches expectation
+[38040000] CHECK 1813 PASS: AXI-Lite write response matches expectation
+[38070000] CHECK 1814 PASS: AXI-Lite write response matches expectation
+[38100000] CHECK 1815 PASS: AXI-Lite write response matches expectation
+[38130000] CHECK 1816 PASS: AXI-Lite write response matches expectation
+[38160000] CHECK 1817 PASS: AXI-Lite write response matches expectation
+[38190000] CHECK 1818 PASS: AXI-Lite write response matches expectation
+[38220000] CHECK 1819 PASS: AXI-Lite write response matches expectation
+[38250000] CHECK 1820 PASS: AXI-Lite write response matches expectation
+[38280000] CHECK 1821 PASS: AXI-Lite write response matches expectation
+[38310000] CHECK 1822 PASS: AXI-Lite write response matches expectation
+[38340000] CHECK 1823 PASS: AXI-Lite write response matches expectation
+[38370000] CHECK 1824 PASS: AXI-Lite write response matches expectation
+[38400000] CHECK 1825 PASS: AXI-Lite write response matches expectation
+[38430000] CHECK 1826 PASS: AXI-Lite write response matches expectation
+[38460000] CHECK 1827 PASS: AXI-Lite write response matches expectation
+[38490000] CHECK 1828 PASS: AXI-Lite write response matches expectation
+[38520000] CHECK 1829 PASS: AXI-Lite write response matches expectation
+[38550000] CHECK 1830 PASS: AXI-Lite write response matches expectation
+[38580000] CHECK 1831 PASS: AXI-Lite write response matches expectation
+[38610000] CHECK 1832 PASS: AXI-Lite write response matches expectation
+[38640000] CHECK 1833 PASS: AXI-Lite write response matches expectation
+[38670000] CHECK 1834 PASS: AXI-Lite write response matches expectation
+[38700000] CHECK 1835 PASS: AXI-Lite write response matches expectation
+[38730000] CHECK 1836 PASS: AXI-Lite write response matches expectation
+[38770000] CHECK 1837 PASS: AXI data write response matches expectation
+[38815000] CHECK 1838 PASS: AXI data read response is OKAY
+[38815000] CHECK 1839 PASS: FIR output matches independent Q15 reference
+[38815000] CHECK 1840 PASS: AXI RLAST position is correct
+[38840000] CHECK 1841 PASS: AXI-Lite read response matches expectation
+[38850000] CHECK 1842 PASS: DONE sticky status asserted after complete frame
+[38850000] CHECK 1843 PASS: DONE interrupt asserted when enabled
+[38870000] CHECK 1844 PASS: AXI-Lite write response matches expectation
+[38880000] CHECK 1845 PASS: DONE interrupt clears through STATUS W1C
+[38880000] CHECK 1846 PASS: Overflow interrupt remains inactive for legal Q15 range
+[38880000] CHECK 1847 PASS: AXI read-channel backpressure was exercised
+
+============================================================
+FIR VERIFICATION SUMMARY
+Checks executed              : 1847
+Unexpected functional errors : 0
+Requirement failures         : 0
+Known issues observed         : 0
+Longest 1-sample/cycle run    : 81
+Core output stall cycles      : 86
+AXI R stall cycles            : 85
+FIR VALIDATION RESULT: PASS
+============================================================
+$finish called at time : 38880 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/fir/tb_fir_subsystem.sv" Line 1138
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:50:22 2026...

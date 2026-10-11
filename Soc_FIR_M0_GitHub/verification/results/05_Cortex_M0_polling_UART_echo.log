@@ -1,0 +1,131 @@
+﻿INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado2019/Soc_FIR_M0/rtl/cortex_m0/vendor/cortexm0ds_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cortexm0ds_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado2019/Soc_FIR_M0/rtl/cortex_m0/vendor/CORTEXM0INTEGRATION.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CORTEXM0INTEGRATION
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/cortex_m0/cortex_m0_subsystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cortex_m0_subsystem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/ahb_to_axi/ahb_to_axi_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_to_axi_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/simple_sram_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_sram_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/axi_burst_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_burst_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/axi_interconnect_shell_reference.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interconnect_shell_reference
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_81tap_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_81tap_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_81tap_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_81tap_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/axi_fir_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_fir_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/fir/fir_subsystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_subsystem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/uart_tx_byte.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_byte
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/uart_rx_byte.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_byte
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/apb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/apb_uart_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_uart_shell
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/axi_to_apb/axi_to_apb_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_to_apb_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/uart/axi_apb_uart_subsystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_apb_uart_subsystem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/axi_dma_reg_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_dma_reg_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma6_register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma6_register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma6_scheduler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma6_scheduler
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma_carry.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_carry
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma6_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma6_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/read_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module read_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/write_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module write_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/interconnect/axi_interconnect_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interconnect_shell
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/soc/soc_clock_reset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_clock_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/soc/soc_fabric_shell.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_fabric_shell
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/soc/soc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/cortex_m0/tb_soc_top_cpu_uart_echo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_soc_top_cpu_uart_echo
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_soc_top_cpu_uart_echo -s tb_soc_top_cpu_uart_echo_behav -debug typical --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/vivado2019/Soc_FIR_M0/rtl/cortex_m0/vendor/CORTEXM0INTEGRATION.v" Line 29. Module CORTEXM0INTEGRATION doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/vivado2019/Soc_FIR_M0/rtl/cortex_m0/vendor/cortexm0ds_logic.v" Line 27. Module cortexm0ds_logic doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.soc_clock_reset
+Compiling module xil_defaultlib.cortexm0ds_logic
+Compiling module xil_defaultlib.CORTEXM0INTEGRATION
+Compiling module xil_defaultlib.cortex_m0_subsystem
+Compiling module xil_defaultlib.ahb_to_axi_bridge
+Compiling module xil_defaultlib.dma6_register_file
+Compiling module xil_defaultlib.dma6_scheduler
+Compiling module xil_defaultlib.dma_carry
+Compiling module xil_defaultlib.dma6_core
+Compiling module xil_defaultlib.read_arbiter
+Compiling module xil_defaultlib.write_arbiter
+Compiling module xil_defaultlib.arbiter
+Compiling module xil_defaultlib.simple_sram_core(ADDR_WIDTH=14)
+Compiling module xil_defaultlib.axi_burst_sram(SRAM_ADDR_WIDTH=1...
+Compiling module xil_defaultlib.axi_interconnect_shell_reference
+Compiling module xil_defaultlib.fir_81tap_core_default
+Compiling module xil_defaultlib.fir_81tap_axi_default
+Compiling module xil_defaultlib.axi_fir_data_default
+Compiling module xil_defaultlib.fir_subsystem
+Compiling module xil_defaultlib.axi_dma_reg_slave
+Compiling module xil_defaultlib.axi_to_apb_bridge
+Compiling module xil_defaultlib.uart_tx_byte
+Compiling module xil_defaultlib.uart_rx_byte_default
+Compiling module xil_defaultlib.apb_uart
+Compiling module xil_defaultlib.apb_uart_shell
+Compiling module xil_defaultlib.axi_apb_uart_subsystem
+Compiling module xil_defaultlib.axi_interconnect_shell
+Compiling module xil_defaultlib.soc_fabric_shell
+Compiling module xil_defaultlib.soc_top
+Compiling module xil_defaultlib.tb_soc_top_cpu_uart_echo
+Built simulation snapshot tb_soc_top_cpu_uart_echo_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_soc_top_cpu_uart_echo_behav/xsim_script.tcl
+# xsim {tb_soc_top_cpu_uart_echo_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+[TB] 1/6: single-character polling echo
+[TB] 2/6: string echo
+[TB] 3/6: continuous characters with no extra idle bit
+[TB] 4/6: fill all 16 RX FIFO entries, then drain/echo
+[TB] 5/6: TX FIFO full, software timeout, then drain
+[TB] 6/6: final scoreboards and FIFO/status checks
+============================================================
+TEST PASS: Cortex-M0 polling UART full echo regression
+Echo bytes=38, TX-fill bytes=16, total TX bytes=54
+UART MMIO reads=2635 writes=56, checks=75
+Covered: single, string, continuous, RX full/empty,
+         TX full/empty, RX/TX timeout and zero-data-error.
+============================================================
+$finish called at time : 6346270 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/cortex_m0/tb_soc_top_cpu_uart_echo.sv" Line 363
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:13 . Memory (MB): peak = 240.605 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:51:49 2026...

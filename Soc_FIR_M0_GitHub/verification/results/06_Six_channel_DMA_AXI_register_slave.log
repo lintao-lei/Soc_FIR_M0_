@@ -1,0 +1,351 @@
+﻿INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/axi_dma_reg_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_dma_reg_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/dma/dma6_register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma6_register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/dma/tb_axi_dma6_reg_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_dma6_reg_slave
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_axi_dma6_reg_slave -s tb_axi_dma6_reg_slave_behav --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axi_dma_reg_slave
+Compiling module xil_defaultlib.dma6_register_file
+Compiling module xil_defaultlib.tb_axi_dma6_reg_slave
+Built simulation snapshot tb_axi_dma6_reg_slave_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_axi_dma6_reg_slave_behav/xsim_script.tcl
+# xsim {tb_axi_dma6_reg_slave_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+============================================================
+Starting six-channel AXI DMA register-slave simulation
+============================================================
+
+TEST channel 0 register window @ 0x4000e000
+[130000] CHECK 1 PASS: BVALID/BRESP stable while BREADY is low
+[135000] CHECK 2 PASS: B response handshake
+[140000] CHECK 3 PASS: exactly one B response
+[220000] CHECK 4 PASS: BVALID/BRESP stable while BREADY is low
+[225000] CHECK 5 PASS: B response handshake
+[230000] CHECK 6 PASS: exactly one B response
+[310000] CHECK 7 PASS: BVALID/BRESP stable while BREADY is low
+[315000] CHECK 8 PASS: B response handshake
+[320000] CHECK 9 PASS: exactly one B response
+[400000] CHECK 10 PASS: BVALID/BRESP stable while BREADY is low
+[405000] CHECK 11 PASS: B response handshake
+[410000] CHECK 12 PASS: exactly one B response
+[450000] CHECK 13 PASS: R channel payload stable while RREADY is low
+[455000] CHECK 14 PASS: single-beat R handshake
+[460000] CHECK 15 PASS: exactly one R beat
+[500000] CHECK 16 PASS: R channel payload stable while RREADY is low
+[505000] CHECK 17 PASS: single-beat R handshake
+[510000] CHECK 18 PASS: exactly one R beat
+[550000] CHECK 19 PASS: R channel payload stable while RREADY is low
+[555000] CHECK 20 PASS: single-beat R handshake
+[560000] CHECK 21 PASS: exactly one R beat
+[600000] CHECK 22 PASS: R channel payload stable while RREADY is low
+[605000] CHECK 23 PASS: single-beat R handshake
+[610000] CHECK 24 PASS: exactly one R beat
+[650000] CHECK 25 PASS: R channel payload stable while RREADY is low
+[655000] CHECK 26 PASS: single-beat R handshake
+[660000] CHECK 27 PASS: exactly one R beat
+[700000] CHECK 28 PASS: R channel payload stable while RREADY is low
+[705000] CHECK 29 PASS: single-beat R handshake
+[710000] CHECK 30 PASS: exactly one R beat
+[750000] CHECK 31 PASS: R channel payload stable while RREADY is low
+[755000] CHECK 32 PASS: single-beat R handshake
+[760000] CHECK 33 PASS: exactly one R beat
+[800000] CHECK 34 PASS: R channel payload stable while RREADY is low
+[805000] CHECK 35 PASS: single-beat R handshake
+[810000] CHECK 36 PASS: exactly one R beat
+
+TEST channel 1 register window @ 0x4000e040
+[890000] CHECK 37 PASS: BVALID/BRESP stable while BREADY is low
+[895000] CHECK 38 PASS: B response handshake
+[900000] CHECK 39 PASS: exactly one B response
+[980000] CHECK 40 PASS: BVALID/BRESP stable while BREADY is low
+[985000] CHECK 41 PASS: B response handshake
+[990000] CHECK 42 PASS: exactly one B response
+[1070000] CHECK 43 PASS: BVALID/BRESP stable while BREADY is low
+[1075000] CHECK 44 PASS: B response handshake
+[1080000] CHECK 45 PASS: exactly one B response
+[1160000] CHECK 46 PASS: BVALID/BRESP stable while BREADY is low
+[1165000] CHECK 47 PASS: B response handshake
+[1170000] CHECK 48 PASS: exactly one B response
+[1210000] CHECK 49 PASS: R channel payload stable while RREADY is low
+[1215000] CHECK 50 PASS: single-beat R handshake
+[1220000] CHECK 51 PASS: exactly one R beat
+[1260000] CHECK 52 PASS: R channel payload stable while RREADY is low
+[1265000] CHECK 53 PASS: single-beat R handshake
+[1270000] CHECK 54 PASS: exactly one R beat
+[1310000] CHECK 55 PASS: R channel payload stable while RREADY is low
+[1315000] CHECK 56 PASS: single-beat R handshake
+[1320000] CHECK 57 PASS: exactly one R beat
+[1360000] CHECK 58 PASS: R channel payload stable while RREADY is low
+[1365000] CHECK 59 PASS: single-beat R handshake
+[1370000] CHECK 60 PASS: exactly one R beat
+[1410000] CHECK 61 PASS: R channel payload stable while RREADY is low
+[1415000] CHECK 62 PASS: single-beat R handshake
+[1420000] CHECK 63 PASS: exactly one R beat
+[1460000] CHECK 64 PASS: R channel payload stable while RREADY is low
+[1465000] CHECK 65 PASS: single-beat R handshake
+[1470000] CHECK 66 PASS: exactly one R beat
+[1510000] CHECK 67 PASS: R channel payload stable while RREADY is low
+[1515000] CHECK 68 PASS: single-beat R handshake
+[1520000] CHECK 69 PASS: exactly one R beat
+[1560000] CHECK 70 PASS: R channel payload stable while RREADY is low
+[1565000] CHECK 71 PASS: single-beat R handshake
+[1570000] CHECK 72 PASS: exactly one R beat
+
+TEST channel 2 register window @ 0x4000e080
+[1650000] CHECK 73 PASS: BVALID/BRESP stable while BREADY is low
+[1655000] CHECK 74 PASS: B response handshake
+[1660000] CHECK 75 PASS: exactly one B response
+[1740000] CHECK 76 PASS: BVALID/BRESP stable while BREADY is low
+[1745000] CHECK 77 PASS: B response handshake
+[1750000] CHECK 78 PASS: exactly one B response
+[1830000] CHECK 79 PASS: BVALID/BRESP stable while BREADY is low
+[1835000] CHECK 80 PASS: B response handshake
+[1840000] CHECK 81 PASS: exactly one B response
+[1920000] CHECK 82 PASS: BVALID/BRESP stable while BREADY is low
+[1925000] CHECK 83 PASS: B response handshake
+[1930000] CHECK 84 PASS: exactly one B response
+[1970000] CHECK 85 PASS: R channel payload stable while RREADY is low
+[1975000] CHECK 86 PASS: single-beat R handshake
+[1980000] CHECK 87 PASS: exactly one R beat
+[2020000] CHECK 88 PASS: R channel payload stable while RREADY is low
+[2025000] CHECK 89 PASS: single-beat R handshake
+[2030000] CHECK 90 PASS: exactly one R beat
+[2070000] CHECK 91 PASS: R channel payload stable while RREADY is low
+[2075000] CHECK 92 PASS: single-beat R handshake
+[2080000] CHECK 93 PASS: exactly one R beat
+[2120000] CHECK 94 PASS: R channel payload stable while RREADY is low
+[2125000] CHECK 95 PASS: single-beat R handshake
+[2130000] CHECK 96 PASS: exactly one R beat
+[2170000] CHECK 97 PASS: R channel payload stable while RREADY is low
+[2175000] CHECK 98 PASS: single-beat R handshake
+[2180000] CHECK 99 PASS: exactly one R beat
+[2220000] CHECK 100 PASS: R channel payload stable while RREADY is low
+[2225000] CHECK 101 PASS: single-beat R handshake
+[2230000] CHECK 102 PASS: exactly one R beat
+[2270000] CHECK 103 PASS: R channel payload stable while RREADY is low
+[2275000] CHECK 104 PASS: single-beat R handshake
+[2280000] CHECK 105 PASS: exactly one R beat
+[2320000] CHECK 106 PASS: R channel payload stable while RREADY is low
+[2325000] CHECK 107 PASS: single-beat R handshake
+[2330000] CHECK 108 PASS: exactly one R beat
+
+TEST channel 3 register window @ 0x4000e0c0
+[2410000] CHECK 109 PASS: BVALID/BRESP stable while BREADY is low
+[2415000] CHECK 110 PASS: B response handshake
+[2420000] CHECK 111 PASS: exactly one B response
+[2500000] CHECK 112 PASS: BVALID/BRESP stable while BREADY is low
+[2505000] CHECK 113 PASS: B response handshake
+[2510000] CHECK 114 PASS: exactly one B response
+[2590000] CHECK 115 PASS: BVALID/BRESP stable while BREADY is low
+[2595000] CHECK 116 PASS: B response handshake
+[2600000] CHECK 117 PASS: exactly one B response
+[2680000] CHECK 118 PASS: BVALID/BRESP stable while BREADY is low
+[2685000] CHECK 119 PASS: B response handshake
+[2690000] CHECK 120 PASS: exactly one B response
+[2730000] CHECK 121 PASS: R channel payload stable while RREADY is low
+[2735000] CHECK 122 PASS: single-beat R handshake
+[2740000] CHECK 123 PASS: exactly one R beat
+[2780000] CHECK 124 PASS: R channel payload stable while RREADY is low
+[2785000] CHECK 125 PASS: single-beat R handshake
+[2790000] CHECK 126 PASS: exactly one R beat
+[2830000] CHECK 127 PASS: R channel payload stable while RREADY is low
+[2835000] CHECK 128 PASS: single-beat R handshake
+[2840000] CHECK 129 PASS: exactly one R beat
+[2880000] CHECK 130 PASS: R channel payload stable while RREADY is low
+[2885000] CHECK 131 PASS: single-beat R handshake
+[2890000] CHECK 132 PASS: exactly one R beat
+[2930000] CHECK 133 PASS: R channel payload stable while RREADY is low
+[2935000] CHECK 134 PASS: single-beat R handshake
+[2940000] CHECK 135 PASS: exactly one R beat
+[2980000] CHECK 136 PASS: R channel payload stable while RREADY is low
+[2985000] CHECK 137 PASS: single-beat R handshake
+[2990000] CHECK 138 PASS: exactly one R beat
+[3030000] CHECK 139 PASS: R channel payload stable while RREADY is low
+[3035000] CHECK 140 PASS: single-beat R handshake
+[3040000] CHECK 141 PASS: exactly one R beat
+[3080000] CHECK 142 PASS: R channel payload stable while RREADY is low
+[3085000] CHECK 143 PASS: single-beat R handshake
+[3090000] CHECK 144 PASS: exactly one R beat
+
+TEST channel 4 register window @ 0x4000e100
+[3170000] CHECK 145 PASS: BVALID/BRESP stable while BREADY is low
+[3175000] CHECK 146 PASS: B response handshake
+[3180000] CHECK 147 PASS: exactly one B response
+[3260000] CHECK 148 PASS: BVALID/BRESP stable while BREADY is low
+[3265000] CHECK 149 PASS: B response handshake
+[3270000] CHECK 150 PASS: exactly one B response
+[3350000] CHECK 151 PASS: BVALID/BRESP stable while BREADY is low
+[3355000] CHECK 152 PASS: B response handshake
+[3360000] CHECK 153 PASS: exactly one B response
+[3440000] CHECK 154 PASS: BVALID/BRESP stable while BREADY is low
+[3445000] CHECK 155 PASS: B response handshake
+[3450000] CHECK 156 PASS: exactly one B response
+[3490000] CHECK 157 PASS: R channel payload stable while RREADY is low
+[3495000] CHECK 158 PASS: single-beat R handshake
+[3500000] CHECK 159 PASS: exactly one R beat
+[3540000] CHECK 160 PASS: R channel payload stable while RREADY is low
+[3545000] CHECK 161 PASS: single-beat R handshake
+[3550000] CHECK 162 PASS: exactly one R beat
+[3590000] CHECK 163 PASS: R channel payload stable while RREADY is low
+[3595000] CHECK 164 PASS: single-beat R handshake
+[3600000] CHECK 165 PASS: exactly one R beat
+[3640000] CHECK 166 PASS: R channel payload stable while RREADY is low
+[3645000] CHECK 167 PASS: single-beat R handshake
+[3650000] CHECK 168 PASS: exactly one R beat
+[3690000] CHECK 169 PASS: R channel payload stable while RREADY is low
+[3695000] CHECK 170 PASS: single-beat R handshake
+[3700000] CHECK 171 PASS: exactly one R beat
+[3740000] CHECK 172 PASS: R channel payload stable while RREADY is low
+[3745000] CHECK 173 PASS: single-beat R handshake
+[3750000] CHECK 174 PASS: exactly one R beat
+[3790000] CHECK 175 PASS: R channel payload stable while RREADY is low
+[3795000] CHECK 176 PASS: single-beat R handshake
+[3800000] CHECK 177 PASS: exactly one R beat
+[3840000] CHECK 178 PASS: R channel payload stable while RREADY is low
+[3845000] CHECK 179 PASS: single-beat R handshake
+[3850000] CHECK 180 PASS: exactly one R beat
+
+TEST channel 5 register window @ 0x4000e140
+[3930000] CHECK 181 PASS: BVALID/BRESP stable while BREADY is low
+[3935000] CHECK 182 PASS: B response handshake
+[3940000] CHECK 183 PASS: exactly one B response
+[4020000] CHECK 184 PASS: BVALID/BRESP stable while BREADY is low
+[4025000] CHECK 185 PASS: B response handshake
+[4030000] CHECK 186 PASS: exactly one B response
+[4110000] CHECK 187 PASS: BVALID/BRESP stable while BREADY is low
+[4115000] CHECK 188 PASS: B response handshake
+[4120000] CHECK 189 PASS: exactly one B response
+[4200000] CHECK 190 PASS: BVALID/BRESP stable while BREADY is low
+[4205000] CHECK 191 PASS: B response handshake
+[4210000] CHECK 192 PASS: exactly one B response
+[4250000] CHECK 193 PASS: R channel payload stable while RREADY is low
+[4255000] CHECK 194 PASS: single-beat R handshake
+[4260000] CHECK 195 PASS: exactly one R beat
+[4300000] CHECK 196 PASS: R channel payload stable while RREADY is low
+[4305000] CHECK 197 PASS: single-beat R handshake
+[4310000] CHECK 198 PASS: exactly one R beat
+[4350000] CHECK 199 PASS: R channel payload stable while RREADY is low
+[4355000] CHECK 200 PASS: single-beat R handshake
+[4360000] CHECK 201 PASS: exactly one R beat
+[4400000] CHECK 202 PASS: R channel payload stable while RREADY is low
+[4405000] CHECK 203 PASS: single-beat R handshake
+[4410000] CHECK 204 PASS: exactly one R beat
+[4450000] CHECK 205 PASS: R channel payload stable while RREADY is low
+[4455000] CHECK 206 PASS: single-beat R handshake
+[4460000] CHECK 207 PASS: exactly one R beat
+[4500000] CHECK 208 PASS: R channel payload stable while RREADY is low
+[4505000] CHECK 209 PASS: single-beat R handshake
+[4510000] CHECK 210 PASS: exactly one R beat
+[4550000] CHECK 211 PASS: R channel payload stable while RREADY is low
+[4555000] CHECK 212 PASS: single-beat R handshake
+[4560000] CHECK 213 PASS: exactly one R beat
+[4600000] CHECK 214 PASS: R channel payload stable while RREADY is low
+[4605000] CHECK 215 PASS: single-beat R handshake
+[4610000] CHECK 216 PASS: exactly one R beat
+[4690000] CHECK 217 PASS: BVALID/BRESP stable while BREADY is low
+[4695000] CHECK 218 PASS: B response handshake
+[4700000] CHECK 219 PASS: exactly one B response
+[4700000] CHECK 220 PASS: 24 configuration writes plus one STATUS W1C write committed
+
+TEST global scheduler and status registers
+[4740000] CHECK 221 PASS: R channel payload stable while RREADY is low
+[4745000] CHECK 222 PASS: single-beat R handshake
+[4750000] CHECK 223 PASS: exactly one R beat
+[4830000] CHECK 224 PASS: BVALID/BRESP stable while BREADY is low
+[4835000] CHECK 225 PASS: B response handshake
+[4840000] CHECK 226 PASS: exactly one B response
+[4880000] CHECK 227 PASS: R channel payload stable while RREADY is low
+[4885000] CHECK 228 PASS: single-beat R handshake
+[4890000] CHECK 229 PASS: exactly one R beat
+[4930000] CHECK 230 PASS: R channel payload stable while RREADY is low
+[4935000] CHECK 231 PASS: single-beat R handshake
+[4940000] CHECK 232 PASS: exactly one R beat
+[4980000] CHECK 233 PASS: R channel payload stable while RREADY is low
+[4985000] CHECK 234 PASS: single-beat R handshake
+[4990000] CHECK 235 PASS: exactly one R beat
+[5030000] CHECK 236 PASS: R channel payload stable while RREADY is low
+[5035000] CHECK 237 PASS: single-beat R handshake
+[5040000] CHECK 238 PASS: exactly one R beat
+[5080000] CHECK 239 PASS: R channel payload stable while RREADY is low
+[5085000] CHECK 240 PASS: single-beat R handshake
+[5090000] CHECK 241 PASS: exactly one R beat
+[5170000] CHECK 242 PASS: BVALID/BRESP stable while BREADY is low
+[5175000] CHECK 243 PASS: B response handshake
+[5180000] CHECK 244 PASS: exactly one B response
+[5220000] CHECK 245 PASS: R channel payload stable while RREADY is low
+[5225000] CHECK 246 PASS: single-beat R handshake
+[5230000] CHECK 247 PASS: exactly one R beat
+[5230000] CHECK 248 PASS: two global control writes reached the local register file
+
+TEST invalid register addresses
+[5310000] CHECK 249 PASS: BVALID/BRESP stable while BREADY is low
+[5315000] CHECK 250 PASS: B response handshake
+[5320000] CHECK 251 PASS: exactly one B response
+[5400000] CHECK 252 PASS: BVALID/BRESP stable while BREADY is low
+[5405000] CHECK 253 PASS: B response handshake
+[5410000] CHECK 254 PASS: exactly one B response
+[5490000] CHECK 255 PASS: BVALID/BRESP stable while BREADY is low
+[5495000] CHECK 256 PASS: B response handshake
+[5500000] CHECK 257 PASS: exactly one B response
+[5580000] CHECK 258 PASS: BVALID/BRESP stable while BREADY is low
+[5585000] CHECK 259 PASS: B response handshake
+[5590000] CHECK 260 PASS: exactly one B response
+[5590000] CHECK 261 PASS: invalid writes generated no local register write pulse
+[5630000] CHECK 262 PASS: R channel payload stable while RREADY is low
+[5635000] CHECK 263 PASS: single-beat R handshake
+[5640000] CHECK 264 PASS: exactly one R beat
+[5680000] CHECK 265 PASS: R channel payload stable while RREADY is low
+[5685000] CHECK 266 PASS: single-beat R handshake
+[5690000] CHECK 267 PASS: exactly one R beat
+[5730000] CHECK 268 PASS: R channel payload stable while RREADY is low
+[5735000] CHECK 269 PASS: single-beat R handshake
+[5740000] CHECK 270 PASS: exactly one R beat
+[5800000] CHECK 271 PASS: BVALID/BRESP stable while BREADY is low
+[5805000] CHECK 272 PASS: B response handshake
+[5810000] CHECK 273 PASS: exactly one B response
+[5850000] CHECK 274 PASS: R channel payload stable while RREADY is low
+[5855000] CHECK 275 PASS: single-beat R handshake
+[5860000] CHECK 276 PASS: exactly one R beat
+[5860000] CHECK 277 PASS: partial WSTRB generated no local register write pulse
+
+TEST unsupported bursts
+[5980000] CHECK 278 PASS: BVALID/BRESP stable while BREADY is low
+[5985000] CHECK 279 PASS: B response handshake
+[5990000] CHECK 280 PASS: exactly one B response
+[5990000] CHECK 281 PASS: unsupported write burst generated no register write pulse
+[6030000] CHECK 282 PASS: unsupported read burst starts with SLVERR
+[6035000] CHECK 283 PASS: unsupported read burst beat and RLAST are correct
+[6045000] CHECK 284 PASS: unsupported read burst beat and RLAST are correct
+[6055000] CHECK 285 PASS: unsupported read burst beat and RLAST are correct
+[6065000] CHECK 286 PASS: unsupported read burst beat and RLAST are correct
+[6070000] CHECK 287 PASS: unsupported read burst ends after four beats
+[6070000] CHECK 288 PASS: configuration without START creates no pending task
+[6070000] CHECK 289 PASS: no channel is busy in register-only test
+[6070000] CHECK 290 PASS: AXI address errors do not corrupt DMA channel state
+
+============================================================
+Checks : 290
+Errors : 0
+TEST PASS: six-channel AXI DMA register slave works
+============================================================
+$finish called at time : 6070 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/dma/tb_axi_dma6_reg_slave.sv" Line 395
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:51:54 2026...

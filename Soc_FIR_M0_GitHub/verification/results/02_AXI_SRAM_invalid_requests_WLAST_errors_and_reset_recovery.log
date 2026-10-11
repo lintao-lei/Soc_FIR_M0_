@@ -1,0 +1,54 @@
+﻿INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/simple_sram_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_sram_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/rtl/sram/axi_burst_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_burst_sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/sram/tb_axi_burst_sram_protocol_errors.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_burst_sram_protocol_errors
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2019/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.tb_axi_burst_sram_protocol_errors -s tb_axi_burst_sram_protocol_errors_behav --relax 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simple_sram_core_default
+Compiling module xil_defaultlib.axi_burst_sram
+Compiling module xil_defaultlib.tb_axi_burst_sram_protocol_error...
+Built simulation snapshot tb_axi_burst_sram_protocol_errors_behav
+
+****** xsim v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_axi_burst_sram_protocol_errors_behav/xsim_script.tcl
+# xsim {tb_axi_burst_sram_protocol_errors_behav} -autoloadwcfg -runall
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+run -all
+============================================================
+AXI burst SRAM negative protocol and reset verification
+============================================================
+[1] Establish sentinel word
+[2] Misaligned AWADDR returns SLVERR and writes nothing
+[3] Illegal FIXED AWBURST returns SLVERR
+[4] Narrow AWSIZE returns SLVERR
+[5] AWLEN=16 (17 beats) returns one SLVERR
+[6] Write crossing 4KiB returns SLVERR
+[7] Early WLAST drains remaining beats and returns SLVERR
+[8] Missing final WLAST returns SLVERR
+[9] Misaligned ARADDR returns one SLVERR beat
+[10] Illegal WRAP ARBURST returns four SLVERR beats
+[11] ARLEN=16 returns seventeen SLVERR beats
+[12] Read crossing 4KiB returns two SLVERR beats
+[13] Reset interrupts an active write, then slave recovers
+[14] Reset interrupts a stalled read, then slave recovers
+------------------------------------------------------------
+Checks=207 Errors=0 B-responses=10 R-beats=28
+TEST PASS: AXI burst SRAM negative protocol cases
+$finish called at time : 2250 ns : File "E:/gpt_data/2026-09-11/u/outputs/Soc_FIR_M0_GitHub_release_20261011/sim/sram/tb_axi_burst_sram_protocol_errors.sv" Line 431
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 22:50:17 2026...
